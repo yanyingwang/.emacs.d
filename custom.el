@@ -17,3 +17,5 @@
 (global-set-key "\C-w" 'clipboard-kill-region)
 (global-set-key "\M-w" 'clipboard-kill-ring-save)
 (global-set-key "\C-y" 'clipboard-yank)
+(set-default-font "Ubuntu Mono-11")
+;;(set-default-font "Monaco-10")
