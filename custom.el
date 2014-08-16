@@ -22,3 +22,7 @@
 ;; http://www.emacswiki.org/emacs/SetFonts
 ;;(set-default-font "Ubuntu Mono-11")
 (set-default-font "Monaco-10")
+
+;; MultiTerm-zsh
+(setq multi-term-program "/bin/zsh")
+
