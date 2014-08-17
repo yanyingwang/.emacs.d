@@ -27,4 +27,7 @@
 (setq multi-term-program "/bin/zsh")
 (add-hook 'term-mode-hook (lambda ()
                             (define-key term-raw-map (kbd "C-y") 'term-paste)))
-
+;; Keybinding
+;; cycle through buffers with Ctrl-Tab (like Firefox)
+;;(global-set-key (kbd "<C-tab>") 'bury-buffer')
+;;(global-set-key (kbd "<C-x tab>") kbd "<C-x o")
