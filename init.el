@@ -26,6 +26,7 @@
 ;;----------------------------------------------------------------------------
 
 (require 'multi-term)
+(require 'ruby-end)
 
 (require-package 'wgrep)
 (require-package 'project-local-variables)
