@@ -34,11 +34,11 @@
 
 (when (require 'term nil t) ; only if term can be loaded..
   (setq term-bind-key-alist
-        (list (cons "C-c C-c" 'term-interrupt-subjob)
+        (list ;;(cons "C-c C-c" 'term-interrupt-subjob)
               ;;(cons "C-p" 'previous-line)
               ;;(cons "C-n" 'next-line)
-              ;;(cons "M-f" 'term-send-forward-word)
-              ;;(cons "M-b" 'term-send-backward-word)
+              (cons "M-f" 'term-send-forward-word)
+              (cons "M-b" 'term-send-backward-word)
               ;;(cons "C-c C-j" 'term-line-mode)
               ;;(cons "C-c C-k" 'term-char-mode)
               ;;(cons "M-DEL" 'term-send-backward-kill-word)
