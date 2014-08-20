@@ -48,7 +48,8 @@
               ;;(cons "C-r" 'term-send-reverse-search-history)
               ;;(cons "M-p" 'term-send-raw-meta)
               ;;(cons "M-y" 'term-send-raw-meta)
-              ;;(cons "C-y" 'term-send-raw))))
+              ;;(cons "C-y" 'term-send-raw)
+              )))
 
 
 ;; Global Keybinding
@@ -56,3 +57,15 @@
 ;;(global-set-key (kbd "<C-tab>") 'bury-buffer)
 ;;(global-set-key (kbd "<C-x tab>") kbd "<C-x o)
 
+(defun duplicate-line (&optional arg)
+  "Duplicate it. With prefix ARG, duplicate ARG times."
+  (interactive "p")
+  (next-line 
+   (save-excursion 
+     (let ((beg (line-beginning-position))
+           (end (line-end-position)))
+       (copy-region-as-kill beg end)
+       (dotimes (num arg arg)
+         (end-of-line) (newline)
+         (yank))))))
+(global-set-key (kbd "C-S-d") 'duplicate-line)
