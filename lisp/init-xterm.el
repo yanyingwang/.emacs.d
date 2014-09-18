@@ -1,4 +1,5 @@
 (require 'init-frame-hooks)
+(require-package 'multi-term)
 
 (defun fix-up-xterm-control-arrows ()
   (let ((map (if (boundp 'input-decode-map)

@@ -1,5 +1,6 @@
 ;;; Basic ruby setup
 (require-package 'ruby-mode)
+(require-package 'ruby-end)
 (require-package 'ruby-hash-syntax)
 
 (add-auto-mode 'ruby-mode
@@ -70,6 +71,9 @@
 
 (require-package 'yaml-mode)
 
+;;; SLIM
+
+(require-package 'slim-mode)
 
 
 ;;; ERB

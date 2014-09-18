@@ -25,9 +25,6 @@
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
 
-(require 'multi-term)
-(require 'ruby-end)
-
 (require-package 'wgrep)
 (require-package 'project-local-variables)
 (require-package 'diminish)
@@ -73,7 +70,6 @@
 (require 'init-html)
 (require 'init-css)
 (require 'init-haml)
-(require 'slim-mode)
 (require 'init-python-mode)
 (require 'init-haskell)
 (require 'init-ruby-mode)

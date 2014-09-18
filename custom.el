@@ -1,3 +1,7 @@
+(require 'slim-mode)
+(require 'ruby-end)
+(require 'multi-term)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -20,8 +24,11 @@
 
 ;; set fonts
 ;; http://www.emacswiki.org/emacs/SetFonts
-;;(set-default-font "Ubuntu Mono-11")
-(set-default-font "Monaco-10")
+(if (eq system-type 'darwin)
+    (set-default-font "Monaco:12")
+  (set-default-font "Monaco-10")
+  ;;(set-default-font "Ubuntu Mono-11")
+)
 
 ;; MultiTerm
 (when (require 'multi-term nil t)
