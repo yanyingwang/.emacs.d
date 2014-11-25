@@ -25,9 +25,9 @@
 ;; set fonts
 ;; http://www.emacswiki.org/emacs/SetFonts
 (if (eq system-type 'darwin)
-    (set-default-font "Monaco:12")
-  (set-default-font "Monaco-10")
-  ;;(set-default-font "Ubuntu Mono-11")
+    ;;(set-default-font "Monaco:12"'')
+  ;;(set-default-font "Monaco-10")
+  (set-default-font "Ubuntu Mono-11")
 )
 
 ;; MultiTerm
