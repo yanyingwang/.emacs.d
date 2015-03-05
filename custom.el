@@ -17,10 +17,9 @@
  )
 
 ;; work with clipboard
-;; http://www.emacswiki.org/emacs/CopyAndPaste#toc12
-(global-set-key "\C-w" 'clipboard-kill-region)
-(global-set-key "\M-w" 'clipboard-kill-ring-save)
-(global-set-key "\C-y" 'clipboard-yank)
+;; http://emacswiki.org/emacs/CopyAndPaste
+;; (x-select-enable-primary t)
+;; (x-select-enable-clipboard t)
 
 ;; set fonts
 ;; http://www.emacswiki.org/emacs/SetFonts
@@ -34,8 +33,8 @@
         multi-term-program "/bin/zsh"))
 
 ; keybindings
-(add-hook 'term-mode-hook (lambda ()
-                            (define-key term-raw-map (kbd "C-y") 'term-paste)))
+; (add-hook 'term-mode-hook (lambda ()
+;                            (define-key term-raw-map (kbd "C-y") 'term-paste)))
 
 (when (require 'term nil t) ; only if term can be loaded..
   (setq term-bind-key-alist
