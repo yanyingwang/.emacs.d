@@ -17,4 +17,5 @@
 ;; set fonts
 ;; http://www.emacswiki.org/emacs/SetFonts
 ;;(set-default-font "Monaco-10")
-(set-default-font "Ubuntu Mono-11:bold")
+;; Ubuntu setting:文字缩放比例0.9
+(set-default-font "Ubuntu Mono-12:bold")
