@@ -22,3 +22,7 @@
 
 ;; set line number
 ;; (global-linum-mode t)
+
+
+;; set C-tab other-windows
+(global-set-key (kbd "<C-tab>") 'other-window) ; Ctrl-TAB
