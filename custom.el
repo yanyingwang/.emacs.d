@@ -21,7 +21,7 @@
 (set-default-font "Ubuntu Mono-12:bold")
 
 ;; set line number
-;; (global-linum-mode t)
+(global-linum-mode t)
 
 
 ;; set C-tab other-windows
