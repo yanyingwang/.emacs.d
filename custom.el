@@ -19,3 +19,6 @@
 ;;(set-default-font "Monaco-10")
 ;; Ubuntu setting:文字缩放比例0.9
 (set-default-font "Ubuntu Mono-12:bold")
+
+;; set line spacing
+(setq-default line-spacing 5)
