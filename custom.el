@@ -17,11 +17,10 @@
 ;; set fonts
 ;; http://www.emacswiki.org/emacs/SetFonts
 ;;(set-default-font "Monaco-10")
-;; Ubuntu setting:文字缩放比例0.9
-(set-default-font "Ubuntu Mono-12:bold")
+(set-default-font "Ubuntu Mono-11:bold")
 
 ;; set line spacing
-(setq-default line-spacing 5)
+(setq-default line-spacing 4)
 
 ;; set line number
 (global-linum-mode t)
