@@ -19,7 +19,7 @@
 ;;(set-default-font "Monaco-10")
 ;;(set-default-font "Ubuntu Mono-11:bold")
 ;;(set-default-font "Ubuntu Mono-11:bold")
-(set-default-font "Input Mono-9:bold")
+(set-default-font "Input Mono-10:bold")
 
 ;; set line spacing
 (setq-default line-spacing 4)
