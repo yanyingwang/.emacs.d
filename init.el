@@ -10,6 +10,21 @@
     (progn
       (package-refresh-contents)
       (package-install 'use-package)))
-
 (require 'use-package)
+
+
+;;; set fonts
+(set-default-font "Input Mono-10:bold")
+
+
+;;; set line spacing
+(setq-default line-spacing 4)
+
+
+;;; set line number
+(global-linum-mode t)
+
+;;; hide scroll bar
+(scroll-bar-mode -1)
+
 
