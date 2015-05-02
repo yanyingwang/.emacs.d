@@ -30,13 +30,13 @@
 
 
 ;;; solarized theme
-;(use-package solarized-theme
-;  :ensure t)
+(use-package solarized-theme
+  :ensure t)
 
-;(require 'solarized)
-;(deftheme solarized-light "The light variant of the Solarized colour theme")
-;(create-solarized-theme 'light 'solarized-light)
-;(provide-theme 'solarized-light)
+(require 'solarized)
+(deftheme solarized-light "The light variant of the Solarized colour theme")
+(create-solarized-theme 'light 'solarized-light)
+(provide-theme 'solarized-light)
 
 
 ;;; helm
