@@ -14,6 +14,8 @@
 
 
 
+
+
 ;;; set fonts
 (set-default-font "Input Mono-10:bold")
 
@@ -32,6 +34,8 @@
 
 
 
+
+
 ;;; solarized theme
 ;(use-package solarized-theme
 ;  :ensure t)
@@ -40,6 +44,8 @@
 ;(deftheme solarized-light "The light variant of the Solarized colour theme")
 ;(create-solarized-theme 'light 'solarized-light)
 ;(provide-theme 'solarized-light)
+
+
 
 
 
@@ -100,6 +106,22 @@
 (setq helm-apropos-fuzzy-match t)    ; fuzzy matching for helm-occur
 
 (global-set-key (kbd "C-c h M-:") 'helm-eval-expression-with-eldoc)    ; eval Emacs lisp
+
+
+
+
+
+(use-package helm-projectile
+  :ensure t)
+
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
+
+(setq projectile-switch-project-action 'helm-projectile-find-file)
+(setq projectile-switch-project-action 'helm-projectile)
+
+(add-to-list 'projectile-globally-ignored-directories "backup")    ; ignore dir name of 'backup'
 
 
 
