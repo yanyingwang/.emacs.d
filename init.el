@@ -25,6 +25,9 @@
 ;;; set line number
 (global-linum-mode t)
 
+;;; hide tool bar
+(tool-bar-mode -1)
+
 ;;; hide scroll bar
 (scroll-bar-mode -1)
 
