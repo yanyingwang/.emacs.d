@@ -162,3 +162,37 @@
                (define-key eshell-mode-map
                  (kbd "M-p")
                  'helm-eshell-history)))
+
+
+
+
+
+
+(use-package projectile-rails
+  :ensure t)
+
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
+
+
+(use-package rvm
+  :ensure t)
+
+(require 'rvm)
+(rvm-use-default)    ; use rvm's default ruby for the current Emacs session
+
+
+(use-package inf-ruby
+  :ensure t)
+
+
+(use-package web-mode
+  :ensure t)
+
+(require 'web-mode)
+
+
+(use-package slim-mode
+  :ensure t)
+
+(require 'slim-mode)
+
