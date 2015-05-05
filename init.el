@@ -167,6 +167,14 @@
 (add-to-list 'aggressive-indent-excluded-modes 'html-mode)    ; exclude html
 
 
+;;; Highlighting indentation for Emacs
+(use-package highlight-indentation
+  :ensure t)
+
+(set-face-background 'highlight-indentation-face "#e3e3d3")
+(set-face-background 'highlight-indentation-current-column-face "#c3b3b3")
+
+
 ;;; ruby-end
 (use-package ruby-end
   :ensure t)
@@ -174,17 +182,19 @@
 (require 'ruby-end)
 
 
-;;; auto pair
-(use-package autopair
+;;; smartparens
+(use-package smartparens
   :ensure t)
 
-(require 'autopair)
-(autopair-global-mode) ;; enable autopair in all buffers
+(require 'smartparens-config)
+(smartparens-global-mode t)
 
 
 ;;;  intelligently call whitespace-cleanup on save
 (use-package whitespace-cleanup-mode
   :ensure t)
+
+(highlight-indentation-mode)
 
 
 
@@ -322,7 +332,7 @@
 ;;(use-package flycheck
 ;;:ensure t)
 
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;;(add-hook 'after-init-hook #'global-flycheck-mode)
 
 
 ;;; projectile-rails
@@ -368,9 +378,6 @@
   :ensure t)
 
 (custom-set-variables '(coffee-tab-width 2))
-
-
-
 
 
 
