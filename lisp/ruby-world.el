@@ -29,10 +29,3 @@
   :ensure t)
 
 
-
-;;; ruby-end
-(use-package ruby-end
-  :ensure t)
-
-(require 'ruby-end)
-
