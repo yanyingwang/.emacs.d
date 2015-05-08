@@ -29,12 +29,11 @@
 
 (require 'smartparens-config)
 (smartparens-global-mode t)
+(highlight-indentation-mode)
 
 
 ;;;  intelligently call whitespace-cleanup on save
-(use-package whitespace-cleanup-mode
-  :ensure t)
-
-(highlight-indentation-mode)
+;;(use-package whitespace-cleanup-mode
+;;:ensure t)
 
 
