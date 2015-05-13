@@ -5,6 +5,7 @@
 (package-initialize)
 
 
+
 ;;; ensure use-packge and auto installing loading it
 (if (not (package-installed-p 'use-package))
     (progn
@@ -31,7 +32,7 @@
 
 (load "~/.emacs.d/lisp/ruby-world")
 
-(load "~/.emacs.d/lisp/themes")
-
+;;(load "~/.emacs.d/lisp/themes")
+(load "~/.emacs.d/lisp/moe-theme")
 
 
