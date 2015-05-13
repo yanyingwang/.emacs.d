@@ -68,12 +68,12 @@
 
 ;; Finally, apply moe-theme now.
 ;; Choose what you like, (moe-light) or (moe-dark)
-;; (moe-light)
+(moe-dark)
 
-(powerline-moe-theme)
+;;(powerline-moe-theme)
 
 ;; automatically switch between moe-dark and moe-light according to the system time
-(require 'moe-theme-switcher)
+;;(require 'moe-theme-switcher)
 
 ;;(moe-theme-set-color 'orange)
 ;; (Available colors: blue, orange, green ,magenta, yellow, purple, red, cyan, w/b.)
