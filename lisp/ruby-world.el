@@ -10,21 +10,6 @@
 ;;(add-hook 'after-init-hook #'global-flycheck-mode)
 
 
-;;; projectile-rails
-(use-package projectile-rails
-  :ensure t)
-
-(add-hook 'projectile-mode-hook 'projectile-rails-on)
-
-;;; rvm
-(use-package rvm
-  :ensure t)
-
-(require 'rvm)
-(rvm-use-default)    ; use rvm's default ruby for the current Emacs session
-
-
-
 
 
 ;;; enh-ruby-mode

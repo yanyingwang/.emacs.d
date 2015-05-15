@@ -10,7 +10,27 @@
 (setq projectile-switch-project-action 'helm-projectile-find-file)
 (setq projectile-switch-project-action 'helm-projectile)
 
+
 (add-to-list 'projectile-globally-ignored-directories "backup")    ; ignore dir name of 'backup'
+
+
+
+
+;;; projectile-rails
+(use-package projectile-rails
+  :ensure t)
+
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
+
+
+
+
+;;; rvm
+(use-package rvm
+  :ensure t)
+
+(require 'rvm)
+(rvm-use-default)    ; use rvm's default ruby for the current Emacs session
 
 
 
