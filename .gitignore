@@ -38,3 +38,4 @@ tutorial/
 backup/
 semanticdb/
 session.*
+projectile.cache
