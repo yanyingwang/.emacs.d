@@ -5,13 +5,26 @@
 
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
+(setq projectile-enable-caching t)
 (helm-projectile-on)
 
+
 (setq projectile-switch-project-action 'helm-projectile-find-file)
-(setq projectile-switch-project-action 'helm-projectile)
+
+;;(setq projectile-switch-project-action 'helm-projectile)
+
+;;(setq projectile-switch-project-action 'projectile-find-dir)
+;;(setq projectile-find-dir-includes-top-level t)
 
 
-(add-to-list 'projectile-globally-ignored-directories "backup")    ; ignore dir name of 'backup'
+;;(setq projectile-keymap-prefix (kbd "C-c C-p"))
+					;change the default keymap prefix C-c p
+
+;;(define-key some-keymap (kbd "s-p") 'projectile-command-map)
+					;add additional commands
+
+(add-to-list 'projectile-globally-ignored-directories "backup")
+					; ignore dir name of 'backup'
 
 
 
