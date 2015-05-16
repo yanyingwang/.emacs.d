@@ -30,7 +30,7 @@
 
 
 (helm-mode 1)
-(helm-autoresize-mode t)     ;autoresize
+;;(helm-autoresize-mode t)     ;autoresize
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
 (global-set-key (kbd "M-x") 'helm-M-x)

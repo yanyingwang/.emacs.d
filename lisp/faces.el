@@ -14,3 +14,9 @@
 ;;; hide scroll bar
 (scroll-bar-mode -1)
 
+
+;;; windows split size
+(use-package golden-ratio
+  :ensure t)
+
+(golden-ratio-mode 1)
