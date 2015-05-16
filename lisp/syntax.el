@@ -15,12 +15,11 @@
 
 
 ;;; Highlighting indentation for Emacs
-(use-package highlight-indentation
-  :ensure t)
+;;(use-package highlight-indentation
+;;:ensure t)
 
-(set-face-background 'highlight-indentation-face "#e3e3d3")
-(set-face-background 'highlight-indentation-current-column-face "#c3b3b3")
-
+;;(set-face-background 'highlight-indentation-face "#e3e3d3")
+;;(set-face-background 'highlight-indentation-current-column-face "#c3b3b3")
 
 
 ;;; smartparens
