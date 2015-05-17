@@ -4,6 +4,9 @@
   :ensure t)
 (require 'auto-complete-config)
 (ac-config-default)
+(add-to-list 'ac-modes 'coffee-mode)
+(add-to-list 'ac-modes 'scss-mode)
+(add-to-list 'ac-modes 'slim-mode)
 
 
 ;;; aggressive indent
@@ -12,6 +15,7 @@
 
 (global-aggressive-indent-mode 1)
 (add-to-list 'aggressive-indent-excluded-modes 'html-mode)    ; exclude html
+
 
 
 ;;; Highlighting indentation for Emacs
