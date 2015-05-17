@@ -39,3 +39,6 @@ backup/
 semanticdb/
 session.*
 projectile.cache
+
+autosaves/
+backups/
