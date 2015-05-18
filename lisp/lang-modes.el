@@ -29,3 +29,11 @@
 
 (custom-set-variables '(coffee-tab-width 2))
 
+
+;;; yaml
+(use-package yaml-mode
+  :ensure t)
+
+(add-hook 'yaml-mode-hook
+	  (lambda ()
+	    (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
