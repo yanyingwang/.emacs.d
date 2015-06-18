@@ -34,7 +34,7 @@
 
 (require 'smartparens-config)
 (smartparens-global-mode t)
-(highlight-indentation-mode)
+;;(highlight-indentation-mode)
 
 
 ;;;  intelligently call whitespace-cleanup on save
