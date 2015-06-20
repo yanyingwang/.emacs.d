@@ -31,6 +31,7 @@
 (load "~/.emacs.d/lisp/linux")
 
 (load "~/.emacs.d/lisp/ruby-world")
+(load "~/.emacs.d/lisp/lisp-world")
 
 ;;(load "~/.emacs.d/lisp/themes")
 (load "~/.emacs.d/lisp/moe-theme")
