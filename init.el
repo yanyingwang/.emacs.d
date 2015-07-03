@@ -24,6 +24,7 @@
 
 (load "~/.emacs.d/lisp/lang-modes")
 (load "~/.emacs.d/lisp/syntax")
+(load "~/.emacs.d/lisp/indent")
 
 (load "~/.emacs.d/lisp/helm")
 (load "~/.emacs.d/lisp/helm-around")
