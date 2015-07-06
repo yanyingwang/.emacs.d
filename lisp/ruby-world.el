@@ -38,3 +38,8 @@
   :ensure t)
 
 (add-hook 'enh-ruby-mode-hook 'inf-ruby-minor-mode)    ; enh-ruby-mode
+
+
+
+;;; prevent emacs from adding coding information in the first line
+(setq ruby-insert-encoding-magic-comment nil)
