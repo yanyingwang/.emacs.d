@@ -30,4 +30,4 @@
 (use-package  indent-guide
   :ensure t)
 
-;;(indent-guide-global-mode)
+(indent-guide-global-mode)
