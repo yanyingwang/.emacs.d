@@ -24,6 +24,9 @@
 					;add additional commands
 
 (add-to-list 'projectile-globally-ignored-directories "backup")
+(add-to-list 'projectile-globally-ignored-directories ".git")
+(add-to-list 'projectile-globally-ignored-directories "log")
+(add-to-list 'projectile-globally-ignored-directories "tmp")
 					; ignore dir name of 'backup'
 
 
@@ -34,17 +37,6 @@
   :ensure t)
 
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
-
-
-
-
-;;; rvm
-(use-package rvm
-  :ensure t)
-
-(require 'rvm)
-(rvm-use-default)    ; use rvm's default ruby for the current Emacs session
-
 
 
 

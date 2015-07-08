@@ -11,6 +11,15 @@
 
 
 
+;;; rvm
+(use-package rvm
+  :ensure t)
+
+(require 'rvm)
+(rvm-use-default)    ; use rvm's default ruby for the current Emacs session
+
+
+
 
 ;;; enh-ruby-mode
 (use-package enh-ruby-mode
@@ -33,6 +42,7 @@
 
 
 
+
 ;;; inf ruby
 (use-package inf-ruby
   :ensure t)
@@ -40,6 +50,3 @@
 (add-hook 'enh-ruby-mode-hook 'inf-ruby-minor-mode)    ; enh-ruby-mode
 
 
-
-;;; prevent emacs from adding coding information in the first line
-(setq ruby-insert-encoding-magic-comment nil)
