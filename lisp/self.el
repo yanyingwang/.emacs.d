@@ -33,3 +33,7 @@
 
 ;;; enable ShowParenMode
 (show-paren-mode 1)
+
+
+;;; prevent emacs from adding coding information in the first line
+(setq ruby-insert-encoding-magic-comment nil)
