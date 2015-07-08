@@ -22,19 +22,21 @@
 (load "~/.emacs.d/lisp/faces")
 (load "~/.emacs.d/lisp/powerline")
 
-(load "~/.emacs.d/lisp/lang-modes")
-(load "~/.emacs.d/lisp/syntax")
-(load "~/.emacs.d/lisp/indent")
+(load "~/.emacs.d/lisp/langs-mode")
+
+(load "~/.emacs.d/lisp/auto-complete")
+(load "~/.emacs.d/lisp/aggressive-indent")
+
+(load "~/.emacs.d/lisp/smartparens")
+;;(load "~/.emacs.d/lisp/indent-guide")
 
 (load "~/.emacs.d/lisp/helm")
+(load "~/.emacs.d/lisp/helm-projectile")
 (load "~/.emacs.d/lisp/helm-around")
 
-(load "~/.emacs.d/lisp/linux")
+(load "~/.emacs.d/lisp/magit")
 
-(load "~/.emacs.d/lisp/ruby-world")
-(load "~/.emacs.d/lisp/lisp-world")
+;;(load "~/.emacs.d/lisp/ruby-world")
+(load "~/.emacs.d/lisp/slime")
 
-;;(load "~/.emacs.d/lisp/themes")
 (load "~/.emacs.d/lisp/moe-theme")
-
-

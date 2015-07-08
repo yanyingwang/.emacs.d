@@ -1,7 +1,3 @@
-
-;;; ruby world
-
-
 ;;; flycheck
 ;; $ gem install rubocop ruby-lint
 ;;(use-package flycheck
@@ -16,7 +12,8 @@
   :ensure t)
 
 (require 'rvm)
-(rvm-use-default)    ; use rvm's default ruby for the current Emacs session
+(rvm-use-default)
+					; use rvm's default ruby for the current Emacs session
 
 
 
@@ -25,7 +22,8 @@
 (use-package enh-ruby-mode
   :ensure t)
 
-(remove-hook 'enh-ruby-mode-hook 'erm-define-faces)    ; remove specific faces with the hook defined by ehn-ruby-mode
+(remove-hook 'enh-ruby-mode-hook 'erm-define-faces)
+					; remove specific faces with the hook defined by ehn-ruby-mode
 (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
 ;;(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
@@ -47,6 +45,7 @@
 (use-package inf-ruby
   :ensure t)
 
-(add-hook 'enh-ruby-mode-hook 'inf-ruby-minor-mode)    ; enh-ruby-mode
+(add-hook 'enh-ruby-mode-hook 'inf-ruby-minor-mode)
+					; enh-ruby-mode
 
 
