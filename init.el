@@ -36,7 +36,7 @@
 
 (load "~/.emacs.d/lisp/magit")
 
-;;(load "~/.emacs.d/lisp/ruby-world")
+(load "~/.emacs.d/lisp/ruby-world")
 (load "~/.emacs.d/lisp/slime")
 
 (load "~/.emacs.d/lisp/moe-theme")
