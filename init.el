@@ -18,9 +18,10 @@
 ;;; load files
 (load "~/.emacs.d/lisp/locale")
 (load "~/.emacs.d/lisp/self")
-
 (load "~/.emacs.d/lisp/faces")
+
 (load "~/.emacs.d/lisp/powerline")
+(load "~/.emacs.d/lisp/golden-ratio")
 
 (load "~/.emacs.d/lisp/langs-mode")
 

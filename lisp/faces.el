@@ -15,12 +15,6 @@
 (scroll-bar-mode -1)
 
 
-;;; windows split size
-(use-package golden-ratio
-  :ensure t)
-(golden-ratio-mode 1)
-
-
 ;;; enable ShowParenMode
 (show-paren-mode 1)
 
