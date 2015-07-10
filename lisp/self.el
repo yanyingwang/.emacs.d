@@ -12,6 +12,19 @@
 
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
+(setq ad-redefinition-action 'accept)
+
+
+
+;; enable C-x C-u & C-x C-l
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+
+
+
+;;; prevent emacs from adding coding information in the first line
+(setq ruby-insert-encoding-magic-comment nil)
+
 
 
 
@@ -29,8 +42,3 @@
 ;;delete-old-versions t  ; Automatically delete excess backups
 ;;kept-new-versions 20   ; how many of the newest versions to keep
 ;;kept-old-versions 5)   ; and how many of the old
-
-
-
-;;; prevent emacs from adding coding information in the first line
-(setq ruby-insert-encoding-magic-comment nil)
