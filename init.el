@@ -29,7 +29,8 @@
 (load "~/.emacs.d/lisp/aggressive-indent")
 
 (load "~/.emacs.d/lisp/smartparens")
-;;(load "~/.emacs.d/lisp/indent-guide")
+(load "~/.emacs.d/lisp/indent-guide")
+;;(load "~/.emacs.d/lisp/highlight-indentation")
 
 (load "~/.emacs.d/lisp/helm")
 (load "~/.emacs.d/lisp/helm-projectile")
