@@ -27,6 +27,9 @@
 
 
 
+;; cleaned up whitespace before saving
+(add-hook 'before-save-hook 'whitespace-cleanup)
+
 
 (custom-set-variables
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
