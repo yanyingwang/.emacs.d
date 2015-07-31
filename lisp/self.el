@@ -31,13 +31,19 @@
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
 
-(custom-set-variables
-  '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
-  '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
+;(custom-set-variables
+  ;'(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
+  ;'(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
 
-;; create the autosave dir if necessary, since emacs won't.
-(make-directory "~/.emacs.d/autosaves/" t)
-(make-directory "~/.emacs.d/backups/" t)
+;;; create the autosave dir if necessary, since emacs won't.
+;(make-directory "~/.emacs.d/autosaves/" t)
+;(make-directory "~/.emacs.d/backups/" t)
+
+
+;(setq backup-directory-alist
+          ;`((".*" . ,temporary-file-directory)))
+    ;(setq auto-save-file-name-transforms
+          ;`((".*" ,temporary-file-directory t)))
 
 ;;(setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
 ;;backup-by-copying t    ; Don't delink hardlinks
@@ -54,3 +60,13 @@
     (save-some-buffers t))
 
 (add-hook 'focus-out-hook 'save-all)
+
+
+;; Save all tempfiles in $TMPDIR/emacs$UID/
+(defconst emacs-tmp-dir (format "%s%s%s/" temporary-file-directory "emacs" (user-uid)))
+(setq backup-directory-alist
+      `((".*" . ,emacs-tmp-dir)))
+(setq auto-save-file-name-transforms
+      `((".*" ,emacs-tmp-dir t)))
+(setq auto-save-list-file-prefix
+      emacs-tmp-dir)
