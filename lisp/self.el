@@ -36,7 +36,7 @@
   ;'(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
 
 ;;; create the autosave dir if necessary, since emacs won't.
-;(make-directory "~/.emacs.d/autosaves/" t)
+(make-directory "~/.emacs.d/autosaves/" t)
 ;(make-directory "~/.emacs.d/backups/" t)
 
 
@@ -63,7 +63,8 @@
 
 
 ;; Save all tempfiles in $TMPDIR/emacs$UID/
-(defconst emacs-tmp-dir (format "%s%s%s/" temporary-file-directory "emacs" (user-uid)))
+;;(defconst emacs-tmp-dir (format "%s%s%s/" temporary-file-directory "emacs" (user-uid)))
+(defconst emacs-tmp-dir "~/.emacs.d/autosaves")
 (setq backup-directory-alist
       `((".*" . ,emacs-tmp-dir)))
 (setq auto-save-file-name-transforms
