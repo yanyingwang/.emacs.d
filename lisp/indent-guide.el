@@ -11,4 +11,4 @@
 
 ;;(setq indent-guide-recursive t)
 
-(setq indent-guide-char ":")
+(setq indent-guide-char "┋")            ;  ¦ │ ┆ ┋ ┋   
