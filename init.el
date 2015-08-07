@@ -1,7 +1,7 @@
 ;;; melpa
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+	     '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
 
@@ -30,6 +30,8 @@
 
 (load "~/.emacs.d/lisp/smartparens")
 (load "~/.emacs.d/lisp/indent-guide")
+(load "~/.emacs.d/lisp/rainbow-delimiters")
+
 ;;(load "~/.emacs.d/lisp/highlight-indentation")
 
 (load "~/.emacs.d/lisp/helm")
@@ -42,3 +44,4 @@
 (load "~/.emacs.d/lisp/slime")
 
 (load "~/.emacs.d/lisp/moe-theme")
+;;(load "~/.emacs.d/lisp/gruvbox")
