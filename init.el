@@ -43,5 +43,6 @@
 (load "~/.emacs.d/lisp/ruby-world")
 (load "~/.emacs.d/lisp/slime")
 
-(load "~/.emacs.d/lisp/moe-theme")
-;;(load "~/.emacs.d/lisp/gruvbox")
+;;(load "~/.emacs.d/lisp/moe-theme")
+(load "~/.emacs.d/lisp/gruvbox-theme")
+;;(load "~/.emacs.d/lisp/zenburn-theme")

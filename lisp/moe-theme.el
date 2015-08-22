@@ -38,4 +38,3 @@
 
 ;;(moe-theme-set-color 'orange)
 ;; (Available colors: blue, orange, green ,magenta, yellow, purple, red, cyan, w/b.)
-

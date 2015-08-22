@@ -1,4 +1,3 @@
-
 ;;; powerline
 (use-package powerline
   :ensure t)
