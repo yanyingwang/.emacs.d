@@ -10,6 +10,10 @@
   :ensure t)
 
 
+(use-package less-css-mode
+  :ensure t)
+
+
 ;;; slim mode
 (use-package slim-mode
   :ensure t)
