@@ -28,7 +28,18 @@
 
 
 ;; cleaned up whitespace before saving
-(add-hook 'before-save-hook 'whitespace-cleanup)
+;;(add-hook 'before-save-hook 'whitespace-cleanup)
+
+
+
+;; show trailing whitespace
+(setq show-trailing-whitespace t)
+
+
+
+;; delete blank lines and whitespace
+(global-set-key (kbd "M-SPC") 'shrink-whitespace)
+
 
 
 ;(custom-set-variables
@@ -53,15 +64,6 @@
 ;;kept-old-versions 5)   ; and how many of the old
 
 
-
-;; Auto save on Loss of Input Focus
-(defun save-all ()
-    (interactive)
-    (save-some-buffers t))
-
-(add-hook 'focus-out-hook 'save-all)
-
-
 ;; Save all tempfiles in $TMPDIR/emacs$UID/
 ;;(defconst emacs-tmp-dir (format "%s%s%s/" temporary-file-directory "emacs" (user-uid)))
 (defconst emacs-tmp-dir "~/.emacs.d/autosaves")
@@ -71,3 +73,15 @@
       `((".*" ,emacs-tmp-dir t)))
 (setq auto-save-list-file-prefix
       emacs-tmp-dir)
+
+
+
+;; Auto save on Loss of Input Focus
+(defun save-all ()
+    (interactive)
+    (save-some-buffers t))
+
+(add-hook 'focus-out-hook 'save-all)
+
+
+
