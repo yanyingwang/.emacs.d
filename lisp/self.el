@@ -28,17 +28,30 @@
 
 
 ;; cleaned up whitespace before saving
-;;(add-hook 'before-save-hook 'whitespace-cleanup)
+(defun delete-trailing-whitespace-except-current-line ()
+  (interactive)
+  (let ((begin (line-beginning-position))
+        (end (line-end-position)))
+    (save-excursion
+      (when (< (point-min) begin)
+        (save-restriction
+          (narrow-to-region (point-min) (1- begin))
+          (delete-trailing-whitespace)))
+      (when (> (point-max) end)
+        (save-restriction
+          (narrow-to-region (1+ end) (point-max))
+          (delete-trailing-whitespace))))))
+
+(add-hook 'before-save-hook 'whitespace-cleanup)
+;;(add-hook 'before-save-hook 'delete-trailing-whitespace-except-current-line)
 
 
+;; show all trailing whitespace
+;;(setq show-trailing-whitespace t)
+(custom-set-variables
+ '(show-trailing-whitespace t))
 
-;; show trailing whitespace
-(setq show-trailing-whitespace t)
 
-
-
-;; delete blank lines and whitespace
-(global-set-key (kbd "M-SPC") 'shrink-whitespace)
 
 
 
@@ -76,12 +89,9 @@
 
 
 
-;; Auto save on Loss of Input Focus
-(defun save-all ()
-    (interactive)
-    (save-some-buffers t))
-
-(add-hook 'focus-out-hook 'save-all)
-
-
-
+;; save all buffers
+(add-hook 'focus-out-hook
+  (lambda ()
+    (cl-letf (((symbol-function 'message) #'format))
+      (save-some-buffers t))))
+      ;;(save-buffer t))))

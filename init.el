@@ -27,6 +27,7 @@
 
 (load "~/.emacs.d/lisp/auto-complete")
 (load "~/.emacs.d/lisp/aggressive-indent")
+;;(load "~/.emacs.d/lisp/auto-indent")
 
 (load "~/.emacs.d/lisp/smartparens")
 (load "~/.emacs.d/lisp/indent-guide")
