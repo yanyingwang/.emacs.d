@@ -42,8 +42,8 @@
           (narrow-to-region (1+ end) (point-max))
           (delete-trailing-whitespace))))))
 
-(add-hook 'before-save-hook 'whitespace-cleanup)
-;;(add-hook 'before-save-hook 'delete-trailing-whitespace-except-current-line)
+;;(add-hook 'before-save-hook 'whitespace-cleanup)
+(add-hook 'before-save-hook 'delete-trailing-whitespace-except-current-line)
 
 
 ;; show all trailing whitespace
