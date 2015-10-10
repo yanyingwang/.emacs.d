@@ -29,6 +29,9 @@
 (load "~/.emacs.d/init.d/golden-ratio")
 
 (load "~/.emacs.d/init.d/auto-complete")
+
+(load "~/.emacs.d/init.d/undo-tree")
+
 (load "~/.emacs.d/init.d/aggressive-indent")
 ;;(load "~/.emacs.d/init.d/auto-indent")
 

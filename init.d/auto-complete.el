@@ -1,6 +1,8 @@
 (use-package auto-complete
   :ensure t)
+
 (require 'auto-complete-config)
+
 (ac-config-default)
 (add-to-list 'ac-modes 'coffee-mode)
 (add-to-list 'ac-modes 'scss-mode)
