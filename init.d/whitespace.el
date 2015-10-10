@@ -1,0 +1,26 @@
+;; cleaned up whitespace before saving
+(defun delete-trailing-whitespace-except-current-line ()
+  (interactive)
+  (let ((begin (line-beginning-position))
+        (end (line-end-position)))
+    (save-excursion
+      (when (< (point-min) begin)
+        (save-restriction
+          (narrow-to-region (point-min) (1- begin))
+          (delete-trailing-whitespace)))
+      (when (> (point-max) end)
+        (save-restriction
+          (narrow-to-region (1+ end) (point-max))
+          (delete-trailing-whitespace))))))
+
+
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace-except-current-line)
+;;(add-hook 'before-save-hook 'whitespace-cleanup)
+
+
+
+;; show all trailing whitespace
+(custom-set-variables
+ '(show-trailing-whitespace t))
+;;(setq show-trailing-whitespace t)

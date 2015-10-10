@@ -20,6 +20,9 @@
 (load "~/.emacs.d/init.d/self")
 (load "~/.emacs.d/init.d/faces")
 
+(load "~/.emacs.d/init.d/tempfile")
+(load "~/.emacs.d/init.d/whitespace")
+
 (load "~/.emacs.d/init.d/langs-mode")
 
 (load "~/.emacs.d/init.d/powerline")
@@ -30,10 +33,14 @@
 ;;(load "~/.emacs.d/init.d/auto-indent")
 
 (load "~/.emacs.d/init.d/smartparens")
+
 (load "~/.emacs.d/init.d/indent-guide")
+;;(load "~/.emacs.d/init.d/highlight-indentation")
+
 (load "~/.emacs.d/init.d/rainbow-delimiters")
 
-;;(load "~/.emacs.d/init.d/highlight-indentation")
+
+
 
 (load "~/.emacs.d/init.d/helm")
 (load "~/.emacs.d/init.d/helm-projectile")
