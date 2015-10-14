@@ -35,10 +35,11 @@
 (load "~/.emacs.d/init.d/aggressive-indent")
 ;;(load "~/.emacs.d/init.d/auto-indent")
 
-(load "~/.emacs.d/init.d/smartparens")
-
 (load "~/.emacs.d/init.d/indent-guide")
 ;;(load "~/.emacs.d/init.d/highlight-indentation")
+
+(load "~/.emacs.d/init.d/smartparens")
+(load "~/.emacs.d/init.d/paredit")
 
 (load "~/.emacs.d/init.d/rainbow-delimiters")
 
