@@ -5,3 +5,6 @@
 (setq slime-contribs '(slime-fancy))
 
 (slime-setup)
+
+
+(add-hook 'slime-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))

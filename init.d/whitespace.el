@@ -31,8 +31,7 @@
 ;;(add-hook 'before-save-hook 'whitespace-cleanup)
 
 
+(setq-default show-trailing-whitespace t)
 
-;; show all trailing whitespace
-(custom-set-variables
- '(show-trailing-whitespace t))
-;;(setq show-trailing-whitespace t)
+(setq-default indent-tabs-mode nil)
+
