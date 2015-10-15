@@ -10,6 +10,6 @@
 
 (setq indent-guide-delay 0.1)
 
-;;(setq indent-guide-recursive t)
+(setq indent-guide-recursive t)
 
 (setq indent-guide-char "┋")            ;  ¦ │ ┆ ┋ ┋
