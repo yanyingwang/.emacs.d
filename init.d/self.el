@@ -19,7 +19,7 @@
 (put 'downcase-region 'disabled nil)
 
 
-;;; prevent emacs from adding coding information in the first line
+;; prevent emacs from adding coding information in the first line
 (setq ruby-insert-encoding-magic-comment nil)
 
 
@@ -33,7 +33,7 @@
 
 
 ;; Make the mouse wheel scroll Emacs
-(mouse-wheel-mode t)
+;;(mouse-wheel-mode t)
 
 
 ;; Always end a file with a newline
@@ -48,6 +48,6 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 
-;;; enable ShowParenMode
+;; enable ShowParenMode
 ;;(show-paren-mode 1)
 
