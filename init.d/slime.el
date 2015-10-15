@@ -1,11 +1,17 @@
-(use-package slime
-  :ensure t)
+;(use-package slime
+  ;:ensure t)
 
-(setq inferior-lisp-program "/usr/bin/sbcl")
-(setq slime-contribs '(slime-fancy))
-(require 'slime)
-(slime-setup)
 
+;(setq inferior-lisp-program "/usr/bin/sbcl")
+;(setq slime-contribs '(slime-fancy))
+;(require 'slime)
+;(slime-setup)
+
+
+
+(load (expand-file-name "~/quicklisp/slime-helper.el"))
+  ;; Replace "sbcl" with the path to your implementation
+  (setq inferior-lisp-program "sbcl")
 
 
 
