@@ -14,7 +14,15 @@
 ;;; hide scroll bar
 (scroll-bar-mode -1)
 
+;; Use colors to highlight commands, etc.
+(global-font-lock-mode t) 
 
-;;; enable ShowParenMode
-;;(show-paren-mode 1)
+;; Display time
+(display-time)
+
+;; Format the title-bar to always include the buffer name
+(setq frame-title-format "emacs – %b")
+
+;; Flash instead of that annoying bell
+(setq visible-bell t)
 

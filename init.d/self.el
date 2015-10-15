@@ -30,3 +30,24 @@
     (cl-letf (((symbol-function 'message) #'format))
       (save-some-buffers t))))
       ;;(save-buffer t))))
+
+
+;; Make the mouse wheel scroll Emacs
+(mouse-wheel-mode t)
+
+
+;; Always end a file with a newline
+(setq require-final-newline t)
+
+
+;; Stop emacs from arbitrarily adding lines to the end of a file when the cursor is moved past the end of it:
+(setq next-line-add-newlines nil)
+
+
+;; Use y or n instead of yes or not
+(fset 'yes-or-no-p 'y-or-n-p)
+
+
+;;; enable ShowParenMode
+;;(show-paren-mode 1)
+
