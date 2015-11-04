@@ -1,5 +1,5 @@
-;(use-package slime
-  ;:ensure t)
+(use-package slime
+  :ensure t)
 
 
 (setq inferior-lisp-program "/usr/bin/sbcl")
