@@ -5,7 +5,7 @@
 (setq inferior-lisp-program "/usr/bin/sbcl")
 (setq slime-contribs '(slime-fancy))
 (require 'slime)
-(slime-setup)
+(slime-setup '(slime-fancy slime-asdf slime-banner))
 
 
 ;(load (expand-file-name "~/quicklisp/slime-helper.el"))

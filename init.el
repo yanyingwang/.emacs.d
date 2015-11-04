@@ -23,6 +23,8 @@
 (load "~/.emacs.d/init.d/tempfile")
 (load "~/.emacs.d/init.d/whitespace")
 
+(load "~/.emacs.d/init.d/clean-aindent")
+
 (load "~/.emacs.d/init.d/langs-mode")
 
 (load "~/.emacs.d/init.d/powerline")
