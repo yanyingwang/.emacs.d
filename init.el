@@ -16,9 +16,7 @@
 
 
 ;;; load files
-(load "~/.emacs.d/init.d/locale")
 (load "~/.emacs.d/init.d/self")
-(load "~/.emacs.d/init.d/faces")
 
 (load "~/.emacs.d/init.d/tempfile")
 
