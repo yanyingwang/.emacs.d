@@ -51,3 +51,4 @@
 ;; enable ShowParenMode
 ;;(show-paren-mode 1)
 
+(remove-hook 'find-file-hooks 'vc-find-file-hook)
