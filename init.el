@@ -19,48 +19,48 @@
 
 
 ;;; load files
-(load "~/.emacs.d/init.d/self")
+(load "~/.emacs.d/init/self")
 
-(load "~/.emacs.d/init.d/tempfile")
+(load "~/.emacs.d/init/tempfile")
 
-(load "~/.emacs.d/init.d/smooth-scrolling")
+(load "~/.emacs.d/init/smooth-scrolling")
 
-;;(load "~/.emacs.d/init.d/remove-whitespace")
-(load "~/.emacs.d/init.d/ws-butler")
+;;(load "~/.emacs.d/init/remove-whitespace")
+(load "~/.emacs.d/init/ws-butler")
 
-(load "~/.emacs.d/init.d/langs-mode")
+(load "~/.emacs.d/init/langs-mode")
 
-(load "~/.emacs.d/init.d/powerline")
-(load "~/.emacs.d/init.d/golden-ratio")
+(load "~/.emacs.d/init/powerline")
+(load "~/.emacs.d/init/golden-ratio")
 
-(load "~/.emacs.d/init.d/auto-complete")
+(load "~/.emacs.d/init/auto-complete")
 
-(load "~/.emacs.d/init.d/undo-tree")
+(load "~/.emacs.d/init/undo-tree")
 
-(load "~/.emacs.d/init.d/aggressive-indent")
-;;(load "~/.emacs.d/init.d/auto-indent")
+(load "~/.emacs.d/init/aggressive-indent")
+;;(load "~/.emacs.d/init/auto-indent")
 
-(load "~/.emacs.d/init.d/indent-guide")
-;;(load "~/.emacs.d/init.d/highlight-indentation")
+(load "~/.emacs.d/init/indent-guide")
+;;(load "~/.emacs.d/init/highlight-indentation")
 
-(load "~/.emacs.d/init.d/smartparens")
-(load "~/.emacs.d/init.d/paredit")
+(load "~/.emacs.d/init/smartparens")
+(load "~/.emacs.d/init/paredit")
 
-(load "~/.emacs.d/init.d/rainbow-delimiters")
-
-
+(load "~/.emacs.d/init/rainbow-delimiters")
 
 
-(load "~/.emacs.d/init.d/helm")
-(load "~/.emacs.d/init.d/helm-projectile")
-(load "~/.emacs.d/init.d/helm-around")
 
-(load "~/.emacs.d/init.d/magit")
-(load "~/.emacs.d/init.d/diff-hl")
 
-(load "~/.emacs.d/init.d/ruby-world")
-(load "~/.emacs.d/init.d/slime")
+(load "~/.emacs.d/init/helm")
+(load "~/.emacs.d/init/helm-projectile")
+(load "~/.emacs.d/init/helm-around")
 
-(load "~/.emacs.d/init.d/moe-theme")
-;;(load "~/.emacs.d/init.d/gruvbox-theme")
-;;(load "~/.emacs.d/init.d/zenburn-theme")
+(load "~/.emacs.d/init/magit")
+(load "~/.emacs.d/init/diff-hl")
+
+(load "~/.emacs.d/init/ruby-world")
+(load "~/.emacs.d/init/slime")
+
+(load "~/.emacs.d/init/moe-theme")
+;;(load "~/.emacs.d/init/gruvbox-theme")
+;;(load "~/.emacs.d/init/zenburn-theme")
