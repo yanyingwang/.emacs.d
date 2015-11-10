@@ -47,3 +47,8 @@
   :ensure t)
 
 (require 'helm-themes)
+
+; Idle Timer
+(add-hook 'projectile-idle-timer-hook 'my-projectile-idle-timer-function)
+
+
