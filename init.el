@@ -21,9 +21,10 @@
 (load "~/.emacs.d/init.d/faces")
 
 (load "~/.emacs.d/init.d/tempfile")
-(load "~/.emacs.d/init.d/whitespace")
 
-(load "~/.emacs.d/init.d/clean-aindent")
+;;(load "~/.emacs.d/init.d/clean-aindent")
+(load "~/.emacs.d/init.d/whitespace")
+(load "~/.emacs.d/init.d/ws-butler")
 
 (load "~/.emacs.d/init.d/langs-mode")
 
