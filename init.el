@@ -56,6 +56,7 @@
 (load "~/.emacs.d/init.d/helm-around")
 
 (load "~/.emacs.d/init.d/magit")
+(load "~/.emacs.d/init.d/diff-hl")
 
 (load "~/.emacs.d/init.d/ruby-world")
 (load "~/.emacs.d/init.d/slime")
