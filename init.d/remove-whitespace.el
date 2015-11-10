@@ -17,8 +17,3 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace-except-current-line)
 ;;(add-hook 'before-save-hook 'whitespace-cleanup)
 
-
-(setq-default show-trailing-whitespace t)
-
-(setq-default indent-tabs-mode nil)
-

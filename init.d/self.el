@@ -114,3 +114,9 @@
 ;; disable minimize window
 (global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "C-x C-z"))
+
+
+
+(setq-default show-trailing-whitespace t)
+
+(setq-default indent-tabs-mode nil)

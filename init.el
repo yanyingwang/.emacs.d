@@ -20,8 +20,9 @@
 
 (load "~/.emacs.d/init.d/tempfile")
 
-;;(load "~/.emacs.d/init.d/clean-aindent")
-(load "~/.emacs.d/init.d/whitespace")
+(load "~/.emacs.d/init.d/smooth-scrolling")
+
+;;(load "~/.emacs.d/init.d/remove-whitespace")
 (load "~/.emacs.d/init.d/ws-butler")
 
 (load "~/.emacs.d/init.d/langs-mode")
