@@ -20,6 +20,8 @@
 
 ;;; load files
 (load "~/.emacs.d/init/self")
+(load "~/.emacs.d/init/key-binding")
+
 
 (load "~/.emacs.d/init/tempfile")
 
