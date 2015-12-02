@@ -66,3 +66,6 @@
 (load "~/.emacs.d/init/moe-theme")
 ;;(load "~/.emacs.d/init/gruvbox-theme")
 ;;(load "~/.emacs.d/init/zenburn-theme")
+;;
+;;
+(setq x-super-keysym 'meta)
