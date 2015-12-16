@@ -7,6 +7,15 @@
 (setq projectile-enable-caching t)
 (helm-projectile-on)
 
+;; To change the remote file exists cache expire to 10 minutes use this snippet of code:
+(setq projectile-file-exists-remote-cache-expire nil)
+
+;; You can also enable the cache for local file systems, that is normally not needed but possible:
+(setq projectile-file-exists-remote-cache-expire (* 10 60))
+
+(setq projectile-file-exists-local-cache-expire (* 5 60))
+
+
 
 (setq projectile-switch-project-action 'helm-projectile)
 ;;(setq projectile-switch-project-action 'helm-projectile-find-file)
