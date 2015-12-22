@@ -31,6 +31,8 @@
 (load "~/.emacs.d/init/ws-butler")
 
 (load "~/.emacs.d/init/langs-mode")
+(load "~/.emacs.d/init/markdown-toc")
+
 
 (load "~/.emacs.d/init/powerline")
 (load "~/.emacs.d/init/golden-ratio")
