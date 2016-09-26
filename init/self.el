@@ -84,7 +84,8 @@
 
 
 ;;; set fonts
-(set-default-font "Input Mono-10:bold")
+;;(set-default-font "Input Mono-10:bold")
+(set-default-font "Ubuntu Mono-12:bold")
 
 ;;; set line spacing
 (setq-default line-spacing 4)
