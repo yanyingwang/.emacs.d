@@ -42,7 +42,7 @@
 (use-package projectile-rails
   :ensure t)
 
-(add-hook 'projectile-mode-hook 'projectile-rails-on)
+(projectile-rails-global-mode)
 
 
 
