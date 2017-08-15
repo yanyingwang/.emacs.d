@@ -67,7 +67,7 @@
 (load "~/.emacs.d/init/helm-around")
 
 (load "~/.emacs.d/init/magit")
-(load "~/.emacs.d/init/flymake")
+;;(load "~/.emacs.d/init/flymake")
 ;;(load "~/.emacs.d/init/flycheck")
 (load "~/.emacs.d/init/diff-hl")
 
