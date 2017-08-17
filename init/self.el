@@ -86,8 +86,8 @@
 ;;; set fonts
 ;;(set-default-font "Ubuntu Mono-12:bold")
 ;;(set-default-font "Bront-12:bold")
-(set-default-font "agave-11:book")
-;;(set-default-font "Pointfree-11:bold")
+;;(set-default-font "agave-11:book")
+(set-default-font "Pointfree-10:bold")
 
 
 
