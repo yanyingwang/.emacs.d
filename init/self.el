@@ -83,14 +83,6 @@
 
 
 
-;;; set fonts
-;;(set-default-font "Ubuntu Mono-12:bold")
-;;(set-default-font "Bront-12:bold")
-(set-default-font "agave-11:book")
-;;(set-default-font "Pointfree-10:bold")
-
-
-
 ;;; set line spacing
 (setq-default line-spacing 4)
 
@@ -128,3 +120,35 @@
 (setq-default show-trailing-whitespace t)
 
 (setq-default indent-tabs-mode nil)
+
+;; swap meta and option for macOS
+
+
+;; check OS type
+(cond
+ ((string-equal system-type "windows-nt") ; Microsoft Windows
+  (progn
+    (message "Microsoft Windows")))
+ ((string-equal system-type "darwin") ; Mac OS X
+  (progn
+    (setq mac-option-key-is-meta nil)
+    (setq mac-command-key-is-meta t)
+    (setq mac-command-modifier 'meta)
+    (setq mac-option-modifier nil)
+    ;;(set-default-font "monaco-12:bold")
+    ;;(set-default-font "Bront-14:bold")
+    (set-default-font "agave-14:book")
+    (message "Mac OS X")))
+ ((string-equal system-type "gnu/linux") ; linux
+  (progn
+    ;;(set-default-font "Ubuntu Mono-12:bold")
+    ;;(set-default-font "Bront-12:bold")
+    (set-default-font "agave-11:book")
+    (message "Linux"))))
+
+
+;;; set fonts
+;;(set-default-font "Ubuntu Mono-12:bold")
+;;(set-default-font "Bront-12:bold")
+;;(set-default-font "agave-11:book")
+;;(set-default-font "Pointfree-10:bold")
