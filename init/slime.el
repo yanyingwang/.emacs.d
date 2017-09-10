@@ -6,14 +6,14 @@
 (if (file-exists-p "/usr/local/bin/sbcl")
     (setq inferior-lisp-program "/usr/local/bin/sbcl"))
 
+
+;;roswell slime
+(if (file-exists-p "/usr/bin/sbcl")
+  (load (expand-file-name "~/.roswell/helper.el")))
+
 (setq slime-contribs '(slime-fancy))
 (require 'slime)
 (slime-setup '(slime-fancy slime-asdf slime-banner))
-
-
-;(load (expand-file-name "~/quicklisp/slime-helper.el"))
-  ;;; Replace "sbcl" with the path to your implementation
-  ;(setq inferior-lisp-program "sbcl")
 
 
 (add-hook 'slime-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
@@ -25,9 +25,3 @@
 (define-key slime-repl-mode-map
   (read-kbd-macro paredit-backward-delete-key) nil))
   (add-hook 'slime-repl-mode-hook 'override-slime-repl-bindings-with-paredit)
-
-
-;;roswell
-;(load (expand-file-name "~/.roswell/impls/ALL/ALL/quicklisp/slime-helper.el"))
-  ;; Replace "sbcl" with the path to your implementation
-  ;(setq inferior-lisp-program "sbcl")

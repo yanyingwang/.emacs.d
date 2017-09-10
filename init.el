@@ -60,6 +60,7 @@
 (load "~/.emacs.d/init/rainbow-delimiters")
 
 
+(load "~/.emacs.d/init/term")
 
 
 (load "~/.emacs.d/init/helm")
