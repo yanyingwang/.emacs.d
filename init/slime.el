@@ -18,6 +18,8 @@
 
 (add-hook 'slime-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
 
+(add-hook 'slime-repl-mode-hook 'rainbow-delimiters-mode)
+
 (add-hook 'slime-repl-mode-hook (lambda () (paredit-mode +1)))
           ;; Stop SLIME's REPL from grabbing DEL,
           ;; which is annoying when backspacing over a '('
@@ -25,3 +27,4 @@
 (define-key slime-repl-mode-map
   (read-kbd-macro paredit-backward-delete-key) nil))
   (add-hook 'slime-repl-mode-hook 'override-slime-repl-bindings-with-paredit)
+
