@@ -141,9 +141,9 @@
     (message "Mac OS X")))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
-    ;;(set-default-font "Ubuntu Mono-12:bold")
+    (set-default-font "Ubuntu Mono-11:bold")
     ;;(set-default-font "Bront-12:bold")
-    (set-default-font "agave-11:book")
+    ;;(set-default-font "agave-11:bold")
     (message "Linux"))))
 
 

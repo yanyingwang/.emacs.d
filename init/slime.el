@@ -8,7 +8,7 @@
 
 
 ;;roswell slime
-(if (file-exists-p "/usr/bin/sbcl")
+(if (and (file-exists-p "/usr/bin/sbcl") (file-exists-p "~/.roswell/helper.el"))
   (load (expand-file-name "~/.roswell/helper.el")))
 
 (setq slime-contribs '(slime-fancy))
