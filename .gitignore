@@ -45,3 +45,5 @@ projectile.cache
 autosaves/
 backups/
 recentf
+
+.last-package-update-day
