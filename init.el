@@ -16,6 +16,7 @@
 
 
 ;;; load files
+(load "~/.emacs.d/init/auto-package-update")
 (load "~/.emacs.d/init/self")
 (load "~/.emacs.d/init/key-binding")
 
