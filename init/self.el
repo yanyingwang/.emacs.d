@@ -121,9 +121,6 @@
 
 (setq-default indent-tabs-mode nil)
 
-;; swap meta and option for macOS
-
-
 ;; check OS type
 (cond
  ((string-equal system-type "windows-nt") ; Microsoft Windows
@@ -131,6 +128,7 @@
     (message "Microsoft Windows")))
  ((string-equal system-type "darwin") ; Mac OS X
   (progn
+    ;(setq x-super-keysym 'meta)
     (setq mac-option-key-is-meta nil)
     (setq mac-command-key-is-meta t)
     (setq mac-command-modifier 'meta)
