@@ -1,13 +1,12 @@
 (require 'package)
-
+(setq package-enable-at-startup nil)
 
 ;(add-to-list 'package-archives '("elpa-popkit" . "http://elpa.popkit.org/"))
-(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 ;; For important compatibility libraries like cl-lib
 ;(when (< emacs-major-version 24) (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 ;(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
-
 
 (package-initialize)
 (setq use-package-always-ensure t)
