@@ -122,7 +122,11 @@
 (setq-default indent-tabs-mode nil)
 
 
-;; check OS type
+;; set fonts with check OS type
+;;(set-default-font "Ubuntu Mono-12:bold")
+;;(set-default-font "Bront-12:bold")
+;;(set-default-font "agave-11:book")
+;;(set-default-font "Pointfree-10:bold")
 (cond
  ((string-equal system-type "windows-nt") ; Microsoft Windows
   (progn
@@ -144,10 +148,3 @@
     ;;(set-default-font "Bront-12:bold")
     ;;(set-default-font "agave-11:bold")
     (message "Linux"))))
-
-
-;;; set fonts
-;;(set-default-font "Ubuntu Mono-12:bold")
-;;(set-default-font "Bront-12:bold")
-;;(set-default-font "agave-11:book")
-;;(set-default-font "Pointfree-10:bold")
