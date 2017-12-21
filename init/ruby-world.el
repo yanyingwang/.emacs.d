@@ -6,22 +6,15 @@
 ;;(add-hook 'after-init-hook #'global-flycheck-mode)
 
 
-
 ;;; rvm
 (use-package rvm
   :ensure t)
 
 (require 'rvm)
 (rvm-use-default)
-					; use rvm's default ruby for the current Emacs session
 
 
-
-
-;;; inf ruby
-(use-package inf-ruby
+(use-package robe
+  :init
+  (add-hook 'ruby-mode-hook 'robe-mode)
   :ensure t)
-
-(add-hook 'enh-ruby-mode-hook 'inf-ruby-minor-mode)
-					; enh-ruby-mode
-
