@@ -3,5 +3,6 @@
   (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
   (setq aw-background nil)
   ;:config
-  :bind (("M-p" . ace-window))
+  :bind (("M-[" . ace-window))
+  :bind (("M-]" . ace-window))
   :ensure t)
