@@ -47,3 +47,5 @@ backups/
 recentf
 
 .last-package-update-day
+
+geiser-history
