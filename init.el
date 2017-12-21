@@ -15,64 +15,16 @@
 
 
 
-;;; load files
-(load "~/.emacs.d/init/auto-package-update")
-(load "~/.emacs.d/init/self")
-(load "~/.emacs.d/init/key-binding")
-
-(load "~/.emacs.d/init/dot-mode")
-
-(load "~/.emacs.d/init/tempfile")
-
-(load "~/.emacs.d/init/smooth-scrolling")
-
-;;(load "~/.emacs.d/init/remove-whitespace")
-(load "~/.emacs.d/init/ws-butler")
-
-(load "~/.emacs.d/init/langs-mode")
-(load "~/.emacs.d/init/markdown-toc")
 
 
-(load "~/.emacs.d/init/powerline")
-(load "~/.emacs.d/init/golden-ratio")
-
-(load "~/.emacs.d/init/auto-complete")
-
-(load "~/.emacs.d/init/undo-tree")
-
-(load "~/.emacs.d/init/aggressive-indent")
-;;(load "~/.emacs.d/init/auto-indent")
-
-(load "~/.emacs.d/init/indent-guide")
-;;(load "~/.emacs.d/init/highlight-indentation")
-
-(load "~/.emacs.d/init/smartparens")
-(load "~/.emacs.d/init/paredit")
-
-(load "~/.emacs.d/init/rainbow-delimiters")
+;;; load init files
+(defun load-directory (dir)
+  (let ((load-it (lambda (f)
+                   (load-file (concat (file-name-as-directory dir) f)))))
+    (mapc load-it (directory-files dir nil "\\.el$"))))
+(load-directory "~/.emacs.d/init")
 
 
-(load "~/.emacs.d/init/term")
-
-
-(load "~/.emacs.d/init/helm")
-(load "~/.emacs.d/init/helm-projectile")
-(load "~/.emacs.d/init/helm-around")
-
-(load "~/.emacs.d/init/magit")
-;;(load "~/.emacs.d/init/flymake")
-;;(load "~/.emacs.d/init/flycheck")
-(load "~/.emacs.d/init/diff-hl")
-
-(load "~/.emacs.d/init/ruby-world")
-(load "~/.emacs.d/init/slime")
-(load "~/.emacs.d/init/geiser")
-
-
-(load "~/.emacs.d/init/clippy")
-
-;(load "~/.emacs.d/init/moe-theme")
-(load "~/.emacs.d/init/theme")
 
 
 
