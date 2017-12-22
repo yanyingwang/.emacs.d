@@ -93,10 +93,10 @@
 (tool-bar-mode -1)
 
 ;;; hide scroll bar
-(scroll-bar-mode -1)
+;(scroll-bar-mode -1)
 
 ;;; hide menu bar
-(menu-bar-mode -1)
+;(menu-bar-mode -1)
 
 ;; Use colors to highlight commands, etc.
 (global-font-lock-mode t)
