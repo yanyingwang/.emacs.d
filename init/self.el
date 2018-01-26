@@ -23,8 +23,8 @@
 
 
 ;;; Start in full-screen mode
-(custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . maximized)))))
+;(custom-set-variables
+; '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 
 ;;; customize scratch message
