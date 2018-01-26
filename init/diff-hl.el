@@ -1,5 +1,4 @@
 (use-package diff-hl
+  :config
+  (global-diff-hl-mode 1)
   :ensure t)
-
-(global-diff-hl-mode 1)
-;(diff-hl-flydiff-mode 1)
