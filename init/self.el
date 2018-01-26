@@ -40,10 +40,6 @@
 (setq ad-redefinition-action 'accept)
 
 
-;; enable C-x C-u & C-x C-l
-(put 'upcase-region 'disabled nil)
-(put 'downcase-region 'disabled nil)
-
 
 ;; prevent emacs from adding coding information in the first line
 (setq ruby-insert-encoding-magic-comment nil)
@@ -88,6 +84,7 @@
 ;;; set line spacing
 (setq-default line-spacing 4)
 
+
 ;;; set line number
 (global-linum-mode t)
 
@@ -113,40 +110,6 @@
 (setq visible-bell t)
 
 
-;; disable minimize window
-(global-unset-key (kbd "C-z"))
-(global-unset-key (kbd "C-x C-z"))
-
-
-
 (setq-default show-trailing-whitespace t)
 
 (setq-default indent-tabs-mode nil)
-
-
-;; set fonts with check OS type
-;;(set-default-font "Ubuntu Mono-12:bold")
-;;(set-default-font "Bront-12:bold")
-;;(set-default-font "agave-11:book")
-;;(set-default-font "Pointfree-10:bold")
-(cond
- ((string-equal system-type "windows-nt") ; Microsoft Windows
-  (progn
-    (message "Microsoft Windows")))
- ((string-equal system-type "darwin") ; Mac OS X
-  (progn
-    ;(setq x-super-keysym 'meta)
-    (setq mac-option-key-is-meta nil)
-    (setq mac-command-key-is-meta t)
-    (setq mac-command-modifier 'meta)
-    (setq mac-option-modifier nil)
-    ;;(set-default-font "monaco-12:bold")
-    ;;(set-default-font "Bront-14:bold")
-    (set-default-font "agave-14:book")
-    (message "Mac OS X")))
- ((string-equal system-type "gnu/linux") ; linux
-  (progn
-    (set-default-font "Ubuntu Mono-11:bold")
-    ;;(set-default-font "Bront-12:bold")
-    ;;(set-default-font "agave-11:bold")
-    (message "Linux"))))
