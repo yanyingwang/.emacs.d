@@ -23,27 +23,3 @@
                    (load-file (concat (file-name-as-directory dir) f)))))
     (mapc load-it (directory-files dir nil "\\.el$"))))
 (load-directory "~/.emacs.d/init")
-
-
-
-
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(coffee-tab-width 2)
- '(custom-safe-themes
-   (quote
-    ("fd24b2c570dbd976e17a63ba515967600acb7d2f9390793859cb82f6a2d5dacd" default)))
- '(initial-frame-alist (quote ((fullscreen . maximized))))
- '(package-selected-packages
-   (quote
-    (geiser yaml-mode ws-butler web-mode use-package undo-tree smooth-scrolling smartparens slime slim-mode scss-mode rvm rainbow-delimiters projectile-rails powerline paredit moe-theme markdown-toc magit less-css-mode indent-guide helm-themes helm-projectile helm-descbinds golden-ratio flymake-ruby dot-mode diff-hl coffee-mode clippy auto-complete aggressive-indent))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

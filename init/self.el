@@ -22,6 +22,8 @@
 
 
 
+;;; set windows size
+(desktop-save-mode 1)
 ;;; Start in full-screen mode
 ;(custom-set-variables
 ; '(initial-frame-alist (quote ((fullscreen . maximized)))))
