@@ -42,4 +42,4 @@ END")
 
 
 
-(global-set-key (kbd "C-c C-g") 'grammarly-save-region-and-run)
+;;;(global-set-key (kbd "C-c C-g") 'grammarly-save-region-and-run)
