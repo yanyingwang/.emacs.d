@@ -8,10 +8,10 @@
 
 ;;; rvm
 (use-package rvm
+  :config
+  (require 'rvm)
+  (rvm-use-default)
   :ensure t)
-
-(require 'rvm)
-(rvm-use-default)
 
 
 (use-package robe

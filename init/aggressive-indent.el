@@ -1,6 +1,6 @@
 ;;; aggressive indent
 (use-package aggressive-indent
   :config
-  (global-aggressive-indent-mode 0)
-  (add-to-list 'aggressive-indent-excluded-modes 'html-mode)    ; exclude html
+  (add-to-list 'aggressive-indent-excluded-modes 'web-mode)    ; exclude html
+  (global-aggressive-indent-mode 1)
   :ensure t)

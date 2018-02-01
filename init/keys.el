@@ -19,6 +19,7 @@
     (setq mac-command-modifier 'meta)
     (setq mac-option-modifier 'super)
     (global-set-key (kbd "s-SPC") 'just-one-space)
+    (global-set-key (kbd "C-s-q") 'indent-pp-sexp)
     (message "Key binding set for MacOS")))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
