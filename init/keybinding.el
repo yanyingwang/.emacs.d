@@ -1,7 +1,7 @@
 ;; disable minimize window keys
 (global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "C-x C-z"))
-
+(global-unset-key (kbd "C-x c"))
 
 
 ;; enable C-x C-u & C-x C-l
