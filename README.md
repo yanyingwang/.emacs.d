@@ -9,6 +9,10 @@ cd ~ && git clone git@github.com:yanyingwang/.emacs.d.git
 2. start your emacs and wait for everything settled.
 
 
-# What's in there
+# Reference
 1. package manager: [use-package](https://github.com/jwiegley/use-package)
-2. Use or support ruby common-lisp slime helm and so on. Please check out the 'init' directory for more detail.
+2. Helm: more Helm keybinding and usage please check [this link](http://tuhdo.github.io/helm-intro.html).
+3. modified keybinding for MacOS system:
+  `C-M-q` => `s-M-q`
+  `M-space` => `s-space`
+4. You can check out my emacs memo if you like: https://github.com/yanyingwang/memo/blob/master/emacs.md
