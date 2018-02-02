@@ -8,8 +8,9 @@
          ("C-c h o" . helm-occur)
          ("C-h SPC" . helm-all-mark-rings)
          ("C-c h x" . helm-register)
-         ("C-c h g" . helm-google-suggest)
-         )
+         ("C-c h g" . helm-google-suggest))
+  :init
+  (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages) ; enable man page at point
   :config
   (require 'helm)
   (require 'helm-config)
@@ -25,19 +26,18 @@
         helm-scroll-amount 8 ; scroll 8 lines other window using M-<next>/M-<prior>
         helm-ff-file-name-history-use-recentf t
         helm-echo-input-in-header-line t)
-  (setq helm-M-x-fuzzy-match t)
-  (setq helm-buffers-fuzzy-matching t
-        helm-recentf-fuzzy-match t)
-  (setq helm-semantic-fuzzy-match t ; To enable fuzzy matching for both Semantic and Imenu listing
-        helm-imenu-fuzzy-match t)
-  (setq helm-locate-fuzzy-match t)   ; fuzzy matching with helm-locate
-  (setq helm-apropos-fuzzy-match t) ; fuzzy matching for helm-occur
+  (setq helm-M-x-fuzzy-match t
+        helm-buffers-fuzzy-matching t
+        helm-recentf-fuzzy-match t
+        helm-semantic-fuzzy-match t ; To enable fuzzy matching for both Semantic and Imenu listing
+        helm-imenu-fuzzy-match t
+        helm-locate-fuzzy-match t   ; fuzzy matching with helm-locate
+        helm-apropos-fuzzy-match t) ; fuzzy matching for helm-occur
   (when (executable-find "curl")
     (setq helm-google-suggest-use-curl-p t))
   (when (executable-find "ack-grep")     ;  use ack-grep to replace grep if possiable
     (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
           helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f"))
-  (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages) ; enable man page at point
   :ensure t)
 
 
