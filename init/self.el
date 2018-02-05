@@ -110,6 +110,9 @@
 (setq visible-bell t)
 
 
-(setq-default show-trailing-whitespace t)
 
+
+;; whitespace & tab
 (setq-default indent-tabs-mode nil)
+(setq-default show-trailing-whitespace t)
+(add-hook 'term-mode-hook (lambda () (setq show-trailing-whitespace nil)))

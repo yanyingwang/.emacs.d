@@ -1,20 +1,19 @@
 (use-package smartparens
+  ;;:config
+  ;;(require 'smartparens-config)
+  ;;(add-hook 'js-mode-hook #'smartparens-mode)
+  ;;(smartparens-global-mode t)
+  ;;(show-smartparens-global-mode t)
   :ensure t)
 
-(require 'smartparens-config)
 
-(smartparens-global-mode t)
-(show-smartparens-global-mode t)
-;(highlight-indentation-mode)
+(use-package smartparens-config
+  :ensure smartparens
+  :config
+  (progn
+    (show-smartparens-global-mode t)))
 
+(add-hook 'prog-mode-hook 'turn-on-smartparens-strict-mode)
+(add-hook 'markdown-mode-hook 'turn-on-smartparens-strict-mode)
 
-
-;;; Highlight-Indentation-for-Emacs
-;;(use-package highlight-indentation
-;;  :ensure t)
-
-;;(highlight-indentation-mode)
-
-;;(set-face-background 'highlight-indentation-face "#e3e3d3")
-;;(set-face-background 'highlight-indentation-current-column-face "#c3b3b3")
 
