@@ -1,4 +1,5 @@
 (use-package smartparens
+  :bind (("M-D" . sp-unwrap-sexp))
   :config
   (require 'smartparens-config)
   ;;(add-hook 'js-mode-hook #'smartparens-mode)
