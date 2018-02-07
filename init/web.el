@@ -32,6 +32,13 @@
   :ensure t)
 
 
+;;; haml mode
+(use-package haml-mode
+  :config
+  (require 'haml-mode)
+  :ensure t)
+
+
 ;;; markdown mode
 (use-package markdown-mode
   :config
