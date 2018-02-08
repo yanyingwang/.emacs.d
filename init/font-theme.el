@@ -10,8 +10,8 @@
  ((string-equal system-type "darwin") ; Mac OS X
   (progn
     ;;(set-default-font "monaco-12:bold")
-    (set-default-font "Bront-14:bold")
-    ;;(set-default-font "agave-14:book")
+    ;;(set-default-font "Bront-14:bold")
+    (set-default-font "agave-14:bold")
     (message "Font set for MacOS")))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
