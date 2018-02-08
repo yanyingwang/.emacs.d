@@ -20,14 +20,16 @@
   (prefer-coding-system 'utf-8))
 
 
+;;; key commands ‘C-c left’ and ‘C-c right’
+(when (fboundp 'winner-mode)
+  (winner-mode 1))
 
 
 ;;; set windows size
 (desktop-save-mode 1)
 ;;; Start in full-screen mode
-;(custom-set-variables
-; '(initial-frame-alist (quote ((fullscreen . maximized)))))
-
+;;(custom-set-variables
+;; '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 ;;; customize scratch message
 (setq initial-scratch-message
