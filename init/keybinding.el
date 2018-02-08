@@ -10,6 +10,7 @@
 
 
 
+;; customize for system conflict
 (cond
  ((string-equal system-type "windows-nt") ; Microsoft Windows
   (progn
@@ -24,3 +25,16 @@
  ((string-equal system-type "gnu/linux") ; linux
   (progn
     (message "Key binding set for Linux"))))
+
+
+;; Split window with different buffer
+(eval-when-compile (require 'cl))
+
+(defun split-window-func-with-other-buffer (split-function)
+  (lexical-let ((s-f split-function))
+    (lambda ()
+      (interactive)
+      (funcall s-f)
+      (set-window-buffer (next-window) (other-buffer)))))
+(global-set-key "\C-x2" (split-window-func-with-other-buffer 'split-window-vertically))
+(global-set-key "\C-x3" (split-window-func-with-other-buffer 'split-window-horizontally))
