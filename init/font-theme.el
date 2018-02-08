@@ -11,6 +11,7 @@
   (progn
     ;;(set-default-font "monaco-12:bold")
     ;;(set-default-font "Bront-14:bold")
+    ;;(set-default-font "agave-14:book")
     (set-default-font "agave-14:bold")
     (message "Font set for MacOS")))
  ((string-equal system-type "gnu/linux") ; linux
@@ -25,26 +26,27 @@
 
 (use-package gruvbox-theme
   :config
-  (load-theme 'gruvbox-dark-medium t)
-  ;(load-theme 'gruvbox-dark-soft  t)
-  ;(load-theme 'gruvbox-dark-hard  t)
-  ;(load-theme 'gruvbox-light-medium t)
-  ;(load-theme 'gruvbox-light-soft  t)
-  ;(load-theme 'gruvbox-light-hard  t)
+  (load-theme 'gruvbox t)
+;;  ;(load-theme 'gruvbox-dark-medium t)
+;;  ;(load-theme 'gruvbox-dark-soft  t)
+;;  ;(load-theme 'gruvbox-dark-hard  t)
+;;  ;(load-theme 'gruvbox-light-medium t)
+;;  ;(load-theme 'gruvbox-light-soft  t)
+;;  ;(load-theme 'gruvbox-light-hard  t)
   :ensure t)
 
 
 
-;(use-package material-theme
-;  ;:init
-;  :config
-;  (load-theme 'material t)
-;  ;(load-theme 'material-light t)
-;  :ensure t)
-
-;(use-package zenburn-theme
-;  :config (load-theme 'zenburn t)
-;  :ensure t)
+;;(use-package material-theme
+;;  ;:init
+;;  :config
+;;  (load-theme 'material t)
+;;  ;(load-theme 'material-light t)
+;;  :ensure t)
+;
+;;(use-package zenburn-theme
+;;  :config (load-theme 'zenburn t)
+;;  :ensure t)
 
 
 
@@ -58,5 +60,7 @@
   (require 'theme-changer)
   (change-theme 'gruvbox-light-medium 'gruvbox-dark-medium)
   :ensure t)
+
+
 
 
