@@ -18,6 +18,6 @@
 
   (add-hook 'geiser-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
   (add-hook 'geiser-repl-mode-hook 'rainbow-delimiters-mode)
-  (add-hook 'geiser-repl-mode-hook (lambda () (paredit-mode +1)))
+  ;;(add-hook 'geiser-repl-mode-hook (lambda () (paredit-mode +1)))
 
   :ensure t)
