@@ -69,7 +69,7 @@
 
 
 ;; Use y or n instead of yes or not
-;(fset 'yes-or-no-p 'y-or-n-p)
+(fset 'yes-or-no-p 'y-or-n-p)
 
 
 ;; enable ShowParenMode
