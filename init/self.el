@@ -89,6 +89,7 @@
 
 ;;; set line number
 (global-linum-mode t)
+(setq linum-format "%d")
 
 ;;; hide tool bar
 (tool-bar-mode -1)
