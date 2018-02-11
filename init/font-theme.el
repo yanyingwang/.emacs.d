@@ -27,7 +27,7 @@
 ;;  (load-theme 'material t)
 ;;  ;(load-theme 'material-light t)
 ;;  :ensure t)
-                                        ;
+
 ;;(use-package zenburn-theme
 ;;  :config (load-theme 'zenburn t)
 ;;  :ensure t)
