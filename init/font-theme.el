@@ -12,7 +12,7 @@
     ;;(set-default-font "monaco-12:bold")
     ;;(set-default-font "Bront-14:bold")
     ;;(set-default-font "agave-14:book")
-    (set-default-font "agave-14:bold")
+    (set-default-font "agave-14:book")
     (message "Font set for MacOS")))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
@@ -22,23 +22,7 @@
     (message "Font set for Linux"))))
 
 
-
-
-(use-package gruvbox-theme
-  :config
-  ;;(load-theme 'gruvbox t)
-  ;;  (load-theme 'gruvbox-dark-medium t)
-  ;;  (load-theme 'gruvbox-dark-soft  t)
-  ;;  (load-theme 'gruvbox-dark-hard  t)
-  (load-theme 'gruvbox-light-medium t)
-  ;;(load-theme 'gruvbox-light-soft  t)
-  ;;(load-theme 'gruvbox-light-hard  t)
-  :ensure t)
-
-
-
 ;;(use-package material-theme
-;;  ;:init
 ;;  :config
 ;;  (load-theme 'material t)
 ;;  ;(load-theme 'material-light t)
@@ -48,16 +32,31 @@
 ;;  :config (load-theme 'zenburn t)
 ;;  :ensure t)
 
+(use-package gruvbox-theme
+  :config
+  ;;(load-theme 'gruvbox t)
+  ;;(load-theme 'gruvbox-light-soft  t)
+  ;;(load-theme 'gruvbox-light-medium t)
+  ;;(load-theme 'gruvbox-light-hard  t)
+  ;;(load-theme 'gruvbox-dark-soft  t)
+  (load-theme 'gruvbox-dark-medium t)
+  ;;(load-theme 'gruvbox-dark-hard  t)
+  :ensure t :defer)
 
 
-;;
-;;(use-package theme-changer
-;;  :init
-;;  (setq calendar-location-name "Shanghai, China")
-;;  (setq calendar-latitude 31.22)
-;;  (setq calendar-longitude 121.48)
-;;  :config
-;;  (require 'theme-changer)
-;;  (change-theme 'gruvbox-light-medium 'gruvbox-dark-medium)
-;;  :ensure t)
-;;
+(use-package circadian
+  :ensure t
+  :config
+  ;;(setq circadian-themes '(("8:00" . gruvbox-light-medium)
+  ;;                         ("19:00" . gruvbox-dark-medium)))
+  (setq calendar-latitude 31.230390)
+  (setq calendar-longitude 121.473702)
+  (setq circadian-themes '((:sunrise . gruvbox-light-medium)
+                           (:sunset  . gruvbox-dark-medium)))
+  (add-hook 'circadian-after-load-theme-hook
+            #'(lambda (theme)
+                (if (string-equal theme "gruvbox-dark-medium")
+                    (set-default-font "agave-14:book")
+                  (set-default-font "agave-14:bold"))))
+  (circadian-setup))
+
