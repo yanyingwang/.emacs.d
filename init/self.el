@@ -82,23 +82,9 @@
 (setq user-mail-address "yanyingwang1@gmail.com")
 
 
-
 ;;; set line spacing
 (setq-default line-spacing 4)
 
-
-;;; set line number
-(global-linum-mode t)
-;;(setq linum-format "%d ")
-
-;;; hide tool bar
-(tool-bar-mode -1)
-
-;;; hide scroll bar
-;(scroll-bar-mode -1)
-
-;;; hide menu bar
-;(menu-bar-mode -1)
 
 ;; Use colors to highlight commands, etc.
 (global-font-lock-mode t)
