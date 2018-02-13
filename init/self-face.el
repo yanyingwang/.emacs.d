@@ -3,7 +3,7 @@
 
 
 (global-linum-mode 1)                   ; line number
-(setq linum-format "%d")
+(setq linum-format "%d ")
 
 
 (tool-bar-mode -1)                      ; tool bar
