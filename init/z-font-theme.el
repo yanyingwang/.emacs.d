@@ -55,8 +55,13 @@
                            (:sunset  . gruvbox-dark-medium)))
   (add-hook 'circadian-after-load-theme-hook
             #'(lambda (theme)
-                (if (string-equal theme "gruvbox-dark-medium")
+                (cond
+                 ((string-equal theme "gruvbox-light-medium")
+                  (progn
+                    (set-default-font "agave-14:bold")
+                    (set-face-foreground 'indent-guide-face "lightgray")))
+                 ((string-equal theme "gruvbox-dark-medium")
+                  (progn
                     (set-default-font "agave-14:book")
-                  (set-default-font "agave-14:bold"))))
+                    (set-face-foreground 'indent-guide-face "dimgray"))))))
   (circadian-setup))
-
