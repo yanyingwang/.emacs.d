@@ -1,7 +1,7 @@
-e(use-package smartparens
-   :bind (("M-D" . sp-unwrap-sexp))
-   :config
-   :ensure t)
+(use-package smartparens
+  :bind (("M-D" . sp-unwrap-sexp))
+  :config
+  :ensure t)
 
 
 (use-package smartparens-config
