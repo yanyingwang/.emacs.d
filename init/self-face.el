@@ -1,5 +1,5 @@
 (setq frame-title-format "emacs – %b") ; format the title-bar to always include the buffer name
-(setq visible-bell t)            ; flash instead of that annoying bell
+(setq visible-bell 1)            ; flash instead of that annoying bell
 
 
 (global-linum-mode 1)                   ; line number
