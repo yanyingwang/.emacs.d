@@ -13,12 +13,13 @@
     ;;(set-default-font "Bront-14:bold")
     ;;(set-default-font "agave-14:book")
     (set-default-font "agave-14:book")
+    (add-to-list 'default-frame-alist '(font . "agave-14:book"))
     (message "Font set for MacOS")))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
-    (set-default-font "Ubuntu Mono-11:bold")
     ;;(set-default-font "Bront-12:bold")
     ;;(set-default-font "agave-11:bold")
+    (set-default-font "Ubuntu Mono-11:bold")
     (message "Font set for Linux"))))
 
 
@@ -59,9 +60,12 @@
                  ((string-equal theme "gruvbox-light-medium")
                   (progn
                     (set-default-font "agave-14:bold")
+                    (add-to-list 'default-frame-alist '(font . "agave-14:bold"))
                     (set-face-foreground 'indent-guide-face "lightgray")))
                  ((string-equal theme "gruvbox-dark-medium")
                   (progn
                     (set-default-font "agave-14:book")
+                    (add-to-list 'default-frame-alist '(font . "agave-14:book"))
                     (set-face-foreground 'indent-guide-face "dimgray"))))))
   (circadian-setup))
+
