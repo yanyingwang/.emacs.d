@@ -6,6 +6,6 @@
   :config
   (push 'company-robe company-backends)
   (company-tng-configure-default)
-  (define-key company-active-map (kbd "C-n") 'company-select-next)
-  (define-key company-active-map (kbd "C-p") 'company-select-previous)
+  ;;(define-key company-active-map (kbd "C-n") 'company-select-next)
+  ;;(define-key company-active-map (kbd "C-p") 'company-select-previous)
   :ensure t)
