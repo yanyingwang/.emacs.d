@@ -18,9 +18,9 @@
        (progn
          (setq mac-command-modifier 'meta)
          (setq mac-option-modifier 'super)
-         (global-set-key (kbd "s-SPC") 'just-one-space)
-         (global-set-key (kbd "C-s-q") 'indent-pp-sexp)
-         (global-set-key (kbd "M-RET") 'toggle-frame-maximized)
+         ;;(global-set-key (kbd "s-SPC") 'just-one-space)
+         ;;(global-set-key (kbd "C-s-q") 'indent-pp-sexp)
+         ;;(global-set-key (kbd "M-RET") 'toggle-frame-maximized)
          (message "Key binding set for MacOS")))
       ((string-equal system-type "gnu/linux") ; Linux
        (progn
