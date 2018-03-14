@@ -17,7 +17,7 @@
 (global-set-key (kbd "<C-tab>") 'other-window)
 
 (global-set-key (kbd "M-]") 'previous-other-window)
-(global-set-key (kbd "<C-s-tab>") 'previous-other-window)
+(global-set-key (kbd "<C-S-tab>") 'previous-other-window)
 
 
 
