@@ -10,6 +10,17 @@
 
 
 
+;; other windows
+(defun previous-other-window () (interactive) (other-window -1))
+
+(global-set-key (kbd "M-[") 'other-window)
+(global-set-key (kbd "<C-tab>") 'other-window)
+
+(global-set-key (kbd "M-]") 'previous-other-window)
+(global-set-key (kbd "<C-s-tab>") 'previous-other-window)
+
+
+
 ;; customize for system conflict
 (cond ((string-equal system-type "windows-nt") ; Windows
        (progn
