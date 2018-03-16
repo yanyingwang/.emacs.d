@@ -1,10 +1,17 @@
 (use-package multiple-cursors
   :defer 2
   :bind (("C-S-c C-S-c" . mc/edit-lines)
-         ("C-S-c C-S-c" . 'mc/edit-lines)
-         ("C->" . 'mc/mark-next-like-this)
-         ("C-<" . 'mc/mark-previous-like-this)
-         ("C-c C-<" . 'mc/mark-all-like-this)
+
+         ("C->" . 'mc/mark-next-like-this-word)
+         ("C-<" .  mc/mark-previous-like-this-word)
+         ("C-c C-<" . 'mc/mark-all-words-like-this)
+         ("C-;" . 'mc/mark-all-words-like-this)
+
+         ("C-M->" . 'mc/mark-next-like-this-symbol)
+         ("C-M-<" .  mc/mark-previous-like-this-symbol)
+         ("C-c C-M-<" . 'mc/mark-all-symbols-like-this)
+         ("C-:" . 'mc/mark-all-symbols-like-this)
+
          (:map mc/keymap ("<return>" . nil))
          ("C-S-<mouse-1>" . 'mc/add-cursor-on-click))
   :init
@@ -35,11 +42,11 @@
   :ensure t)
 
 
-(use-package iedit
-  :init
-  :config
-  (require 'iedit)
-  :ensure t)
+;;(use-package iedit
+;;  :init
+;;  :config
+;;  (require 'iedit)
+;;  :ensure t)
 
 
 (use-package expand-region
