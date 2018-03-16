@@ -26,10 +26,12 @@
   :ensure t)
 
 
-(use-package expand-region
-  :bind (("C-=" . 'er/expand-region))
+(use-package phi-search
+  ;;:bind (("C-s" . 'phi-search)
+  ;;       ("C-r" . 'phi-search-backward))
   :init
   :config
+  (require 'phi-search)
   :ensure t)
 
 
@@ -37,4 +39,11 @@
   :init
   :config
   (require 'iedit)
+  :ensure t)
+
+
+(use-package expand-region
+  :bind (("C-=" . 'er/expand-region))
+  :init
+  :config
   :ensure t)
