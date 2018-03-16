@@ -8,6 +8,7 @@
   :init
   :config
   :ensure t)
+(define-key mc/keymap (kbd "<return>") nil)
 
 
 (use-package expand-region
