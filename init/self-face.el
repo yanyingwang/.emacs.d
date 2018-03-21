@@ -18,3 +18,5 @@
 
 (setq initial-scratch-message
       (concat ";; Happy hacking " (or user-login-name "") " - Emacs ♥ you!\n\n")) ;customize scratch message
+
+(global-hl-line-mode 1)
