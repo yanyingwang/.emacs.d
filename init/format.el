@@ -5,6 +5,7 @@
   (add-to-list 'aggressive-indent-excluded-modes 'slim-mode)
   (add-to-list 'aggressive-indent-excluded-modes 'haml-mode)
   (add-to-list 'aggressive-indent-excluded-modes 'ruby-mode)
+  (add-to-list 'aggressive-indent-excluded-modes 'js2-mode)
   (global-aggressive-indent-mode 1)
   :ensure t)
 
