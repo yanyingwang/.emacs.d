@@ -59,13 +59,13 @@
                 (cond
                  ((string-equal theme "gruvbox-light-medium")
                   (progn
-                    (set-default-font "agave-14:bold")
-                    (add-to-list 'default-frame-alist '(font . "agave-14:bold"))
+                    (set-face-attribute 'default nil :font "agave-14:bold")
+                    (set-frame-font "agave-14:bold" nil t)
                     (set-face-foreground 'indent-guide-face "lightgray")))
                  ((string-equal theme "gruvbox-dark-medium")
                   (progn
-                    (set-default-font "agave-14:book")
-                    (add-to-list 'default-frame-alist '(font . "agave-14:book"))
+                    (set-face-attribute 'default nil :font "agave-14:book")
+                    (set-frame-font "agave-14:book" nil t)
                     (set-face-foreground 'indent-guide-face "dimgray"))))))
   (circadian-setup))
 
