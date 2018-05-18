@@ -11,9 +11,9 @@
   (progn
     ;;(set-default-font "monaco-12:bold")
     ;;(set-default-font "Bront-14:bold")
-    ;;(set-default-font "agave-14:book")
+    ;;(set-default-font "agave-14:bold")
     (set-default-font "agave-14:book")
-    (add-to-list 'default-frame-alist '(font . "agave-14:book"))
+    (set-frame-font "agave-14:book" nil t)
     (message "Font set for MacOS")))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
@@ -40,7 +40,7 @@
   ;;(load-theme 'gruvbox-light-medium t)
   ;;(load-theme 'gruvbox-light-hard  t)
   ;;(load-theme 'gruvbox-dark-soft  t)
-  (load-theme 'gruvbox-dark-medium t)
+  ;;(load-theme 'gruvbox-dark-medium t)
   ;;(load-theme 'gruvbox-dark-hard  t)
   :ensure t :defer)
 

@@ -50,7 +50,7 @@ recentf
 
 geiser-history
 network-security.data
-geiser-history.chez
+geiser-history.*
 
 bing-dict/
 games/
