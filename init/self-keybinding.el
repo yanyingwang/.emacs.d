@@ -13,12 +13,12 @@
 ;; other windows
 (defun previous-other-window () (interactive) (other-window -1))
 
+
 (global-set-key (kbd "M-[") 'other-window)
 (global-set-key (kbd "<C-tab>") 'other-window)
-
 (global-set-key (kbd "M-]") 'previous-other-window)
 (global-set-key (kbd "<C-S-tab>") 'previous-other-window)
-
+(global-set-key (kbd "<M-return>") 'toggle-frame-fullscreen)
 
 
 ;; customize for system conflict
