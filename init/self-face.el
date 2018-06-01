@@ -2,11 +2,11 @@
 (setq visible-bell 1)            ; flash instead of that annoying bell
 
 
-(global-linum-mode 1)                   ; line number
+(global-display-line-numbers-mode 1)
 (setq linum-format "%d ")
 
 
-(tool-bar-mode -1)                      ; tool bar
+(tool-bar-mode 1)                       ; tool bar
 (scroll-bar-mode 1)                     ; scroll bar
 (menu-bar-mode 1)                       ; menu bar
 
@@ -19,4 +19,4 @@
 (setq initial-scratch-message
       (concat ";; Happy hacking " (or user-login-name "") " - Emacs ♥ you!\n\n")) ;customize scratch message
 
-(global-hl-line-mode 1)
+(global-hl-line-mode -1)
