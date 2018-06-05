@@ -3,35 +3,20 @@
 ;;(set-default-font "Bront-12:bold")
 ;;(set-default-font "agave-11:book")
 ;;(set-default-font "Pointfree-10:bold")
-(cond
- ((string-equal system-type "windows-nt") ; Microsoft Windows
-  (progn
-    (message "Font set for Windows")))
- ((string-equal system-type "darwin") ; Mac OS X
-  (progn
-    ;;(set-default-font "monaco-12:bold")
-    ;;(set-default-font "Bront-14:bold")
-    ;;(set-default-font "agave-14:bold")
-    (set-default-font "agave-14:book")
-    (set-frame-font "agave-14:book" nil t)
-    (message "Font set for MacOS")))
- ((string-equal system-type "gnu/linux") ; linux
-  (progn
-    ;;(set-default-font "Bront-12:bold")
-    ;;(set-default-font "agave-11:bold")
-    (set-default-font "Ubuntu Mono-11:bold")
-    (message "Font set for Linux"))))
+;;(set-default-font "monaco-12:bold")
+;;(set-default-font "Bront-14:bold")
+;;(set-default-font "agave-14:bold")
+;;(set-default-font "Bront-12:bold")
+;;(set-default-font "agave-11:bold")
 
+(cond ((string-equal system-type "windows-nt")
+       (progn (message "Font set for Windows")))
+      ((string-equal system-type "darwin")
+       (progn (set-default-font "agave-14:book")
+              (set-frame-font "agave-14:book" nil t)))
+      ((string-equal system-type "gnu/linux")
+       (progn (set-default-font "Ubuntu Mono-11:bold"))))
 
-;;(use-package material-theme
-;;  :config
-;;  (load-theme 'material t)
-;;  ;(load-theme 'material-light t)
-;;  :ensure t)
-
-;;(use-package zenburn-theme
-;;  :config (load-theme 'zenburn t)
-;;  :ensure t)
 
 (use-package gruvbox-theme
   :config
@@ -52,17 +37,21 @@
   ;;                         ("19:00" . gruvbox-dark-medium)))
   (setq calendar-latitude 31.230390)
   (setq calendar-longitude 121.473702)
-  (setq circadian-themes '((:sunrise . gruvbox-light-medium)
-                           (:sunset  . gruvbox-dark-medium)))
+  (setq circadian-themes '((:sunrise . gruvbox-dark-soft)
+                           (:sunset  . gruvbox-dark-hard)))
   (add-hook 'circadian-after-load-theme-hook
             #'(lambda (theme)
                 (cond
-                 ((string-equal theme "gruvbox-light-medium")
+                 ((or (string-equal theme "gruvbox-light-soft")
+                      (string-equal theme "gruvbox-light-medium")
+                      (string-equal theme "gruvbox-light-hard"))
                   (progn
                     (set-face-attribute 'default nil :font "agave-14:bold")
                     (set-frame-font "agave-14:bold" nil t)
                     (set-face-foreground 'indent-guide-face "lightgray")))
-                 ((string-equal theme "gruvbox-dark-medium")
+                 ((or (string-equal theme "gruvbox-dark-soft")
+                      (string-equal theme "gruvbox-dark-medium")
+                      (string-equal theme "gruvbox-dark-hard"))
                   (progn
                     (set-face-attribute 'default nil :font "agave-14:book")
                     (set-frame-font "agave-14:book" nil t)
