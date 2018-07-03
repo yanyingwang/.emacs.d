@@ -14,11 +14,11 @@
    ((string-equal system-type "gnu/linux")
     (progn
       (message "Linux"))))
-  ;;(setq geiser-active-implementations '(chez))
+  (setq geiser-active-implementations '(chez))
   (setq geiser-repl-history-filename "~/.emacs.d/geiser-history")
   (setq geiser-repl-use-other-window nil)
   (add-hook 'geiser-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
   (add-hook 'geiser-repl-mode-hook 'rainbow-delimiters-mode)
   :ensure t)
 
-(setq scheme-program-name "chez")
+;;(setq scheme-program-name "chez")
