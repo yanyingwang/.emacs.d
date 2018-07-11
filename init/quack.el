@@ -4788,8 +4788,8 @@ Provided by Quack: http://www.neilvandyke.org/quack/"
 
 ;; TODO: Way to get default collects directories.  From Matthew Flatt,
 ;; 2006-04-22:
-;; 
-;; env PLTCOLLECTS="" mzscheme -mvqe '(printf "~s\n" (map path->string 
+;;
+;; env PLTCOLLECTS="" mzscheme -mvqe '(printf "~s\n" (map path->string
 ;; (current-library-collection-paths)))'
 
 ;; TODO: Have key binding to insert "lambda" (for use with pretty-lambda).
@@ -4823,7 +4823,7 @@ Provided by Quack: http://www.neilvandyke.org/quack/"
 ;; customized there
 (require 'quack)
 ;; The binary of your interpreter
-(setq scheme-program-name "chez")
+;;(setq scheme-program-name "chez")
 
 ;; This hook lets you use your theme colours instead of quack's ones.
 (defun scheme-mode-quack-hook ()
