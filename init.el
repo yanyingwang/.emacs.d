@@ -19,5 +19,6 @@
     (mapc load-it (directory-files dir nil "\\.el$"))))
 
 (load-directory "~/.emacs.d/init/self")
+(load-directory "~/.emacs.d/init/projectile")
 (load-directory "~/.emacs.d/init")
 (load-directory "~/.emacs.d/init/company")

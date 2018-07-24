@@ -62,3 +62,15 @@
 	      (define-key eshell-mode-map
 		(kbd "M-p")
 		'helm-eshell-history)))
+
+
+(use-package helm-descbinds
+  :ensure t)
+
+(require 'helm-descbinds)
+(helm-descbinds-mode)
+
+(use-package helm-themes
+  :ensure t)
+
+(require 'helm-themes)
