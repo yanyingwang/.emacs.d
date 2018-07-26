@@ -1,3 +1,4 @@
+;; run the console with `run-geiser'
 (use-package geiser
   :init
   (cond
