@@ -21,4 +21,4 @@
   (add-hook 'geiser-repl-mode-hook 'rainbow-delimiters-mode)
   :ensure t)
 
-;;(setq scheme-program-name "chez")
+(setq scheme-program-name "chez")
