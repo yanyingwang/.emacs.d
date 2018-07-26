@@ -22,3 +22,6 @@
 (load-directory "~/.emacs.d/init/projectile")
 (load-directory "~/.emacs.d/init")
 (load-directory "~/.emacs.d/init/company")
+(load-directory "~/.emacs.d/init/scheme")
+
+
