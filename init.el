@@ -20,8 +20,12 @@
 
 (load-directory "~/.emacs.d/init/self")
 (load-directory "~/.emacs.d/init/projectile")
-(load-directory "~/.emacs.d/init")
-(load-directory "~/.emacs.d/init/company")
+(load-directory "~/.emacs.d/init/codmode")
 (load-directory "~/.emacs.d/init/scheme")
-
-
+(load-directory "~/.emacs.d/init/format")
+(load-directory "~/.emacs.d/init/company")
+(load-directory "~/.emacs.d/init/manage")
+(load-directory "~/.emacs.d/init/productivity")
+(load-directory "~/.emacs.d/init/tool")
+(load-directory "~/.emacs.d/init")
+(load-directory "~/.emacs.d/init/face")
