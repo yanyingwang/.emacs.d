@@ -1,5 +1,17 @@
-(setq frame-title-format "emacs – %b") ; format the title-bar to always include the buffer name
 (setq visible-bell 1)            ; flash instead of that annoying bell
+
+(setq frame-title-format ; format the title-bar to always include the buffer name
+      '((:eval (if (buffer-file-name)
+                   (abbreviate-file-name (buffer-file-name))
+                 "%"))
+        (:eval (if (buffer-modified-p)
+                   " •"))
+        " - Emacs" emacs-version))
+
+
+(when (memq window-system '(mac ns))
+  (add-to-list 'default-frame-alist '(ns-appearance . dark))
+  (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t)))
 
 
 (global-display-line-numbers-mode 1)
