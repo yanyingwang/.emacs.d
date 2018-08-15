@@ -25,6 +25,9 @@
 (setq ad-redefinition-action 'accept)
 
 
-
 (setq user-full-name "Yanying Wang")
 (setq user-mail-address "yanyingwang1@gmail.com")
+
+
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
