@@ -50,7 +50,8 @@
 
 
 (use-package expand-region
-  :bind (("C-=" . 'er/expand-region))
+  ;; C-=
+  :bind (("C-M-SPC" . 'er/expand-region))
   :init
   :config
   :ensure t)
