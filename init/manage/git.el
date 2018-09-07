@@ -6,3 +6,6 @@
 (use-package browse-at-remote
   :bind (("C-c g g" . browse-at-remote))
   :ensure t)
+
+(use-package github-stars
+  :ensure t)
