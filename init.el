@@ -30,10 +30,3 @@
 (load-directory "~/.emacs.d/init")
 (load-directory "~/.emacs.d/init/face")
 
-
-(use-package awesome-tab
-  :load-path "~/.emacs.d/init/awesome-tab.el"
-  :bind (("C-c n" . awesome-tab-backward)
-         ("C-c p" . awesome-tab-forward))
-  :config
-  (awesome-tab-mode t))
