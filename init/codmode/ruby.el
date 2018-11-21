@@ -17,3 +17,8 @@
   (add-hook 'ruby-mode-hook 'robe-mode)
   (add-hook 'enh-ruby-mode-hook 'robe-mode)
   :ensure t)
+
+(use-package ruby-refactor
+  :init
+  (add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
+  :ensure t)
