@@ -27,6 +27,7 @@
 (load-directory "~/.emacs.d/init/manage")
 (load-directory "~/.emacs.d/init/productivity")
 (load-directory "~/.emacs.d/init/tool")
+(load-directory "~/.emacs.d/init/others")
 (load-directory "~/.emacs.d/init")
 (load-directory "~/.emacs.d/init/face")
 
