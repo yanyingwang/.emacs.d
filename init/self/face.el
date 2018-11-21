@@ -1,4 +1,4 @@
-(setq visible-bell t)            ; flash instead of that annoying bell
+;; (setq visible-bell t)            ; flash instead of that annoying bell
 
 
 (setq frame-title-format ; format the title-bar to always include the buffer name
