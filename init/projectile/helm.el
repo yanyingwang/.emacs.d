@@ -1,4 +1,4 @@
-;;; helm-projectile
+;;; Helm-projectile
 (use-package helm-projectile
   :init
   (setq projectile-keymap-prefix (kbd "C-c p"))
@@ -8,6 +8,7 @@
   (setq projectile-file-exists-remote-cache-expire (* 10 60)) ; You can also enable the cache for local file systems, that is normally not needed but possible:
   (setq projectile-file-exists-local-cache-expire (* 5 60))
   (setq projectile-switch-project-action 'helm-projectile)
+  (setq helm-buffer-max-length 60)      ; adjust helm-mini filename column width
   ;;(setq projectile-switch-project-action 'helm-projectile-find-file) ; values: helm-projectile-find-file projectile-find-dir
   ;;(setq projectile-find-dir-includes-top-level t)
   (add-hook 'projectile-idle-timer-hook 'my-projectile-idle-timer-function) ; Idle Timer
