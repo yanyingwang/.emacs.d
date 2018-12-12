@@ -11,9 +11,18 @@
   :ensure t)
 
 
-
 ;;; coffeescript mode
 (use-package coffee-mode
   :ensure t)
 
 (custom-set-variables '(coffee-tab-width 2))
+
+
+(use-package skewer-mode
+  :init
+  (add-hook 'js2-mode-hook 'skewer-mode)
+  (add-hook 'css-mode-hook 'skewer-css-mode)
+  (add-hook 'html-mode-hook 'skewer-html-mode)
+  (setq httpd-port 8081)
+  :config
+  :ensure t)
