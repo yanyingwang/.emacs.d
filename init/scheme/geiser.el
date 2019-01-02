@@ -18,6 +18,7 @@
   ;;(setq geiser-active-implementations '(chez))
   (setq geiser-repl-history-filename "~/.emacs.d/geiser-history")
   (setq geiser-repl-use-other-window nil)
-  (add-hook 'skewer-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
+  (add-hook 'geiser-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
   (add-hook 'geiser-repl-mode-hook 'rainbow-delimiters-mode)
+  (add-hook 'geiser-repl-mode-hook 'smartparens-strict-mode)
   :ensure t)
