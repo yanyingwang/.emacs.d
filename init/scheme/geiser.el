@@ -1,4 +1,10 @@
 ;; run the console with `run-geiser'
+
+(setenv "CHEZSCHEMELIBDIRS"
+        (concat
+         (getenv "HOME")
+         "/chezlib"))
+
 (use-package geiser
   :init
   (cond
