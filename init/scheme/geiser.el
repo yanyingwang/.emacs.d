@@ -3,7 +3,7 @@
 (setenv "CHEZSCHEMELIBDIRS"
         (concat
          (getenv "HOME")
-         "/chezlib"))
+         "/.chezlib"))
 
 (use-package geiser
   :init
