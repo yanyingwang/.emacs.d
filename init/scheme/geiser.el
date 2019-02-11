@@ -12,6 +12,7 @@
     (progn
       (setq geiser-chez-binary "/usr/local/bin/chez")
       (setq geiser-racket-binary "/Applications/Racket v7.1/bin/racket")
+      (setq geiser-gauche-binary "/usr/local/bin/gosh -i")
       (setq geiser-guile-binary "/usr/local/bin/guile")
       (setq geiser-mit-binary "/usr/local/bin/mit")
       (setq geiser-chicken-binary "/usr/local/bin/csi")
@@ -30,3 +31,6 @@
   (add-hook 'geiser-repl-mode-hook 'rainbow-delimiters-mode)
   (add-hook 'geiser-repl-mode-hook 'smartparens-strict-mode)
   :ensure t)
+
+
+(setq scheme-program-name "gosh -i")
