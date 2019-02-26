@@ -19,3 +19,8 @@
  '(rainbow-delimiters-depth-7-face ((t (:foreground "DeepPink2"))))
  '(rainbow-delimiters-depth-8-face ((t (:foreground "forest green"))))
  '(rainbow-delimiters-depth-9-face ((t (:foreground "dark red")))))
+
+
+
+(use-package rainbow-mode
+  :ensure t)
