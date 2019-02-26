@@ -21,3 +21,6 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
  4. You can check out my emacs memo if you like: https://github.com/yanyingwang/memo/blob/master/emacs.md
  ......
 
+
+# screenshots
+![list](https://gitlab.com/yanyingwang/.emacs.d/raw/master/screenshots/dim-golden-ratio.png)
