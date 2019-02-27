@@ -33,7 +33,8 @@ site-lisp/package/
 /emms/
 /.smex-items
 /image-dired/
-/eshell
+/eshell/history
+/eshell/lastdir
 
 projectile-bookmarks.eld
 tutorial/
