@@ -40,6 +40,6 @@
   (defun pl/helm-alive-p ()
     (and (boundp 'helm-alive-p)
          (symbol-value 'helm-alive-p)))
-  ;; (golden-ratio-mode 1)
+  (golden-ratio-mode 1)
   :ensure t)
 
