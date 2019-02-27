@@ -37,3 +37,5 @@
 ;;   (setq httpd-port 8081)
 ;;   :config
 ;;   :ensure t)
+
+(setq js-indent-level 2)
