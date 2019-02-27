@@ -4,6 +4,7 @@
   (setq epe-path-style 'fish)
   ;; (setq eshell-highlight-prompt nil)
   (setq eshell-prompt-function 'epe-theme-lambda)
+  (add-hook 'eshell-mode (setq diff-dl-mode 0))
   :config
   :ensure t)
 

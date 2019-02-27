@@ -1,9 +1,9 @@
 (use-package golden-ratio
   :diminish golden-ratio-mode
   :init
-  (setq golden-ratio-adjust-factor .9
-        golden-ratio-wide-adjust-factor .9)
-
+  ;; (setq golden-ratio-adjust-factor .9
+  ;;       golden-ratio-wide-adjust-factor .9)
+  :config
   ;; ediff
   (eval-after-load "golden-ratio"
     '(progn
@@ -40,8 +40,6 @@
   (defun pl/helm-alive-p ()
     (and (boundp 'helm-alive-p)
          (symbol-value 'helm-alive-p)))
-
-  :config
-  (golden-ratio-mode 1)
+  ;; (golden-ratio-mode 1)
   :ensure t)
 
