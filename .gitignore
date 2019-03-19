@@ -56,3 +56,4 @@ geiser-history.*
 bing-dict/
 games/
 .chicken-scheme-symbols-dump.el
+transient/

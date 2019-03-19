@@ -13,7 +13,7 @@
 (add-hook 'slim-mode-hook (lambda () (setq show-trailing-whitespace t)))
 (add-hook 'markdown-mode-hook (lambda () (setq show-trailing-whitespace t)))
 
-(setq require-final-newline 1)          ;Always end a file with a newline
+(setq require-final-newline nil)          ;Always end a file with a newline
 (setq next-line-add-newlines nil)       ;Stop emacs from arbitrarily adding lines to the end of a file when the cursor is moved past the end of it
 
 (setq-default line-spacing 4) ; set line spacing
