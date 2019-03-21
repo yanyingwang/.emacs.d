@@ -34,5 +34,5 @@
 
 (setq mode-require-final-newline nil)
 
-(setq show-paren-mode t)
 (setq show-paren-delay t)
+(setq show-paren-mode t)
