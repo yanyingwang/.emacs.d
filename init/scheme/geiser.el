@@ -19,8 +19,8 @@
    ((string-equal system-type "gnu/linux")
     (progn
       (message "Linux"))))
-  ;; geiser-racket-collects
-  (setq geiser-racket-init-file "~/.emacs.d/.racketrc")
+  (setq geiser-racket-collects '("~/.emacs.d/init/scheme/"))
+  (setq geiser-racket-init-file "~/.emacs.d/init/scheme/dotracketrc")
   (setq geiser-active-implementations '(racket chez))
   (setq geiser-repl-history-filename "~/.emacs.d/geiser-history")
   (setq geiser-repl-use-other-window nil)

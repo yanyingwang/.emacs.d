@@ -1,0 +1,27 @@
+(require xrepl)
+(require ansi-color)
+
+
+(parameterize ([foreground-color 'b-red])
+  (color-display "\n Happy "))
+
+(parameterize ([foreground-color 'blue])
+  (color-display "Hacking "))
+
+(parameterize ([foreground-color 'green])
+  (color-display (string-titlecase (getenv "USER"))))
+
+(parameterize ([foreground-color 'yellow])
+  (color-display " - "))
+
+(parameterize ([foreground-color 'cyan])
+  (color-display "Racket"))
+
+(parameterize ([foreground-color 'magenta])
+  (color-display " ♥ "))
+
+(parameterize ([foreground-color 'b-magenta])
+  (color-display "You"))
+
+(parameterize ([foreground-color 'red])
+  (color-display " !!!\n\n"))
