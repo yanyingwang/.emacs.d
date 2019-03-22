@@ -1,3 +1,6 @@
+;; please run below with shell terminal first:
+;; raco pkg install xrepl ansi-color
+
 (require xrepl)
 (require ansi-color)
 
