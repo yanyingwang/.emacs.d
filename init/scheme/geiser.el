@@ -1,7 +1,6 @@
 ;; run the console with `run-geiser'
 
 
-
 (use-package geiser
   :init
   (cond
@@ -20,9 +19,12 @@
    ((string-equal system-type "gnu/linux")
     (progn
       (message "Linux"))))
-  ;;(setq geiser-active-implementations '(chez))
+  ;; geiser-racket-collects
+  (setq geiser-racket-init-file "~/.emacs.d/.racketrc")
+  (setq geiser-active-implementations '(racket chez))
   (setq geiser-repl-history-filename "~/.emacs.d/geiser-history")
   (setq geiser-repl-use-other-window nil)
+  ;; (setq geiser-repl-skip-version-check-p t)
   ;;(setq geiser-repl-startup-time 20000)
   (add-hook 'geiser-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
   (add-hook 'geiser-repl-mode-hook 'rainbow-delimiters-mode)
@@ -30,4 +32,4 @@
   :ensure t)
 
 
-(setq scheme-program-name "gosh -i")
+;; (setq scheme-program-name "gosh -i")
