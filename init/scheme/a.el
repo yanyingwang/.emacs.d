@@ -3,15 +3,18 @@
 ;; (setq scheme-program-name "gosh -i")
 
 
+
+
+
 (setenv "CHEZSCHEMELIBDIRS"
         (concat
          (getenv "HOME")
          "/.chezlib"))
 
 
-
 (use-package racket-mode
   :init
+  (add-to-list 'auto-mode-alist '("\\.rkt?\\'" . racket-mode))
   (add-to-list 'auto-mode-alist '("\\.*racketrc\\'" . racket-mode))
   ;; (add-hook 'racket-mode-hook
   ;;           (lambda ()
