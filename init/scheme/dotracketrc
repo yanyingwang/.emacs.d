@@ -27,4 +27,4 @@
   (color-display "You"))
 
 (parameterize ([foreground-color 'red])
-  (color-display " !!!\n\n"))
+  (color-display " !!!\n\n\n"))
