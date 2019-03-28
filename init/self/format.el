@@ -6,6 +6,7 @@
 (add-hook 'emacs-lisp-mode-hook (lambda () (setq show-trailing-whitespace t)))
 (add-hook 'common-lisp-mode-hook (lambda () (setq show-trailing-whitespace t)))
 (add-hook 'scheme-mode-hook (lambda () (setq show-trailing-whitespace t)))
+(add-hook 'racket-mode-hook (lambda () (setq show-trailing-whitespace t)))
 (add-hook 'js2-mode-hook (lambda () (setq show-trailing-whitespace t)))
 (add-hook 'web-mode-hook (lambda () (setq show-trailing-whitespace t)))
 (add-hook 'scss-mode-hook (lambda () (setq show-trailing-whitespace t)))

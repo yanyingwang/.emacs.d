@@ -27,6 +27,7 @@
   (add-hook 'emacs-lisp-mode-hook 'rainbow-mode)
   (add-hook 'ruby-mode-hook 'rainbow-mode)
   (add-hook 'scheme-mode-hook 'rainbow-mode)
+  (add-hook 'racket-mode-hook 'racket-mode)
   (add-hook 'js-mode-hook 'rainbow-mode)
   :config
   :ensure t)

@@ -5,7 +5,7 @@
 
 
 
-
+;; chezschemelibdirs
 (setenv "CHEZSCHEMELIBDIRS"
         (concat
          (getenv "HOME")
