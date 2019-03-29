@@ -3,6 +3,7 @@
 
 (require xrepl)
 (require ansi-color)
+(require sugar)
 
 
 (parameterize ([foreground-color 'b-red])
