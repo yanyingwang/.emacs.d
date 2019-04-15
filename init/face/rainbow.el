@@ -13,7 +13,7 @@
  '(rainbow-delimiters-depth-3-face ((t (:foreground "#8ec07c"))))
  '(rainbow-delimiters-depth-4-face ((t (:foreground "#d65d0e"))))
 
- '(rainbow-delimiters-depth-5-face ((t (:foreground "dark magenta"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "BlueViolet"))))
 
  '(rainbow-delimiters-depth-6-face ((t (:foreground "dark cyan"))))
  '(rainbow-delimiters-depth-7-face ((t (:foreground "DeepPink2"))))
