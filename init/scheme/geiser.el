@@ -22,7 +22,7 @@
   (setq geiser-active-implementations '(racket chez))
   (setq geiser-repl-history-filename "~/.emacs.d/geiser-history")
   (setq geiser-repl-use-other-window nil)
-  (setq geiser-font-lock-repl-input )
+  ;; (setq geiser-font-lock-repl-input )
   ;; (setq geiser-repl-skip-version-check-p t)
   ;; (setq geiser-repl-startup-time 20000)
   (add-hook 'geiser-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
