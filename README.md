@@ -17,7 +17,9 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 3. modified keybinding for MacOS system:
    `C-M-q` => `s-M-q`
    `M-space` => `s-space`
-   `C-c C-k` => copy line
+   `C-c k` => copy line
+   `C-c l` (`s-l`) => select line and move cursor to the beginning postion
+   `C-c n` (`s-n`) => select line and move cursor to the beginning postion of next line
    [more](https://github.com/yanyingwang/.emacs.d/blob/master/init/self/keybinding.el)
  4. You can check out my emacs memo if you like: https://github.com/yanyingwang/memo/blob/master/emacs.md
  5. geiser with scheme(racket/chez/gosh)

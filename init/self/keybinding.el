@@ -40,4 +40,15 @@
   (kill-ring-save (line-beginning-position)
                   (line-beginning-position (+ 1 arg)))
   (message "%d line%s copied" arg (if (= 1 arg) "" "s")))
-(global-set-key "\C-c\C-k" 'copy-line)
+(global-set-key (kbd "C-c k") 'copy-line)
+
+
+;; select-current-line
+;; https://lists.gnu.org/archive/html/help-gnu-emacs/2010-12/msg01183.html
+(defun select-current-line ()
+  "Select the current line"
+  (interactive)
+  (beginning-of-line) ; move to end of line
+  (set-mark (line-end-position)))
+(global-set-key (kbd " C-c l") 'select-current-line)
+(global-set-key (kbd " s-l") 'select-current-line)

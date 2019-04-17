@@ -46,9 +46,17 @@
 
 
 (use-package expand-region
-  :bind (("C-=" . 'er/expand-region))
-  :bind (("C-M-SPC" . 'er/expand-region))
+  :bind (("C-=" . 'er/expand-region)
+         ("C-M-SPC" . 'er/expand-region))
   ;; mark-sexp => C-M-@
+  :init
+  :config
+  :ensure t)
+
+
+(use-package expand-line
+  :bind (("s-n" . 'turn-on-expand-line-mode)
+         ("C-c n" . 'turn-on-expand-line-mode))
   :init
   :config
   :ensure t)
