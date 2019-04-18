@@ -41,6 +41,7 @@
                   (line-beginning-position (+ 1 arg)))
   (message "%d line%s copied" arg (if (= 1 arg) "" "s")))
 (global-set-key (kbd "C-c k") 'copy-line)
+(global-set-key (kbd "C-c g k") 'copy-line)
 
 
 ;; select-current-line
@@ -51,4 +52,13 @@
   (beginning-of-line) ; move to end of line
   (set-mark (line-end-position)))
 (global-set-key (kbd " C-c l") 'select-current-line)
+(global-set-key (kbd " C-c g l") 'select-current-line)
+(global-set-key (kbd " s-l") 'select-current-line)
+
+;; select until next begining line
+(global-set-key (kbd "C-c n") 'turn-on-expand-line-mode)
+(global-set-key (kbd "s-n") 'turn-on-expand-line-mode)
+
+;; cycle-paren
+(global-set-key (kbd "C-c g p") 'racket-cycle-paren-shapes)
 (global-set-key (kbd " s-l") 'select-current-line)

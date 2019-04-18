@@ -55,8 +55,7 @@
 
 
 (use-package expand-line
-  :bind (("s-n" . 'turn-on-expand-line-mode)
-         ("C-c n" . 'turn-on-expand-line-mode))
+  :bind (("C-c g n" . 'turn-on-expand-line-mode))
   :init
   :config
   :ensure t)

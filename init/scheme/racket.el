@@ -21,4 +21,5 @@
 (use-package scribble-mode
   :init
   (add-hook 'scribble-mode-hook #'geiser-mode)
+  :bind (("C-c C-p" . racket-cycle-paren-shapes))
   :ensure t)
