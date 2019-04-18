@@ -1,5 +1,5 @@
 ;; please run below with shell terminal first:
-;; raco pkg install xrepl ansi-color
+;; raco pkg install xrepl ansi-color scribble
 
 (require xrepl)
 (require ansi-color)
@@ -29,3 +29,10 @@
 
 (parameterize ([foreground-color 'red])
   (color-display " !!!\n\n"))
+
+
+
+;; enable at-exp
+;; https://docs.racket-lang.org/scribble/reader-internals.html?q=at%20express#%28part._at-exp-lang%29
+(require scribble/reader)
+(use-at-readtable)
