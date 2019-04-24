@@ -34,5 +34,13 @@
 
 ;; enable at-exp
 ;; https://docs.racket-lang.org/scribble/reader-internals.html?q=at%20express#%28part._at-exp-lang%29
+;; raco pkg install at-exp-lib
 (require scribble/reader)
 (use-at-readtable)
+
+
+;; https://docs.racket-lang.org/describe/index.html
+;; raco pkg install desscribe
+(require describe)
+
+
