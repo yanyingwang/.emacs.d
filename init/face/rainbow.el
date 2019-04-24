@@ -13,7 +13,7 @@
  '(rainbow-delimiters-depth-3-face ((t (:foreground "DarkSeaGreen"))))
  '(rainbow-delimiters-depth-4-face ((t (:foreground "IndianRed"))))
 
- '(rainbow-delimiters-depth-5-face ((t (:foreground "MediumPurple")))) ;"SlateGray" "DarkOrchid"
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "SlateGray")))) ;"SlateGray" "DarkOrchid" "MediumPurple"
 
  '(rainbow-delimiters-depth-6-face ((t (:foreground "SteelBlue")))) ;"DarkCyan" "SteelBlue"
  '(rainbow-delimiters-depth-7-face ((t (:foreground "DeepPink2"))))

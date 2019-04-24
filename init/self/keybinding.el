@@ -61,4 +61,4 @@
 
 ;; cycle-paren
 (global-set-key (kbd "C-c g p") 'racket-cycle-paren-shapes)
-(global-set-key (kbd " s-l") 'select-current-line)
+(global-set-key (kbd " s-p") 'racket-cycle-paren-shapes)
