@@ -1,10 +1,8 @@
 ;; please run below with shell terminal first:
 ;; raco pkg install xrepl ansi-color scribble
 
-(require xrepl)
-(require ansi-color)
-(require sugar)
 
+(require ansi-color)
 
 (parameterize ([foreground-color 'b-red])
   (color-display "\n Happy "))
@@ -32,6 +30,12 @@
 
 
 
+;; https://docs.racket-lang.org/xrepl/index.html?q=%2Crequire
+(require xrepl)
+
+(require sugar)
+
+
 ;; enable at-exp
 ;; https://docs.racket-lang.org/scribble/reader-internals.html?q=at%20express#%28part._at-exp-lang%29
 ;; raco pkg install at-exp-lib
@@ -41,6 +45,5 @@
 
 ;; https://docs.racket-lang.org/describe/index.html
 ;; raco pkg install desscribe
-(require describe)
-
+;; (require describe)
 
