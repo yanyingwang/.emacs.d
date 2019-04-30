@@ -31,7 +31,7 @@
 
 
 ;; https://docs.racket-lang.org/xrepl/index.html?q=%2Crequire
-(require xrepl)
+;;(require xrepl) ;; xrepl can not work very well with geiser
 
 (require sugar)
 
@@ -45,5 +45,5 @@
 
 ;; https://docs.racket-lang.org/describe/index.html
 ;; raco pkg install desscribe
-;; (require describe)
+(require describe)
 
