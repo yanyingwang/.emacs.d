@@ -34,6 +34,7 @@
 ;;(require xrepl) ;; xrepl can not work very well with geiser
 
 (require sugar)
+(require (submod sugar safe))
 
 
 ;; enable at-exp
