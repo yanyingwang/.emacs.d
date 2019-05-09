@@ -1,0 +1,4 @@
+alias gst 'git status $1'
+alias ll 'ls -l $1'
+alias open 'find-file $1'
+alias openo 'find-file-other-window $1'

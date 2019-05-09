@@ -11,8 +11,8 @@
   ;; (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
   ;; (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
   ;; (add-hook 'racket-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
-  (add-hook 'racket-repl-mode-hook 'rainbow-delimiters-mode)
-  (add-hook 'racket-repl-mode-hook 'smartparens-strict-mode)
+  ;; (add-hook 'racket-repl-mode-hook 'rainbow-delimiters-mode)
+  ;; (add-hook 'racket-repl-mode-hook 'smartparens-strict-mode)
   ;; (setq tab-always-indent 'complete)
   :ensure t)
 
