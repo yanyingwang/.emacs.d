@@ -7,6 +7,9 @@
   (add-hook 'emacs-lisp-mode-hook 'smartparens-strict-mode)
   (add-hook 'clojure-mode-hook 'smartparens-strict-mode)
   (add-hook 'scheme-mode-hook 'smartparens-strict-mode)
+  (add-hook 'racket-mode-hook 'smartparens-strict-mode)
+  (add-hook 'racket-repl-mode-hook 'smartparens-strict-mode)
+  (add-hook 'geiser-repl-mode-hook 'smartparens-strict-mode)
   :config
   (sp-pair "(" ")" :wrap "C-(")
   :ensure t)

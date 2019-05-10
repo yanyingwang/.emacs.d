@@ -26,8 +26,6 @@
   ;; (setq geiser-repl-skip-version-check-p t)
   ;; (setq geiser-repl-startup-time 20000)
   (add-hook 'geiser-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
-  (add-hook 'geiser-repl-mode-hook 'rainbow-delimiters-mode)
-  (add-hook 'geiser-repl-mode-hook 'smartparens-strict-mode)
   ;; (font-lock-add-keywords 'geiser-repl-mode (geiser-syntax-keywords))
   :ensure t)
 
