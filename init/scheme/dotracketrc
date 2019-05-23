@@ -48,3 +48,5 @@
 ;; raco pkg install desscribe
 (require describe)
 
+;; raco pkg install debug
+(require debug/repl)
