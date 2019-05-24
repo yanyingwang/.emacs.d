@@ -50,3 +50,7 @@
 
 ;; raco pkg install debug
 (require debug/repl)
+
+;; raco pkg install macro-debugger
+(require macro-debugger/syntax-browser)
+(require macro-debugger/stepper-text)
