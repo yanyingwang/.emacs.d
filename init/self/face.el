@@ -32,3 +32,18 @@
       (concat ";; Happy hacking " (or user-login-name "") " - Emacs ♥ you!\n\n")) ;customize scratch message
 
 (global-hl-line-mode -1)
+
+
+;;show lambda as λ
+(defun my-pretty-lambda ()
+  "make some word or string show as pretty Unicode symbols"
+  (setq prettify-symbols-alist
+        '(
+          ("lambda" . 955) ; λ
+          )))
+
+(add-hook 'racket-mode-hook 'my-pretty-lambda)
+(add-hook 'scheme-mode-hook 'my-pretty-lambda)
+(add-hook 'elisp-mode-hook 'my-pretty-lambda)
+
+(global-prettify-symbols-mode -1)

@@ -62,3 +62,20 @@
 ;; cycle-paren
 (global-set-key (kbd "C-c g p") 'racket-cycle-paren-shapes)
 (global-set-key (kbd " s-p") 'racket-cycle-paren-shapes)
+
+
+;; insert lambda
+(defun insert-lambda ()
+  "Insert lambda at cursor point."
+  (interactive)
+  (insert "lambda")
+  ;; (backward-char 4)
+  )
+(defun insert-lambda-exp ()
+  "Insert lambda exp at cursor point."
+  (interactive)
+  (insert "(lambda () ())")
+  (backward-char 5)
+  )
+(global-set-key (kbd "C-M-y") 'insert-lambda)
+(global-set-key (kbd "C-M-S-y") 'insert-lambda-exp)
