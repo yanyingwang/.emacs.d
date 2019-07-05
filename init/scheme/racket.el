@@ -6,7 +6,8 @@
               (define-key racket-mode-map (kbd "C-M-y") 'insert-lambda)))
   (add-hook 'racket-repl-mode-hook
             (lambda ()
-              (define-key racket-mode-map (kbd "C-M-y") 'insert-lambda)))
+              (define-key racket-repl-mode-map (kbd "C-M-y") 'insert-lambda)
+              (define-key racket-repl-mode-map (kbd "[") 'racket-smart-open-bracket)))
   ;; (add-hook 'racket-mode-hook      #'racket-unicode-input-method-enable)
   ;; (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
   ;; (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
