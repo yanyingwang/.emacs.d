@@ -46,4 +46,4 @@
 (add-hook 'scheme-mode-hook 'my-pretty-lambda)
 (add-hook 'elisp-mode-hook 'my-pretty-lambda)
 
-(global-prettify-symbols-mode -1)
+(global-prettify-symbols-mode 1)
