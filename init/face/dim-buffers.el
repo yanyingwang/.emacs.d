@@ -10,7 +10,7 @@
 
 ;; (use-package dimmer
 ;;   :init
-;;   (setq dimmer-fraction 0.2)
+;;   (setq dimmer-fraction 0.3)
 ;;   ;; (setq dimmer-exclusion-regexp "eshell")
 ;;   :config
 ;;   (dimmer-mode)
