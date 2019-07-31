@@ -38,4 +38,4 @@
 ;;   :config
 ;;   :ensure t)
 
-(setq js-indent-level 2)
+(setq js-indent-level 4)
