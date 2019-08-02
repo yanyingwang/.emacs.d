@@ -5,7 +5,7 @@
    ((string-equal system-type "darwin")
     (progn
       (setq geiser-chez-binary "/usr/local/bin/chez")
-      (setq geiser-racket-binary "/Applications/Racket v7.2/bin/racket")
+      (setq geiser-racket-binary "/Applications/Racket v7.3/bin/racket")
       (setq geiser-gauche-binary "/usr/local/bin/gosh -i")
       (setq geiser-guile-binary "/usr/local/bin/guile")
       (setq geiser-mit-binary "/usr/local/bin/mit")
