@@ -20,7 +20,7 @@
 
 (tool-bar-mode -1)                       ; tool bar
 (scroll-bar-mode -1)                     ; scroll bar
-(menu-bar-mode 1)                        ; menu bar
+(menu-bar-mode -1)                        ; menu bar
 
 
 (display-time-mode 1)                   ; display time
@@ -43,6 +43,7 @@
           )))
 
 (add-hook 'racket-mode-hook 'my-pretty-lambda)
+(add-hook 'racket-repl-mode-hook 'my-pretty-lambda)
 (add-hook 'scheme-mode-hook 'my-pretty-lambda)
 (add-hook 'elisp-mode-hook 'my-pretty-lambda)
 

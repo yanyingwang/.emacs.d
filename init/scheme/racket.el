@@ -13,11 +13,12 @@
   ;; (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
   ;; (add-hook 'racket-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
   ;; (setq tab-always-indent 'complete)
-  :config
   (add-to-list 'auto-mode-alist '("\\.rkt?\\'" . racket-mode))
-  (add-to-list 'auto-mode-alist '("\\.rkt\\'" . racket-mode))
+  ;; (add-to-list 'auto-mode-alist '("\\.rkt\\'" . racket-mode))
   (add-to-list 'auto-mode-alist '("\\.*racketrc\\'" . racket-mode))
+  :config
   :ensure t)
+
 
 
 
