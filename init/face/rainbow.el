@@ -30,7 +30,7 @@
   :ensure t)
 
 
-(use-package rainbow-mode
-  :init
-  :config
-  :ensure t)
+;; (use-package rainbow-mode
+;;   :init
+;;   :config
+;;   :ensure t)

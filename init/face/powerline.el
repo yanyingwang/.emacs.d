@@ -2,7 +2,7 @@
   :config
   (require 'micgoline)
   (setq ns-use-srgb-colorspace nil)
-  (setq powerline-default-separator 'arrow)
+  (setq powerline-default-separator 'slant)
   :ensure t)
 
 
@@ -193,8 +193,6 @@
 ;; (provide 'micgoline)
 
 ;; ;;; micgoline.el ends here
-
-
 
 
 ;; (require 'micgoline)
