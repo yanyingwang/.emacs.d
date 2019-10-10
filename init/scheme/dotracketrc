@@ -18,7 +18,6 @@
                         " "))
 
 
-
 ;; https://docs.racket-lang.org/xrepl/index.html?q=%2Crequire
 ;;(require xrepl) ;; xrepl can not work very well with geiser
 (require sugar)
@@ -44,4 +43,4 @@
 (require macro-debugger/stepper-text)
 
 
- (require racket/rerequire)
+(require racket/rerequire)
