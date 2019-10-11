@@ -1,2 +1,0 @@
-(defalias 'eshell/ei  'helm-find-files)
-(defalias 'eshell/vi  'helm-find-files)

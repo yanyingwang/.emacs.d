@@ -1,2 +1,3 @@
 (setenv "OBJC_DISABLE_INITIALIZE_FORK_SAFETY" "YES")
+(setenv "TERM" "xterm-256color")
 
