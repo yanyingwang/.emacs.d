@@ -14,7 +14,7 @@
                           ,(colorize "♥" 'magenta)
                           ,(colorize "You" 'light-magenta)
                           ,(colorize "!!!" 'red)
-                          "\n\n\n")
+                          "\n\n")
                         " "))
 
 
