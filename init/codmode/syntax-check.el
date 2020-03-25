@@ -4,9 +4,15 @@
   (flymake-mode)
   :ensure t)
 
-
 (use-package flymake-easy
   :ensure t)
+
+(use-package flymake-diagnostic-at-point
+  :after flymake
+  :config
+  (add-hook 'flymake-mode-hook #'flymake-diagnostic-at-point-mode))
+
+
 
 (use-package flymake-ruby
   :ensure t
@@ -26,11 +32,13 @@
   :init
   (add-hook 'sh-mode-hook 'flymake-shellcheck-load))
 
+(use-package flymake-jslint
+  :ensure t
+  :init
+  (add-hook 'js-mode-hook 'flymake-jslint-load))
 
-;; (use-package flymake-jslint
-;;   :ensure t
-;;   :init
-;;   (add-hook 'js-mode-hook 'flymake-jslint-load))
+
+
 
 (use-package flymake-yaml
   :ensure t
@@ -62,59 +70,3 @@
 
 
 
-
-;; ;; (use-package flymake-ruby
-;; ;;   :init
-;; ;;   (add-hook 'ruby-mode-hook 'flymake-ruby-load)
-;; ;;   :config
-;; ;;   (require 'flymake-ruby)
-;; ;;   :ensure t)
-
-;; (use-package flycheck
-;;   :config
-;;   (global-flycheck-mode)
-;;   :ensure t)
-
-;; ;; (use-package flycheck-posframe
-;; ;;   :ensure t
-;; ;;   :after flycheck
-;; ;;   :config (add-hook 'flycheck-mode-hook #'flycheck-posframe-mode))
-
-;; (use-package flycheck-pos-tip
-;;   :init
-;;   (with-eval-after-load 'flycheck
-;;     (flycheck-pos-tip-mode))
-;;   :ensure t)
-
-;; ;; (use-package flycheck-color-mode-line
-;; ;;   :init
-;; ;;   (eval-after-load "flycheck"
-;; ;;     '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
-;; ;;   :config
-;; ;;   (require 'flycheck-color-mode-line)
-;; ;;   :ensure t)
-
-
-;; ;; (use-package flycheck-package
-;; ;;   :init
-;; ;;   (with-eval-after-load 'flycheck
-;; ;;     (flycheck-package-setup))
-;; ;;   :ensure t)
-
-
-
-
-
-;; ;;; not finished package
-;; ;; (use-package flycheck-grammarly
-;; ;;   :init
-;; ;;   :config
-;; ;;   :ensure t)
-
-
-
-;; ;; (use-package flycheck-pos-tip
-;; ;;   :config
-;; ;;   (with-eval-after-load 'flycheck
-;; ;;     (flycheck-pos-tip-mode))
-;; ;;   :ensure t)

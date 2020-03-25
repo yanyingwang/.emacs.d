@@ -34,6 +34,7 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 ![list](https://gitlab.com/yanyingwang/.emacs.d/raw/master/screenshots/racket-in-geiser.png)
 
 
-# flycheck
-`gem install rubocop`
+# flymake
+npm install -g jslint
+
 
