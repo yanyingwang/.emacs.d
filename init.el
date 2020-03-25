@@ -1,7 +1,7 @@
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-;;(add-to-list 'package-archives '("elpa-popkit" . "http://elpa.popkit.org/"))
+;; (add-to-list 'package-archives '("elpa-popkit" . "http://elpa.popkit.org/"))
 ;;(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
 (package-initialize)
 
@@ -37,7 +37,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (esh-autosuggest youdao-dictionary yaml-mode wttrin ws-butler web-mode use-package smartparens slime slim-mode scss-mode scribble-mode rvm ruby-refactor robe region-bindings-mode rainbow-delimiters racket-mode projectile-rails pinyin-search phi-search multiple-cursors micgoline markdown-mode magit indent-guide helm-themes helm-projectile helm-descbinds haml-mode gruvbox-theme golden-ratio geiser expand-region expand-line exec-path-from-shell eshell-prompt-extras emr diff-hl company-tabnine circadian chicken-scheme cal-china-x browse-at-remote bing-dict auto-package-update auto-dim-other-buffers aggressive-indent))))
+    (flymake-racket flycheck-posframe flycheck-package flycheck-grammarly flycheck flycheck-pos-tip flycheck-tip flymake-ruby vue-html-mode vue-mode youdao-dictionary yaml-mode wttrin ws-butler web-mode use-package smartparens slime slim-mode scss-mode scribble-mode rvm ruby-refactor robe region-bindings-mode rainbow-delimiters racket-mode projectile-rails pinyin-search phi-search multiple-cursors micgoline markdown-mode magit indent-guide helm-themes helm-projectile helm-descbinds haml-mode gruvbox-theme golden-ratio geiser expand-region expand-line exec-path-from-shell eshell-prompt-extras esh-autosuggest emr diff-hl company-tabnine circadian chicken-scheme cal-china-x browse-at-remote bing-dict auto-package-update auto-dim-other-buffers aggressive-indent))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
