@@ -1,7 +1,7 @@
-<img src="https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg?token=ABABACDY3QV6OYXB2RODFDC6QVI4O" alt="favicon" width="64"/>
+<img src="https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg" alt="favicon" width="64"/>
 
 # .emacs.d
-My Emacs configration file, go to download a macos version for this: [specific version](https://emacsformacosx.com/)
+My Emacs configration file, go to download a [macos version](https://emacsformacosx.com/)for this.
 
 # How to use
 1. clone git repo to your home dir:
