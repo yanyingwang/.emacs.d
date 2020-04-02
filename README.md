@@ -1,6 +1,6 @@
 
 # My Emacs configration file - .emacs.d
-![icon](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg?token=ABABACHC63YE2OEWE5MRSSS6QVHUW)
+![icon](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg?token=ABABACHC63YE2OEWE5MRSSS6QVHUW =64x)
 
 this configure files only tested for this [specific version](https://emacsformacosx.com/)
 
