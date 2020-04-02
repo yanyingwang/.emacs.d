@@ -1,8 +1,7 @@
-<img src="https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg" alt="favicon" width="64"/>
+<img src="https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg?token=ABABACDY3QV6OYXB2RODFDC6QVI4O" alt="favicon" width="64"/>
 
-# My Emacs configration file - .emacs.d
-
-this configure files only tested for this [specific version](https://emacsformacosx.com/)
+# .emacs.d
+My Emacs configration file, go to download a macos version for this: [specific version](https://emacsformacosx.com/)
 
 # How to use
 1. clone git repo to your home dir:
@@ -32,8 +31,8 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 
 
 # screenshots
-![list](https://gitlab.com/yanyingwang/.emacs.d/raw/master/screenshots/dim-golden-ratio.png)
-![list](https://gitlab.com/yanyingwang/.emacs.d/raw/master/screenshots/racket-in-geiser.png)
+![scsh1](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/dim-golden-ratio.png)
+![scsh2](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/racket-in-geiser.png)
 
 
 # flymake
