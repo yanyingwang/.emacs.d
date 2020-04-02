@@ -1,5 +1,5 @@
 # My Emacs configration file - .emacs.d
-<img src="https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg?token=ABABACHC63YE2OEWE5MRSSS6QVHUW" alt="drawing" width="64"/>
+<img src="https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg?token=ABABACDY3QV6OYXB2RODFDC6QVI4O" alt="favicon" width="64"/>
 
 this configure files only tested for this [specific version](https://emacsformacosx.com/)
 
