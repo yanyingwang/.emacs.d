@@ -39,3 +39,5 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 npm install -g jslint
 
 
+# racket
+ln -sf ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc
