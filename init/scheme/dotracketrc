@@ -1,6 +1,6 @@
 ;; ln -s ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc
 ;; please run below with shell terminal first:
-;; raco pkg install xrepl colorize scribble
+;; raco install colorize xrepl sugar scribble describe at-exp debug macro-debugger
 
 ;; raco pkg install colorize
 (require colorize
