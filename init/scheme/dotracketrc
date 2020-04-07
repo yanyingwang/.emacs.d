@@ -1,6 +1,5 @@
 ;; ln -s ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc
 ;; please run below with shell terminal first:
-;; raco install colorize xrepl sugar scribble describe at-exp debug macro-debugger
 
 ;; raco pkg install colorize
 (require colorize
@@ -19,21 +18,22 @@
                         " "))
 
 
+;; raco pkg install xrepl
 ;; https://docs.racket-lang.org/xrepl/index.html?q=%2Crequire
 ;;(require xrepl) ;; xrepl can not work very well with geiser
 (require sugar)
 (require (submod sugar safe))
 
 
+;; raco pkg install at-exp-lib
 ;; enable at-exp
 ;; https://docs.racket-lang.org/scribble/reader-internals.html?q=at%20express#%28part._at-exp-lang%29
-;; raco pkg install at-exp-lib
 (require scribble/reader)
 (use-at-readtable)
 
 
+;; raco pkg install describe
 ;; https://docs.racket-lang.org/describe/index.html
-;; raco pkg install desscribe
 (require describe)
 
 ;; raco pkg install debug
