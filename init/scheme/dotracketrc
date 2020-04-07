@@ -4,7 +4,6 @@
 ;; raco pkg install colorize
 (require colorize
          racket/string)
-
 (displayln (string-join `("\n"
                           ,(colorize "Happy" 'light-red)
                           ,(colorize "Hacking" 'blue)
@@ -17,20 +16,18 @@
                           "\n\n")
                         " "))
 
-
-;; raco pkg install xrepl
+;; raco pkg install sugar
+;; xrepl
 ;; https://docs.racket-lang.org/xrepl/index.html?q=%2Crequire
 ;;(require xrepl) ;; xrepl can not work very well with geiser
 (require sugar)
 (require (submod sugar safe))
-
 
 ;; raco pkg install at-exp-lib
 ;; enable at-exp
 ;; https://docs.racket-lang.org/scribble/reader-internals.html?q=at%20express#%28part._at-exp-lang%29
 (require scribble/reader)
 (use-at-readtable)
-
 
 ;; raco pkg install describe
 ;; https://docs.racket-lang.org/describe/index.html
@@ -42,6 +39,5 @@
 ;; raco pkg install macro-debugger
 (require macro-debugger/syntax-browser)
 (require macro-debugger/stepper-text)
-
 
 (require racket/rerequire)
