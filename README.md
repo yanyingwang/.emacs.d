@@ -1,7 +1,7 @@
-<img src="https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg" alt="favicon" width="64"/>
+<img src="https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/favicon.jpg" alt="favicon" width="110"/>
 
 # .emacs.d
-My Emacs configration file, go to download a [macos version](https://emacsformacosx.com/)for this.
+My Emacs configration file, you can go to download a [macos version](https://emacsformacosx.com/) for this.
 
 # How to use
 1. clone git repo to your home dir:
@@ -9,7 +9,7 @@ My Emacs configration file, go to download a [macos version](https://emacsformac
 cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 ~~~
 
-2. start your emacs and wait for everything settled.
+2. start your emacs and wait for everything to be settled.
 
 
 # Reference
@@ -25,19 +25,12 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
    `C-c g n` (`C-c n` `s-n`) => select line and move cursor to the beginning postion of next line
    `C-c g p` (`s-n`) => this is binded to `racket-cycle-paren-shapes`
    [more](https://github.com/yanyingwang/.emacs.d/blob/master/init/self/keybinding.el)
- 5. You can check out my emacs memo if you like: https://github.com/yanyingwang/memo/blob/master/emacs.md
- 6. geiser with scheme(racket/chez/gosh)
- ......
-
+5. You can check out my emacs memo if you like: https://github.com/yanyingwang/memo/blob/master/emacs.md
+6. geiser with scheme(racket/chez/gosh)
+7. flymake for ruby racket js: `npm install -g jslint`
+8. racketrc: `ln -sf ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc`
 
 # screenshots
 ![scsh1](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/dim-golden-ratio.png)
 ![scsh2](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/racket-in-geiser.png)
 
-
-# flymake
-npm install -g jslint
-
-
-# racket
-ln -sf ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc
