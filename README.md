@@ -4,7 +4,7 @@
 
 ---
 
-# How to use
+## how to use
 1. clone git repo to your home dir:
 ~~~shell
 cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
@@ -13,7 +13,7 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 2. start your emacs and wait for everything to be settled.
 
 
-# Reference
+## reference
 1. package manager: [use-package](https://github.com/jwiegley/use-package)
 2. Helm: more Helm keybinding and usage please check [this link](http://tuhdo.github.io/helm-intro.html).
 3. modified keybinding for MacOS system:
@@ -31,7 +31,7 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 7. flymake for ruby racket js: `npm install -g jslint`
 8. racketrc: `ln -sf ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc`
 
-# screenshots
+## screenshot
 ![scsh1](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/dim-golden-ratio.png)
 ![scsh2](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/racket-in-geiser.png)
 
