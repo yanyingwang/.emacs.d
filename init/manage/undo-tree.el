@@ -1,6 +1,4 @@
-;(use-package undo-tree
-;  :ensure t)
-
-;require 'undo-tree)
-
-;global-undo-tree-mode)
+(use-package undo-tree
+  :config
+  (global-undo-tree-mode)
+  :ensure t)

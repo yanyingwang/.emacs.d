@@ -4,6 +4,7 @@
 ;; raco pkg install colorize
 (require colorize
          racket/string)
+
 (displayln (string-join `("\n"
                           ,(colorize "Happy" 'light-red)
                           ,(colorize "Hacking" 'blue)
