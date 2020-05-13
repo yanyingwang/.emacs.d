@@ -30,6 +30,7 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 6. geiser with scheme(racket/chez/gosh)
 7. flymake for ruby racket js: `npm install -g jslint`
 8. racketrc: `ln -sf ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc`
+9. enable us to use emacs to edit macos's plist files.
 
 ## screenshot
 ![scsh1](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/dim-golden-ratio.png)
