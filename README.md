@@ -35,4 +35,5 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 ## screenshot
 ![scsh1](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/dim-golden-ratio.png)
 ![scsh2](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/racket-in-geiser.png)
+![scsh3](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/macos-plist.png)
 
