@@ -36,18 +36,18 @@
   (setq ns-use-srgb-colorspace nil)
   :ensure t)
 
-(use-package smart-mode-line
-  :ensure t
-  ;; :after powerline
-  ;; :after micgoline
-  ;; :after smart-mode-line
-  :init
-  (setq sml/no-confirm-load-theme t)
-  (sml/setup)
-  ;; (setq sml/theme 'dark)
-  ;; (setq sml/theme 'light)
-  (setq sml/theme 'respectful)
-  :ensure t)
+;; (use-package smart-mode-line
+;;   :ensure t
+;;   ;; :after powerline
+;;   ;; :after micgoline
+;;   ;; :after smart-mode-line
+;;   :init
+;;   (setq sml/no-confirm-load-theme t)
+;;   (sml/setup)
+;;   ;; (setq sml/theme 'dark)
+;;   ;; (setq sml/theme 'light)
+;;   (setq sml/theme 'respectful)
+;;   :ensure t)
 
 ;; (use-package telephone-line
 ;;   :config
