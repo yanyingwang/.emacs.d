@@ -58,3 +58,5 @@ games/
 .chicken-scheme-symbols-dump.el
 transient/
 racket-mode
+
+elpa.tar
