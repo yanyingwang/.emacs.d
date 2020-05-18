@@ -10,7 +10,7 @@
 cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 ~~~
 
-2. start your emacs and wait for everything to be settled.
+2. start your emacs and wait for everything to be settled or you can change to the `build` branch and execute `tar -xvf elpa.tar`.
 
 
 ## reference
