@@ -45,20 +45,16 @@
 
 (displayln @~a{
 
-               +--------------------------------------------+
-               |  @(string-join `(,(colorize "Happy" 'light-red)
-                                  ,(colorize "Hacking" 'blue)
-                                  ,(colorize (string-titlecase (getenv "USER")) 'green)
-                                  "-"
-                                  ,(colorize "Racket" 'cyan)
-                                  ,(colorize "♥" 'magenta)
-                                  ,(colorize "You" 'light-magenta)
-                                  ,(colorize "!!!" 'red))
-                               " ")  |
-               +--------------------------------------------+
-
-
+               @(string-join `(,(colorize "-->>" 'light-green)
+                               ,(colorize "Happy" 'light-red)
+                               ,(colorize "Hacking" 'blue)
+                               ,(colorize (string-titlecase (getenv "USER")) 'green)
+                               "-"
+                               ,(colorize "Racket" 'red)
+                               ,(colorize "REPL" 'cyan)
+                               ,(colorize "♥" 'magenta)
+                               ,(colorize "You" 'light-magenta)
+                               ,(colorize "!!!" 'red))
+                             " ")
 
                })
-
-
