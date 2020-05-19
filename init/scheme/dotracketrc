@@ -1,44 +1,64 @@
 ;; ln -s ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc
 ;; please run below with shell terminal first:
 
-;; raco pkg install colorize
-(require colorize
-         racket/string)
 
-(displayln (string-join `("\n"
-                          ,(colorize "Happy" 'light-red)
-                          ,(colorize "Hacking" 'blue)
-                          ,(colorize (string-titlecase (getenv "USER")) 'green)
-                          "-"
-                          ,(colorize "Racket" 'cyan)
-                          ,(colorize "♥" 'magenta)
-                          ,(colorize "You" 'light-magenta)
-                          ,(colorize "!!!" 'red)
-                          "\n\n")
-                        " "))
 
-;; raco pkg install sugar
-;; xrepl
-;; https://docs.racket-lang.org/xrepl/index.html?q=%2Crequire
-;;(require xrepl) ;; xrepl can not work very well with geiser
+;;;; raco pkg install sugar
 (require sugar)
 (require (submod sugar safe))
 
-;; raco pkg install at-exp-lib
+;;;; raco pkg install at-exp-lib
 ;; enable at-exp
 ;; https://docs.racket-lang.org/scribble/reader-internals.html?q=at%20express#%28part._at-exp-lang%29
 (require scribble/reader)
 (use-at-readtable)
 
-;; raco pkg install describe
+;;;; raco pkg install describe
 ;; https://docs.racket-lang.org/describe/index.html
-(require describe)
+;(require describe) ;; xrepl also implement this fun 
 
-;; raco pkg install debug
+;;;; raco pkg install debug
 (require debug/repl)
 
-;; raco pkg install macro-debugger
+;;;; raco pkg install macro-debugger
 (require macro-debugger/syntax-browser)
 (require macro-debugger/stepper-text)
 
 (require racket/rerequire)
+
+
+;;;; raco pkg install xrepl-lib
+;; https://docs.racket-lang.org/xrepl/index.html?q=%2Crequire
+;; The following line loads `xrepl' support
+(require xrepl)
+;;
+;; load readline support (added by `install-readline!')
+(require readline/rep)
+
+
+
+
+
+;;;; raco pkg install colorize
+(require colorize
+         racket/string)
+
+(displayln @~a{
+
+               +--------------------------------------------+
+               |  @(string-join `(,(colorize "Happy" 'light-red)
+                                  ,(colorize "Hacking" 'blue)
+                                  ,(colorize (string-titlecase (getenv "USER")) 'green)
+                                  "-"
+                                  ,(colorize "Racket" 'cyan)
+                                  ,(colorize "♥" 'magenta)
+                                  ,(colorize "You" 'light-magenta)
+                                  ,(colorize "!!!" 'red))
+                               " ")  |
+               +--------------------------------------------+
+
+
+
+               })
+
+
