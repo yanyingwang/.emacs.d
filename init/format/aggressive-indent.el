@@ -7,5 +7,6 @@
   (add-to-list 'aggressive-indent-excluded-modes 'enh-ruby-mode)
   (add-to-list 'aggressive-indent-excluded-modes 'js2-mode)
   (add-to-list 'aggressive-indent-excluded-modes 'js-mode)
+  :init
   (global-aggressive-indent-mode 1)
   :ensure t)
