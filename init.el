@@ -28,5 +28,6 @@
 (load-directory "~/.emacs.d/init/productivity")
 (load-directory "~/.emacs.d/init/tool")
 (load-directory "~/.emacs.d/init/others")
-(load-file "~/.emacs.d/init/helm.el")
+;; (load-file "~/.emacs.d/init/helm.el")
+(load-directory "~/.emacs.d/init")
 (load-directory "~/.emacs.d/init/face")

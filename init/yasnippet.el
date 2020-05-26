@@ -1,7 +1,6 @@
 
 (use-package yasnippet
   :init
-
   (defvar company-mode/enable-yas t
     "Enable yasnippet for all backends.")
 
@@ -14,6 +13,11 @@
   (setq company-backends (mapcar #'company-mode/backend-with-yas company-backends))
 
 
+  ;; (yas-reload-all)
+  ;; (add-hook 'prog-mode-hook #'yas-minor-mode)
+  :config
+  (yas-global-mode 1)
+
   (yas-define-snippets 'racket-mode
                        '(("require scribble/reader" "(require scribble/reader) (use-at-readtable)" "(require scribble/reader) (use-at-readtable)")
                          ("require xrepl scribble/reader" "(require xrepl racket/string racket/format scribble/reader) (use-at-readtable)" "(require xrepl racket/... scribble/reader) (use-at-readtable)")))
@@ -22,10 +26,6 @@
                        '(("require scribble/reader" "(require scribble/reader) (use-at-readtable)" "(require scribble/reader) (use-at-readtable)")
                          ("require xrepl scribble/reader" "(require xrepl racket/string racket/format scribble/reader) (use-at-readtable)" "(require xrepl racket/... scribble/reader) (use-at-readtable)")))
 
-  ;; (yas-reload-all)
-  ;; (add-hook 'prog-mode-hook #'yas-minor-mode)
-  :config
-  (yas-global-mode 1)
   :ensure t)
 
 
@@ -35,3 +35,5 @@
   ;; (add-hook 'prog-mode-hook #'yas-minor-mode)
   :config
   :ensure t)
+
+
