@@ -8,5 +8,5 @@
   (add-to-list 'aggressive-indent-excluded-modes 'js2-mode)
   (add-to-list 'aggressive-indent-excluded-modes 'js-mode)
   :init
-  (global-aggressive-indent-mode 1)
+  (global-aggressive-indent-mode 0)
   :ensure t)

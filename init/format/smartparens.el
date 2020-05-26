@@ -1,6 +1,7 @@
 (use-package smartparens
   :bind (("M-D" . sp-unwrap-sexp)
-         ("<C-M-backspace>" . sp-backward-kill-sexp))
+         ("<C-M-backspace>" . sp-backward-kill-sexp)
+         ("<S-M-backspace>" . sp-backward-kill-sexp))
   :init
   (add-hook 'prog-mode-hook 'smartparens-global-mode)
   (add-hook 'markdown-mode-hook 'turn-on-smartparens-strict-mode)

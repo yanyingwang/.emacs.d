@@ -31,9 +31,11 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 7. flymake for ruby racket js: `npm install -g jslint`
 8. racketrc: `ln -sf ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc`
 9. enable us to use emacs to edit macos's plist files.
+10. customized [yasnippet](https://github.com/joaotavora/yasnippet) working with company.
 
 ## screenshot
 ![scsh1](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/dim-golden-ratio.png)
 ![scsh2](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/racket-in-geiser.png)
 ![scsh3](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/macos-plist.png)
+![scsh4](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/yasnippet-racket-repl.png)
 
