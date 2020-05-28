@@ -32,9 +32,9 @@
   :config
   (require 'micgoline)
   (setq ns-use-srgb-colorspace nil)
-  (setq powerline-default-separator 'arrow) ;; nil slant arrow
-  (setq ns-use-srgb-colorspace nil)
+  (setq powerline-default-separator 'slant) ;; nil slant arrow
   :ensure t)
+
 
 ;; (use-package smart-mode-line
 ;;   :ensure t
