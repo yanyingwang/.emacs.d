@@ -1,9 +1,6 @@
 
 (use-package racket-mode
   :init
-  (add-to-list 'auto-mode-alist '("\\.rkt?\\'" . racket-mode))
-  (add-to-list 'auto-mode-alist '("\\.*racketrc\\'" . racket-mode))
-  (add-to-list 'auto-mode-alist '("\\*rkt\\'" . racket-mode))
   (add-hook 'racket-mode-hook
             (lambda ()
               (define-key racket-mode-map (kbd "C-M-y") 'insert-lambda)))
@@ -23,6 +20,8 @@
   ;; (setq tab-always-indent 'complete)
   (setq racket-program "/Applications/Racket v7.7/bin/racket")
   :config
+  (add-to-list 'auto-mode-alist '("\\.rkt?\\'" . racket-mode))
+  (add-to-list 'auto-mode-alist '("\\.*racketrc\\'" . racket-mode))
   :ensure t)
 
 

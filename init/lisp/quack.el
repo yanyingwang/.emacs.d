@@ -3149,18 +3149,18 @@ Can be used in your `~/.emacs' file something like this:
                           auto-mode-alist)
                   (reverse retained)))))
 
-(quack-add-auto-mode-alist '(("\\.ccl\\'"    . scheme-mode)
-                             ("\\.rkt\\'"    . scheme-mode)
-                             ("\\.rktd\\'"   . scheme-mode)
-                             ("\\.sch\\'"    . scheme-mode)
-                             ("\\.scm\\'"    . scheme-mode)
-                             ("\\.ss\\'"     . scheme-mode)
-                             ("\\.stk\\'"    . scheme-mode)
-                             ("\\.stklos\\'" . scheme-mode)
-                             ;;
-                             ("/\\.mzschemerc\\'" . scheme-mode)
-                             ;; Non-Scheme:
-                             ("\\.plt\\'"    . quack-pltfile-mode)))
+;; (quack-add-auto-mode-alist '(("\\.ccl\\'"    . scheme-mode)
+;;                              ("\\.rkt\\'"    . scheme-mode)
+;;                              ("\\.rktd\\'"   . scheme-mode)
+;;                              ("\\.sch\\'"    . scheme-mode)
+;;                              ("\\.scm\\'"    . scheme-mode)
+;;                              ("\\.ss\\'"     . scheme-mode)
+;;                              ("\\.stk\\'"    . scheme-mode)
+;;                              ("\\.stklos\\'" . scheme-mode)
+;;                              ;;
+;;                              ("/\\.mzschemerc\\'" . scheme-mode)
+;;                              ;; Non-Scheme:
+;;                              ("\\.plt\\'"    . quack-pltfile-mode)))
 
 ;; Syntax Table:
 
