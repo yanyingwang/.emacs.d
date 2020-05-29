@@ -15,7 +15,7 @@
   (require 'helm)
   (require 'helm-config)
   (helm-mode 1)
-  ;;(semantic-mode 1)
+  ;; (semantic-mode 1)
   ;;(helm-autoresize-mode t)              ; autoresize
   ;;(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
   ;;(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
