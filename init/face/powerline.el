@@ -1,4 +1,3 @@
-
 ;;--;; alternate variable
 ;;alternate
 ;;arrow
@@ -19,20 +18,61 @@
 ;;nil
 
 
-;; (use-package powerline
-;;   :config
-;;   (require 'powerline)
-;;   (powerline-default-theme)
-;;   ;;(setq powerline-arrow-shape 'arrow)   ; the default
-;;   (setq powerline-arrow-shape 'curve)   ; give your mode-line curves
-;;   ;; (setq powerline-arrow-shape 'arrow14) ; best for small fonts
-;;   :ensure t)
+
+(use-package powerline
+  :config
+  (powerline-default-theme)
+  ;;(setq powerline-arrow-shape 'arrow)   ; the default
+  (setq powerline-arrow-shape 'curve)   ; give your mode-line curves
+  ;; (setq powerline-arrow-shape 'arrow14) ; best for small fonts
+  :ensure t)
+
 
 (use-package micgoline
-  :config
-  (require 'micgoline)
+  :init
+  (defface micgoline-pl-active-blue
+
+    '((t (:background "#4885ed" :foreground "#FFFFFF" :inherit mode-line)))
+    "P face blue."
+    :group 'powerline)
+
+  (defface micgoline-pl-inactive-blue
+    '((t (:background "#2b2f59" :Foreground "#FFFFFF" :inherit mode-line-inactive))) ;; "#00A1F1"
+    "P face blue."
+    :group 'powerline)
+
+  (defface micgoline-pl-active-green
+    '((t (:background "#3cba54" :foreground "#FFFFFF" :inherit mode-line)))
+    "P face green."
+    :group 'powerline)
+
+  (defface micgoline-pl-inactive-green
+    '((t (:background  "#16441d" :foreground "#FFFFFF" :inherit mode-line-inactive))) ;; "#7CBB00"
+    "P face green."
+    :group 'powerline)
+
+  (defface micgoline-pl-active-red
+    '((t (:background "#db3236" :foreground "#FFFFFF" :inherit mode-line)))
+    "P face red."
+    :group 'powerline)
+
+  (defface micgoline-pl-inactive-red
+    '((t (:background "#59342a" :foreground "#FFFFFF" :inherit mode-line-inactive))) ;; "#F65314"
+    "P face red."
+    :group 'powerline)
+
+  (defface micgoline-pl-active-yellow
+    '((t (:background "#f4c20d" :foreground "#FFFFFF" :inherit mode-line)))
+    "P face yellow."
+    :group 'powerline)
+
+  (defface micgoline-pl-inactive-yellow
+    '((t (:background "#54592a" :foreground "#FFFFFF" :inherit mode-line-inactive))) ;; "#FFBB00"
+    "P face yellow."
+    :group 'powerline)
   (setq ns-use-srgb-colorspace nil)
   (setq powerline-default-separator 'slant) ;; nil slant arrow
+  :config
   :ensure t)
 
 
