@@ -64,9 +64,9 @@
 
 
 
-
-
-
-
-
-
+(use-package flyspell-correct
+  :after flyspell
+  :bind (:map flyspell-mode-map ("C-;" . flyspell-correct-wrapper)))
+(use-package flyspell-correct-popup
+  :after flyspell-correct)
+;; (add-hook 'flyspell-mode-hook #'flyspell-correct-auto-mode)

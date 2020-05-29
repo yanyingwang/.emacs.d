@@ -1,7 +1,7 @@
-[use-package ivy
+(use-package ivy
   :init
   ;; (ivy-mode 1)
-  :ensure t]
+  :ensure t)
 
 ;; (use-package ivy-rich
 ;;   :init
