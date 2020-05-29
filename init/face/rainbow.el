@@ -39,7 +39,7 @@
 ;; :mode "\\.elisp-mode\\'"
 ;; :ensure t)
 
-(define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
-  (lambda () (rainbow-mode 1)))
-
-(my-global-rainbow-mode 1)
+;;(define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
+  ;;(lambda () (rainbow-mode 1)))
+;;
+;;(my-global-rainbow-mode 1)
