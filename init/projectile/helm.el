@@ -2,7 +2,7 @@
 (use-package helm-projectile
   :init
   (setq projectile-keymap-prefix (kbd "C-c p"))
-  (setq projectile-completion-system 'ivy) ; helm default ivy
+  (setq projectile-completion-system 'helm) ; helm default ivy
   (setq projectile-enable-caching t)
   (setq projectile-file-exists-remote-cache-expire nil) ; To change the remote file exists cache expire to 10 minutes use this snippet of code:
   (setq projectile-file-exists-remote-cache-expire (* 10 60)) ; You can also enable the cache for local file systems, that is normally not needed but possible:

@@ -1,7 +1,7 @@
-[use-package ivy
+(use-package ivy
   :init
   ;; (ivy-mode 1)
-  :ensure t]
+  :ensure t)
 
 ;; (use-package ivy-rich
 ;;   :init
@@ -29,7 +29,7 @@
   ;; (setq ivy-use-virtual-buffers t)
   ;; (setq ivy-count-format "(%d/%d) ")
   ;; (setq ivy-wrap t)
-  (setq ivy-height 8)
+  (setq ivy-height 5)
 
   (global-set-key (kbd "C-s") 'swiper-isearch)
   (global-set-key (kbd "C-r") 'swiper-isearch-backward)
