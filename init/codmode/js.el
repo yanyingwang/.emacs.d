@@ -40,10 +40,19 @@
 
 (setq js-indent-level 2)
 
+;; ;;; vue-mode
+;; (use-package vue-html-mode
+;;   :init
+;;   (add-to-list 'auto-mode-alist '("\\.vue?\\'" . vue-html-mode))
+;;   :config
+;;   (require 'vue-html-mode)
+;;   :ensure t)
+
+
 ;;; vue-mode
-(use-package vue-html-mode
+(use-package vue-mode
   :init
   (add-to-list 'auto-mode-alist '("\\.vue?\\'" . vue-html-mode))
   :config
-  (require 'vue-html-mode)
+  (require 'vue-mode)
   :ensure t)
