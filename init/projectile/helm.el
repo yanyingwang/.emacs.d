@@ -20,6 +20,7 @@
   (add-to-list 'projectile-globally-ignored-directories ".git")
   (add-to-list 'projectile-globally-ignored-directories "log")
   (add-to-list 'projectile-globally-ignored-directories "tmp")
+  (add-to-list 'projectile-globally-ignored-directories "*node_modules")
   :ensure t)
 
 
