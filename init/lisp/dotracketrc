@@ -1,4 +1,4 @@
-;; ln -s ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc
+;; ln -s ~/.emacs.d/init/lisp/dotracketrc ~/.racketrc
 ;; please run below with shell terminal first:
 
 

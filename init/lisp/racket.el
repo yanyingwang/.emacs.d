@@ -18,7 +18,8 @@
   ;; (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
   ;; (add-hook 'racket-repl-mode-hook (lambda () (setq show-trailing-whitespace nil)))
   ;; (setq tab-always-indent 'complete)
-  (setq racket-program "/Applications/Racket v7.6/bin/racket")
+  (setq racket-program "/Applications/Racket v7.7/bin/racket")
+  (setq racket-user-command-line-arguments '("-e" "(require scribble/reader) (use-at-readtable)"))
   :config
   (add-to-list 'auto-mode-alist '("\\.rkt?\\'" . racket-mode))
   (add-to-list 'auto-mode-alist '("\\.*racketrc\\'" . racket-mode))
