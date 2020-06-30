@@ -31,9 +31,9 @@
   ;; (setq ivy-wrap t)
   (setq ivy-height 5)
 
-  ;; (global-set-key (kbd "C-s") 'swiper-isearch)
-  ;; (global-set-key (kbd "C-r") 'swiper-isearch-backward)
-  ;; (global-set-key (kbd "M-s .") 'swiper-isearch-thing-at-point)
+  (global-set-key (kbd "C-s") 'swiper-isearch)
+  (global-set-key (kbd "C-r") 'swiper-isearch-backward)
+  (global-set-key (kbd "M-s .") 'swiper-isearch-thing-at-point)
   ;; (global-set-key (kbd "M-x") 'counsel-M-x)
   ;; (global-set-key (kbd "C-x C-f") 'counsel-find-file)
   ;; (global-set-key (kbd "M-y") 'counsel-yank-pop)
