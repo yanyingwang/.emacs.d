@@ -21,6 +21,9 @@
   (add-to-list 'projectile-globally-ignored-directories "log")
   (add-to-list 'projectile-globally-ignored-directories "tmp")
   (add-to-list 'projectile-globally-ignored-directories "*node_modules")
+  (add-to-list 'projectile-globally-ignored-directories "*compiled")
+  ;; (add-to-list 'projectile-globally-ignored-file-suffixes "*zo")
+  ;; (add-to-list 'projectile-globally-ignored-files "user_rkt.zo")
   :ensure t)
 
 
