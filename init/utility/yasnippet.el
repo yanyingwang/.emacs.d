@@ -18,13 +18,25 @@
   :config
   (yas-global-mode 1)
 
-  (yas-define-snippets 'racket-mode
-                       '(("require scribble/reader" "(require scribble/reader) (use-at-readtable)" "(require scribble/reader) (use-at-readtable)")
-                         ("require xrepl scribble/reader" "(require xrepl racket/string racket/format scribble/reader) (use-at-readtable)" "(require xrepl racket/... scribble/reader) (use-at-readtable)")))
+  ;; (yas-define-snippets 'racket-mode
+  ;;                      '(("require scribble/reader"
+  ;;                         "(require scribble/reader) (use-at-readtable)"
+  ;;                         "(require scribble/reader) (use-at-readtable)")
+  ;;                        ("require xrepl scribble/reader racket/base"
+  ;;                         "(require xrepl scribble/reader racket/base)"
+  ;;                         "(require xrepl scribble/reader racket/...) (use-at-readtable)")
+  ;;                        ))
 
-  (yas-define-snippets 'comint-mode ;; describle mode of `racket-repl` says: In addition to any hooks its parent mode ‘comint-mode’ might have run,this mode runs the hook ‘racket-repl-mode-hook’, as the final or penultimate step during initialization.
-                       '(("require scribble/reader" "(require scribble/reader) (use-at-readtable)" "(require scribble/reader) (use-at-readtable)")
-                         ("require xrepl scribble/reader" "(require xrepl racket/string racket/format scribble/reader) (use-at-readtable)" "(require xrepl racket/... scribble/reader) (use-at-readtable)")))
+  ;;;; describle mode of `racket-repl` says: In addition to any hooks its parent mode ‘comint-mode’ might have run,this mode
+  ;;;; runs the hook ‘racket-repl-mode-hook’, as the final or penultimate step during initialization.
+  (yas-define-snippets 'comint-mode
+                       '(("require scribble/reader"
+                          "(require scribble/reader) (use-at-readtable)"
+                          "(require scribble/reader) (use-at-readtable)")
+                         ("require xrepl scribble/reader racket/base"
+                          "(require xrepl scribble/reader racket/base)"
+                          "(require xrepl scribble/reader racket/...) (use-at-readtable)"))
+                       )
 
   :ensure t)
 
