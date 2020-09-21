@@ -79,3 +79,20 @@
   )
 (global-set-key (kbd "C-M-y") 'insert-lambda)
 (global-set-key (kbd "C-M-S-y") 'insert-lambda-exp)
+
+
+;;   ;; https://oracleyue.github.io/2018/04/24/init-helm/
+;; (global-set-key (kbd "M-g a") 'helm-do-grep-ag)
+;; (setq helm-grep-default-command   ;; ~grep~
+;;       "grep --color=always -d skip %e -n%cH -e %p %f"
+;;       helm-grep-default-recurse-command
+;;       "grep --color=always -d recurse %e -n%cH -e %p %f")
+
+;; (setq helm-grep-default-command     ;; ~ack~
+;;       "ack -Hn --color --smart-case --no-group %e %p %f"
+;;       helm-grep-default-recurse-command
+;;       "ack -H --color --smart-case --no-group %e %p %f")
+;; (setq helm-grep-ag-command        ;; ~ag~ from "the-silver-searcher"
+;;       "ag --line-numbers -S --hidden --color --color-match '31;43' \
+;;           --nogroup %s %s %s")
+;; (setq helm-grep-ag-pipe-cmd-switches '("--color-match '31;43'"))

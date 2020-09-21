@@ -1,3 +1,4 @@
+
 ;;; helm
 (use-package helm
   :bind (("M-x" . helm-M-x)
@@ -35,8 +36,10 @@
         helm-apropos-fuzzy-match t) ; fuzzy matching for helm-occur
   (when (executable-find "curl")
     (setq helm-google-suggest-use-curl-p t))
-  (when (executable-find "ack-grep")     ;  use ack-grep to replace grep if possiable
-    (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
+  ;; https://oracleyue.github.io/2018/04/24/init-helm/
+  ;; brew install ack the_silver_searcher
+  (when (executable-find "ag")     ;  use ack-grep to replace grep if possiable
+    (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f" ; USAGE: helm-find-file => select a dir => C-s to start searching, C-u C-s to start recurese searching.
           helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f"))
   :ensure t)
 
