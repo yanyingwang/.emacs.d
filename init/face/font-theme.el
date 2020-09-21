@@ -88,3 +88,8 @@
                 ;;     (set-face-foreground 'indent-guide-face "dimgray"))))
                 ))
   (circadian-setup))
+
+
+
+;; (set-face-attribute 'default nil :font "SF Mono-12:semibold")
+;; (set-frame-font "SF Mono-12:bold" nil t)
