@@ -9,13 +9,13 @@
 ;;(set-default-font "Bront-12:bold")
 ;;(set-default-font "agave-11:bold")
 
-(cond ((string-equal system-type "windows-nt")
-       (progn (message "Font set for Windows")))
-      ((string-equal system-type "darwin")
-       (progn (set-default-font "agave-14:book")
-              (set-frame-font "agave-14:book" nil t)))
-      ((string-equal system-type "gnu/linux")
-       (progn (set-default-font "Ubuntu Mono-11:bold"))))
+;; (cond ((string-equal system-type "windows-nt")
+;;        (progn (message "Font set for Windows")))
+;;       ((string-equal system-type "darwin")
+;;        (progn (set-default-font "agave-14:book")
+;;               (set-frame-font "agave-14:book" nil t)))
+;;       ((string-equal system-type "gnu/linux")
+;;        (progn (set-default-font "Ubuntu Mono-11:bold"))))
 
 
 (use-package gruvbox-theme

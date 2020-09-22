@@ -48,3 +48,7 @@
 (add-hook 'elisp-mode-hook 'my-pretty-lambda)
 
 (global-prettify-symbols-mode 1)
+
+
+(set-frame-parameter (selected-frame) 'alpha '(98 . 96))
+(add-to-list 'default-frame-alist '(alpha . (98 . 96)))
