@@ -15,17 +15,15 @@
    ;; If you edit it by hand, you could mess it up, so be careful.
    ;; Your init file should contain only one such instance.
    ;; If there is more than one, they won't work right.
-   '(rainbow-delimiters-depth-1-face ((t (:foreground "#458588"))))
-   '(rainbow-delimiters-depth-2-face ((t (:foreground "#b16286"))))
-   '(rainbow-delimiters-depth-3-face ((t (:foreground "DarkSeaGreen"))))
-   '(rainbow-delimiters-depth-4-face ((t (:foreground "IndianRed"))))
-
-   '(rainbow-delimiters-depth-5-face ((t (:foreground "DarkOrchid")))) ;"SlateGray" "DarkOrchid" "MediumPurple"
-
-   '(rainbow-delimiters-depth-6-face ((t (:foreground "SteelBlue")))) ;"DarkCyan" "SteelBlue"
-   '(rainbow-delimiters-depth-7-face ((t (:foreground "DeepPink2"))))
-   '(rainbow-delimiters-depth-8-face ((t (:foreground "OliveDrab"))))
-   '(rainbow-delimiters-depth-9-face ((t (:foreground "dark red")))))
+   '(rainbow-delimiters-depth-1-face ((t (:foreground "#458588" :height 1.09))))
+   '(rainbow-delimiters-depth-2-face ((t (:foreground "#b16286" :height 1.08))))
+   '(rainbow-delimiters-depth-3-face ((t (:foreground "DarkSeaGreen" :height 1.07))))
+   '(rainbow-delimiters-depth-4-face ((t (:foreground "IndianRed" :height 1.06))))
+   '(rainbow-delimiters-depth-5-face ((t (:foreground "DarkOrchid" :height 1.04)))) ;"SlateGray" "DarkOrchid" "MediumPurple"
+   '(rainbow-delimiters-depth-6-face ((t (:foreground "SteelBlue" :height 1.02)))) ;"DarkCyan" "SteelBlue"
+   '(rainbow-delimiters-depth-7-face ((t (:foreground "DeepPink2" :height 1.01))))
+   '(rainbow-delimiters-depth-8-face ((t (:foreground "OliveDrab" :height 1.00))))
+   '(rainbow-delimiters-depth-9-face ((t (:foreground "dark red" :height 0.99)))))
   ;; https://www.w3schools.com/colors/colors_names.asp
   :ensure t)
 
