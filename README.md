@@ -42,4 +42,8 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 
 
 ## tar elpa
+~~~shell
+gco build
 tar -cvf elpa.tar elpa
+gco master
+~~~
