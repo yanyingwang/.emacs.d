@@ -39,3 +39,7 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 ![scsh3](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/macos-plist.png)
 ![scsh4](https://raw.githubusercontent.com/yanyingwang/.emacs.d/master/screenshots/yasnippet-racket-repl.png)
 
+
+
+## tar elpa
+tar -cvf elpa.tar elpa
