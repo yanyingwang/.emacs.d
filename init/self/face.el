@@ -31,7 +31,7 @@
 (setq initial-scratch-message
       (concat ";; Happy hacking " (or user-login-name "") " - Emacs ♥ you!\n\n")) ;customize scratch message
 
-(global-hl-line-mode -1)
+(global-hl-line-mode 1)
 
 
 ;;show lambda as λ
@@ -52,6 +52,3 @@
 
 (set-frame-parameter (selected-frame) 'alpha '(98 . 95))
 (add-to-list 'default-frame-alist '(alpha . (98 . 95)))
-
-
-(global-hl-line-mode 1)
