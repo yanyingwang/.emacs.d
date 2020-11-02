@@ -52,3 +52,6 @@
 
 (set-frame-parameter (selected-frame) 'alpha '(98 . 95))
 (add-to-list 'default-frame-alist '(alpha . (98 . 95)))
+
+
+(global-hl-line-mode 1)
