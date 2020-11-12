@@ -18,7 +18,8 @@
   :ensure t
   :init
   (require 'flymake-ruby)
-  (add-hook 'ruby-mode-hook 'flymake-ruby-load))
+  ;;(add-hook 'ruby-mode-hook 'flymake-ruby-load)
+  )
 
 (use-package flymake-racket
   :ensure t
