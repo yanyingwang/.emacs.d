@@ -15,8 +15,8 @@
 (global-set-key (kbd "M-]") 'previous-other-window)
 (global-set-key (kbd "<C-S-tab>") 'previous-other-window)
 (global-set-key (kbd "<M-return>") 'toggle-frame-fullscreen)
-(global-set-key (kbd "<M-S-escape>") 'next-buffer)
-(global-set-key (kbd "<M-escape>") 'previous-buffer)
+(global-set-key (kbd "<s-S-escape>") 'next-buffer)
+(global-set-key (kbd "<s-escape>") 'previous-buffer)
 
 ;; key customize for system conflict
 (cond ((string-equal system-type "windows-nt")
