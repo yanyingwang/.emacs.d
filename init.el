@@ -1,6 +1,10 @@
+;; https://emacs.stackexchange.com/questions/233/how-to-proceed-on-package-el-signature-check-failure
+
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives '("elpa-gnu" . "https://elpa.gnu.org/packages/"))
+
 ;; (add-to-list 'package-archives '("elpa-popkit" . "http://elpa.popkit.org/"))
 ;;(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
 (package-initialize)
