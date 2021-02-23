@@ -14,7 +14,7 @@
   :config
   (projectile-global-mode)
   (helm-projectile-on)
-  (define-key projectile-mode-map (kbd "s-<escape>") #'projectile-project-buffers-other-buffer)
+  (define-key projectile-mode-map (kbd "M-<escape>") #'projectile-project-buffers-other-buffer)
   (define-key projectile-mode-map (kbd "s-b") #'projectile-switch-to-buffer)
   (add-to-list 'projectile-globally-ignored-directories "backup") ; ignore dirs
   (add-to-list 'projectile-globally-ignored-directories ".git")

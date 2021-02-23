@@ -30,14 +30,14 @@
 
 
 
-;; (use-package rainbow-mode
-;; :init
-;; :config
-;; (add-hook 'elisp-mode-hook 'rainbow-mode)
-;; :mode "\\.elisp-mode\\'"
-;; :ensure t)
+(use-package rainbow-mode
+  :init
+  :config
+  ;; (add-hook 'elisp-mode-hook 'rainbow-mode)
+  ;; :mode "\\.elisp-mode\\'"
+  :ensure t)
 
-;;(define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
-  ;;(lambda () (rainbow-mode 1)))
-;;
-;;(my-global-rainbow-mode 1)
+(define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
+  (lambda () (rainbow-mode 1)))
+
+(my-global-rainbow-mode 1)
