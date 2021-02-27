@@ -34,8 +34,8 @@
                           "(require scribble/reader) (use-at-readtable)"
                           "(require scribble/reader) (use-at-readtable)")
                          ("require xrepl debug/repl scribble/reader racket/..."
-                          "(require xrepl debug/repl describe scribble/reader racket/list racket/string racket/format) (use-at-readtable)"
-                          "(require xrepl debug/repl describe scribble/reader racket/list racket/string racket/format) (use-at-readtable)")))
+                          "(require xrepl debug/repl describe scribble/reader racket/list racket/string racket/format racket/pretty) (use-at-readtable)"
+                          "(require xrepl debug/repl describe scribble/reader racket/list racket/string racket/format racket/pretty) (use-at-readtable)")))
 
   :ensure t)
 
