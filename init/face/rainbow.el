@@ -39,14 +39,23 @@
 ;(my-global-rainbow-mode 1)
 
 
-;; (use-package dired-hacks-utils
+(use-package dired-hacks-utils
+  :init
+  :config
+  :ensure t)
+(use-package dired-filter
+  :init
+  :config
+  :ensure t)
+;; (use-package dired-collapse
 ;;   :init
 ;;   :config
 ;;   :ensure t)
-;; (use-package dired-filter
-;;   :init
-;;   :config
-;;   :ensure t)
+(use-package diredfl
+  :init
+  :config
+  (diredfl-global-mode)
+  :ensure t)
 (use-package dired-rainbow
   :init
   :config
@@ -72,7 +81,6 @@
     (dired-rainbow-define vc "#0074d9" ("git" "gitignore" "gitattributes" "gitmodules"))
     (dired-rainbow-define-chmod executable-unix "#38c172" "-.*x.*"))
   :ensure t)
-
 
 ;; (use-package rainbow-blocks
 ;;   :init
