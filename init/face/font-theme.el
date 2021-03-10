@@ -68,25 +68,25 @@
   (add-hook 'circadian-after-load-theme-hook
             #'(lambda (theme)
                 (progn
-                  (set-face-attribute 'default nil :font "agave-14:book")
+                  ;; (set-face-attribute 'default nil :font "agave-14:bold")
                   (set-frame-font "agave-14:book" nil t)
-                  (set-face-foreground 'indent-guide-face "dimgray"))
-                ;; (cond
-                ;;  ((or (string-equal theme "gruvbox-light-soft")
-                ;;       (string-equal theme "gruvbox-light-medium")
-                ;;       (string-equal theme "gruvbox-light-hard"))
-                ;;   (progn
-                ;;     (set-face-attribute 'default nil :font "agave-14:bold")
-                ;;     (set-frame-font "agave-14:bold" nil t)
-                ;;     (set-face-foreground 'indent-guide-face "lightgray")))
-                ;;  ((or (string-equal theme "gruvbox-dark-soft")
-                ;;       (string-equal theme "gruvbox-dark-medium")
-                ;;       (string-equal theme "gruvbox-dark-hard"))
-                ;;   (progn
-                ;;     (set-face-attribute 'default nil :font "agave-14:book")
-                ;;     (set-frame-font "agave-14:book" nil t)
-                ;;     (set-face-foreground 'indent-guide-face "dimgray"))))
-                ))
+                  ;; (set-face-foreground 'indent-guide-face "dimgray"))
+                  ;; (cond
+                  ;;  ((or (string-equal theme "gruvbox-light-soft")
+                  ;;       (string-equal theme "gruvbox-light-medium")
+                  ;;       (string-equal theme "gruvbox-light-hard"))
+                  ;;   (progn
+                  ;;     (set-face-attribute 'default nil :font "agave-14:bold")
+                  ;;     (set-frame-font "agave-14:bold" nil t)
+                  ;;     (set-face-foreground 'indent-guide-face "lightgray")))
+                  ;;  ((or (string-equal theme "gruvbox-dark-soft")
+                  ;;       (string-equal theme "gruvbox-dark-medium")
+                  ;;       (string-equal theme "gruvbox-dark-hard"))
+                  ;;   (progn
+                  ;;     (set-face-attribute 'default nil :font "agave-14:book")
+                  ;;     (set-frame-font "agave-14:book" nil t)
+                  ;;     (set-face-foreground 'indent-guide-face "dimgray"))))
+                  ))
   (circadian-setup))
 
 
