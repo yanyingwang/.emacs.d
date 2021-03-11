@@ -87,7 +87,7 @@
                   ;;     (set-frame-font "agave-14:book" nil t)
                   ;;     (set-face-foreground 'indent-guide-face "dimgray"))))
                   ))
-  (circadian-setup))
+  (circadian-setup)))
 
 
 
