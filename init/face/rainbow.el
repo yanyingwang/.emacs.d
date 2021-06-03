@@ -13,16 +13,28 @@
      ;; "OliveDrab"
      ;; "dark red"
 
- ;;;; https://www.color-hex.com/color/ff0000
-     "#350000"
-     "#6b0000"
-     "#4c0000"
-     "#7f0000"
-     "#470000"
-     "#7c0000"
-     "#580000"
-     "#990000"
-     "#660000"
+
+     ;;;; https://flaviocopes.com/rgb-color-codes/
+     "DarkRed"
+     "DarkGoldenRod"
+     "DarkOliveGreen"
+     "DarkSlateGray"
+     "DarkBlue"
+     "DarkSlateBlue"
+     "SaddleBrown"
+     "DarkMagenta"
+     "RosyBrown"
+
+     ;;;; https://www.color-hex.com/color/ff0000
+     ;; "#350000"
+     ;; "#6b0000"
+     ;; "#4c0000"
+     ;; "#7f0000"
+     ;; "#470000"
+     ;; "#7c0000"
+     ;; "#580000"
+     ;; "#990000"
+     ;; "#660000"
 
      ;; "#4c0000"
      ;; "#7f0000"
