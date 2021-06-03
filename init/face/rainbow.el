@@ -19,7 +19,7 @@
      "DarkGoldenRod"
      "DarkOliveGreen"
      "DarkSlateGray"
-     "DarkBlue"
+     "MidnightBlue"
      "DarkSlateBlue"
      "SaddleBrown"
      "DarkMagenta"
