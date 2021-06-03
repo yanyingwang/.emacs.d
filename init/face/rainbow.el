@@ -1,3 +1,54 @@
+
+;; https://www.w3schools.com/colors/colors_names.asp
+
+(defvar rd-colors
+    (list
+     ;; "#458588"
+     ;; "#b16286"
+     ;; "DarkSeaGreen"
+     ;; "IndianRed"
+     ;; "DarkOrchid"  ;"SlateGray" "DarkOrchid" "MediumPurple"
+     ;; "SteelBlue" ;"DarkCyan" "SteelBlue"
+     ;; "DeepPink2"
+     ;; "OliveDrab"
+     ;; "dark red"
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+     ;; "#000000"
+     ;; "#190000"
+     ;; "#330000"
+
+     "#4c0000"
+     "#990000"
+
+     "#660000"
+     "#b20000"
+
+     "#7f0000"
+     "#b20000"
+
+     "#990000"
+     "#4c0000"
+
+     "#660000"
+     "#b20000"
+
+     ;; "#cc0000"
+     ;; "#e50000"
+     ;; "#ff0000" ;; ======================= RED color
+     ;; "#ff1919"
+     ;; "#ff3232"
+
+     ;; "#ff4c4c"
+     ;; "#ff6666"
+     ;; "#ff7f7f"
+     ;; "#ff9999"
+     ;; "#ffb2b2"
+     ;; "#ffcccc"
+     ;; "#ffe5e5"
+
+     ;; "#ffffff"
+     ))
+
 (use-package rainbow-delimiters
   :init
   (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
@@ -15,16 +66,17 @@
    ;; If you edit it by hand, you could mess it up, so be careful.
    ;; Your init file should contain only one such instance.
    ;; If there is more than one, they won't work right.
-   '(rainbow-delimiters-depth-1-face ((t (:foreground "#458588" :height 1.09))))
-   '(rainbow-delimiters-depth-2-face ((t (:foreground "#b16286" :height 1.08))))
-   '(rainbow-delimiters-depth-3-face ((t (:foreground "DarkSeaGreen" :height 1.07))))
-   '(rainbow-delimiters-depth-4-face ((t (:foreground "IndianRed" :height 1.06))))
-   '(rainbow-delimiters-depth-5-face ((t (:foreground "DarkOrchid" :height 1.04)))) ;"SlateGray" "DarkOrchid" "MediumPurple"
-   '(rainbow-delimiters-depth-6-face ((t (:foreground "SteelBlue" :height 1.02)))) ;"DarkCyan" "SteelBlue"
-   '(rainbow-delimiters-depth-7-face ((t (:foreground "DeepPink2" :height 1.01))))
-   '(rainbow-delimiters-depth-8-face ((t (:foreground "OliveDrab" :height 1.00))))
-   '(rainbow-delimiters-depth-9-face ((t (:foreground "dark red" :height 0.99)))))
-  ;; https://www.w3schools.com/colors/colors_names.asp
+   `(rainbow-delimiters-mismatched-face ((t (:foreground "yellow"))))
+   `(rainbow-delimiters-unmatched-face ((t (:foreground "blue"))))
+   `(rainbow-delimiters-depth-1-face ((t (:foreground ,(nth 0 rd-colors)))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground ,(nth 1 rd-colors)))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground ,(nth 2 rd-colors)))))
+   `(rainbow-delimiters-depth-4-face ((t (:foreground ,(nth 3 rd-colors)))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground ,(nth 4 rd-colors)))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground ,(nth 5 rd-colors)))))
+   `(rainbow-delimiters-depth-7-face ((t (:foreground ,(nth 6 rd-colors)))))
+   `(rainbow-delimiters-depth-8-face ((t (:foreground ,(nth 7 rd-colors)))))
+   `(rainbow-delimiters-depth-9-face ((t (:foreground ,(nth 8 rd-colors))))))
   :ensure t)
 
 
@@ -38,7 +90,6 @@
 ;; (define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
 ;;   (lambda () (rainbow-mode 1)))
 ;; (my-global-rainbow-mode 1)
-
 
 ;; (use-package rainbow-blocks
 ;;   :init

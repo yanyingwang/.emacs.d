@@ -3,7 +3,7 @@
 
 
 
-;;;; raco pkg install sugar
+;;;; raco pkg install -i sugar
 (require sugar)
 (require (submod sugar safe))
 
@@ -21,8 +21,8 @@
 (require debug/repl)
 
 ;;;; raco pkg install macro-debugger
-(require macro-debugger/syntax-browser)
-(require macro-debugger/stepper-text)
+;;(require macro-debugger/syntax-browser)
+;;(require macro-debugger/stepper-text)
 
 (require racket/rerequire)
 
@@ -30,10 +30,10 @@
 ;;;; raco pkg install xrepl-lib
 ;; https://docs.racket-lang.org/xrepl/index.html?q=%2Crequire
 ;; The following line loads `xrepl' support
-(require xrepl)
+;;(require xrepl)
 ;;
 ;; load readline support (added by `install-readline!')
-(require readline/rep)
+;;(require readline/rep)
 
 
 
@@ -52,7 +52,7 @@
                                "-"
                                ,(colorize "Racket" 'red)
                                ,(colorize "REPL" 'blue)
-                               ,(colorize "♥" 'magenta)
+                               ,(colorize "♥ " 'magenta)
                                ,(colorize "You" 'light-magenta)
                                ,(colorize "!!!" 'red))
                              " ")
