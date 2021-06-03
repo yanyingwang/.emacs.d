@@ -14,17 +14,29 @@
      ;; "dark red"
 
  ;;;; https://www.color-hex.com/color/ff0000
+     "#350000"
      "#4c0000"
-     "#7f0000"
-     "#8b1919"
-     "#bf7f7f"
+     "#470000"
      "#580000"
-     "#720000"
-     "#983232"
-     "#b26666"
-     "#650000"
-     "#a54c4c"
+     "#660000"
+     "#6b0000"
+     "#7f0000"
+     "#7c0000"
+     "#990000"
+
+     ;; "#4c0000"
+     ;; "#7f0000"
+     ;; "#8b1919"
+     ;; "#983232"
+     ;; "#b26666"
+     ;; "#580000"
+     ;; "#720000"
+     ;; "#650000"
+     ;; "#a54c4c"
+     ;; "#bf7f7f"
      ))
+
+
 
 (use-package rainbow-delimiters
   :init
@@ -43,8 +55,8 @@
    ;; If you edit it by hand, you could mess it up, so be careful.
    ;; Your init file should contain only one such instance.
    ;; If there is more than one, they won't work right.
-   `(rainbow-delimiters-mismatched-face ((t (:foreground "yellow"))))
-   `(rainbow-delimiters-unmatched-face ((t (:foreground "blue"))))
+   `(rainbow-delimiters-mismatched-face ((t (:foreground "#ff0080"))))
+   `(rainbow-delimiters-unmatched-face ((t (:foreground "#00ffff"))))
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,(nth 0 rd-colors)))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,(nth 1 rd-colors)))))
    `(rainbow-delimiters-depth-3-face ((t (:foreground ,(nth 2 rd-colors)))))
@@ -60,8 +72,12 @@
 (use-package rainbow-mode
   :init
   :config
-  (add-hook 'elisp-mode-hook 'rainbow-mode)
-  (add-hook 'css-mode-hook 'rainbow-mode)
+  (add-hook 'racket-repl-mode-hook #'rainbow-mode)
+  (add-hook 'racket-mode-hook #'rainbow-mode)
+  (add-hook 'ruby-mode-hook #'rainbow-mode)
+  (add-hook 'js-mode-hook #'rainbow-mode)
+  (add-hook 'elisp-mode-hook #'rainbow-mode)
+  (add-hook 'css-mode-hook #'rainbow-mode)
   ;; :mode "\\.elisp-mode\\'"
   :ensure t)
 ;; (define-globalized-minor-mode my-global-rainbow-mode rainbow-mode

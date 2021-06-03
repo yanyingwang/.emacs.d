@@ -15,7 +15,7 @@
 
 ;;;; raco pkg install describe
 ;; https://docs.racket-lang.org/describe/index.html
-;(require describe) ;; xrepl also implement this fun 
+;(require describe) ;; xrepl also implement this fun
 
 ;;;; raco pkg install debug
 (require debug/repl)
