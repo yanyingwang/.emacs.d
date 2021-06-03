@@ -1,8 +1,8 @@
 
-;; https://www.w3schools.com/colors/colors_names.asp
 
 (defvar rd-colors
     (list
+     ;;;; https://www.w3schools.com/colors/colors_names.asp
      ;; "#458588"
      ;; "#b16286"
      ;; "DarkSeaGreen"
@@ -12,41 +12,18 @@
      ;; "DeepPink2"
      ;; "OliveDrab"
      ;; "dark red"
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-     ;; "#000000"
-     ;; "#190000"
-     ;; "#330000"
 
+ ;;;; https://www.color-hex.com/color/ff0000
      "#4c0000"
-     "#990000"
-
-     "#660000"
-     "#b20000"
-
      "#7f0000"
-     "#b20000"
-
-     "#990000"
-     "#4c0000"
-
-     "#660000"
-     "#b20000"
-
-     ;; "#cc0000"
-     ;; "#e50000"
-     ;; "#ff0000" ;; ======================= RED color
-     ;; "#ff1919"
-     ;; "#ff3232"
-
-     ;; "#ff4c4c"
-     ;; "#ff6666"
-     ;; "#ff7f7f"
-     ;; "#ff9999"
-     ;; "#ffb2b2"
-     ;; "#ffcccc"
-     ;; "#ffe5e5"
-
-     ;; "#ffffff"
+     "#8b1919"
+     "#bf7f7f"
+     "#580000"
+     "#720000"
+     "#983232"
+     "#b26666"
+     "#650000"
+     "#a54c4c"
      ))
 
 (use-package rainbow-delimiters

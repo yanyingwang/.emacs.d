@@ -8,6 +8,7 @@
 ;;(set-default-font "agave-14:bold")
 ;;(set-default-font "Bront-12:bold")
 ;;(set-default-font "agave-11:bold")
+(defvar fontname "agave-14")
 
 ;; (cond ((string-equal system-type "windows-nt")
 ;;        (progn (message "Font set for Windows")))
@@ -56,6 +57,7 @@
 ;;
 
 
+
 (use-package circadian
   :ensure t
   :config
@@ -68,24 +70,24 @@
   (add-hook 'circadian-after-load-theme-hook
             #'(lambda (theme)
                 (progn
-                  (set-face-attribute 'default nil :font "agave-14:bold")
-                  (set-frame-font "agave-14:book" nil t)
+                  (set-face-attribute 'default nil :font (concat fontname ":bold"))
+                  (set-frame-font (concat fontname ":book") nil t)
                   (set-face-foreground 'indent-guide-face "dimgray"))
-                  (cond
-                   ((or (string-equal theme "gruvbox-light-soft")
-                        (string-equal theme "gruvbox-light-medium")
-                        (string-equal theme "gruvbox-light-hard"))
-                    (progn
-                      (set-face-attribute 'default nil :font "agave-14:bold")
-                      (set-frame-font "agave-14:book" nil t)
-                      (set-face-foreground 'indent-guide-face "lightgray")))
-                   ((or (string-equal theme "gruvbox-dark-soft")
-                        (string-equal theme "gruvbox-dark-medium")
-                        (string-equal theme "gruvbox-dark-hard"))
-                    (progn
-                      (set-face-attribute 'default nil :font "agave-14:book")
-                      (set-frame-font "agave-14:bold" nil t)
-                      (set-face-foreground 'indent-guide-face "dimgray"))))
+                ;; (cond
+                ;;  ((or (string-equal theme "gruvbox-light-soft")
+                ;;       (string-equal theme "gruvbox-light-medium")
+                ;;       (string-equal theme "gruvbox-light-hard"))
+                ;;   (progn
+                ;;     (set-face-attribute 'default nil :font (concat fontname ":bold"))
+                ;;     (set-frame-font (concat fontname ":book") nil t)
+                ;;     (set-face-foreground 'indent-guide-face "lightgray")))
+                ;;  ((or (string-equal theme "gruvbox-dark-soft")
+                ;;       (string-equal theme "gruvbox-dark-medium")
+                ;;       (string-equal theme "gruvbox-dark-hard"))
+                ;;   (progn
+                ;;     (set-face-attribute 'default nil :font (concat fontname ":book"))
+                ;;     (set-frame-font (concat fontname ":bold") nil t)
+                ;;     (set-face-foreground 'indent-guide-face "dimgray"))))
                   ))
   (circadian-setup))
 
