@@ -14,16 +14,17 @@
      ;; "dark red"
 
 
-     ;;;; https://flaviocopes.com/rgb-color-codes/
+     ;; ;;;; https://flaviocopes.com/rgb-color-codes/
      "DarkRed"
      "DarkGoldenRod"
      "DarkOliveGreen"
      "DarkSlateGray"
-     "MidnightBlue"
+     "MediumBlue"
      "DarkSlateBlue"
      "SaddleBrown"
      "DarkMagenta"
      "RosyBrown"
+
 
      ;;;; https://www.color-hex.com/color/ff0000
      ;; "#350000"
