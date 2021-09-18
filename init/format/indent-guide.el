@@ -3,7 +3,7 @@
   :init
   (setq indent-guide-delay 0.5)
   (setq indent-guide-recursive t)
-  (setq indent-guide-char "¡")            ;  ¦ │ ┆ ┋ ┋ ¡ ¶ ‽ § ¿ ◊
+  (setq indent-guide-char "¦") ;¦│┆┋┋¡¶‽§¿◊
   :config
   (require 'indent-guide)
   (indent-guide-global-mode)
