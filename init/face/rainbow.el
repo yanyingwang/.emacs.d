@@ -19,10 +19,10 @@
      "DarkGoldenRod"
      "DarkOliveGreen"
      "DarkSlateGray"
-     "MediumBlue"
+     "blue" ;; "MediumBlue"
      "DarkSlateBlue"
      "SaddleBrown"
-     "DarkMagenta"
+     "purple" ;; "DarkViolet" ;; "DarkMagenta"
      "RosyBrown"
 
 

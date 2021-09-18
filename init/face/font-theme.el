@@ -70,7 +70,7 @@
   (add-hook 'circadian-after-load-theme-hook
             #'(lambda (theme)
                 (progn
-                  (set-face-attribute 'default nil :font (concat fontname ":bold"))
+                  (set-face-attribute 'default nil :font (concat fontname ":book"))
                   (set-frame-font (concat fontname ":book") nil t)
                   (set-face-foreground 'indent-guide-face "dimgray"))
                 ;; (cond
