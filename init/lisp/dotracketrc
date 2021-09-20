@@ -2,6 +2,8 @@
 ;; please run below with shell terminal first:
 
 
+(require racket/trace)
+
 
 ;;;; raco pkg install -i sugar
 (require sugar)
