@@ -21,6 +21,8 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
    `M-space` => `s-space`
 
 4. global custom keybinding:
+   `C-c 2 c` => hs-toggle-hiding, fold code block as one line or unfold it.
+   `C-c 2 a` => hs-show-all, show all folded code block.
    `C-c g l` (`C-c k`) => copy line, `g` standards for `global`
    `C-c g l` (`C-c l` `s-l`) => select line and move cursor to the beginning postion
    `C-c g n` (`C-c n` `s-n`) => select line and move cursor to the beginning postion of next line
