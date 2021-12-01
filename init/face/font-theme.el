@@ -8,7 +8,8 @@
 ;;(set-default-font "agave-14:bold")
 ;;(set-default-font "Bront-12:bold")
 ;;(set-default-font "agave-11:bold")
-(defvar fontname "agave-14")
+;; (defvar fontname "agave-15")
+(defvar fontname "monaco-13")
 
 ;; (cond ((string-equal system-type "windows-nt")
 ;;        (progn (message "Font set for Windows")))
@@ -70,8 +71,8 @@
   (add-hook 'circadian-after-load-theme-hook
             #'(lambda (theme)
                 (progn
-                  (set-face-attribute 'default nil :font (concat fontname ":book"))
-                  (set-frame-font (concat fontname ":book") nil t)
+                  (set-face-attribute 'default nil :font (concat fontname ":bold"))
+                  (set-frame-font (concat fontname ":bold") nil t)
                   (set-face-foreground 'indent-guide-face "dimgray"))
                 ;; (cond
                 ;;  ((or (string-equal theme "gruvbox-light-soft")
