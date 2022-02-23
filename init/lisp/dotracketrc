@@ -6,7 +6,7 @@
 
 
 ;;;; raco pkg install -i sugar
-(require sugar)
+(require sugar sugar/debug)
 (require (submod sugar safe))
 
 ;;;; raco pkg install at-exp-lib

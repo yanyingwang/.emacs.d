@@ -72,7 +72,7 @@
             #'(lambda (theme)
                 (progn
                   (set-face-attribute 'default nil :font (concat fontname ":bold"))
-                  (set-frame-font (concat fontname ":bold") nil t)
+                  (set-frame-font (concat fontname ":book") nil t)
                   (set-face-foreground 'indent-guide-face "dimgray"))
                 ;; (cond
                 ;;  ((or (string-equal theme "gruvbox-light-soft")

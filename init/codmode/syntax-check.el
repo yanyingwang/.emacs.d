@@ -71,3 +71,16 @@
 ;; (use-package flyspell-correct-popup
 ;;   :after flyspell-correct)
 ;; ;; (add-hook 'flyspell-mode-hook #'flyspell-correct-auto-mode)
+
+
+(use-package flymake-grammarly
+  :ensure t
+  :init
+  (require 'flymake-grammarly)
+  ;; (setq flymake-grammarly-check-time 0.8)
+  (add-hook 'text-mode-hook 'flymake-grammarly-load)
+  (add-hook 'latex-mode-hook 'flymake-grammarly-load)
+  (add-hook 'org-mode-hook 'flymake-grammarly-load)
+  (add-hook 'markdown-mode-hook 'flymake-grammarly-load)
+
+  )
