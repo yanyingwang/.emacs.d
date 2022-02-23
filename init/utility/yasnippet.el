@@ -35,9 +35,22 @@
                           "(require scribble/reader) (use-at-readtable)")
                          ("require xrepl debug/repl scribble/reader racket/..."
                           "(require xrepl debug/repl describe scribble/reader racket/list racket/string racket/format racket/pretty) (use-at-readtable)"
-                          "(require xrepl debug/repl describe scribble/reader racket/list racket/string racket/format racket/pretty) (use-at-readtable)")))
+                          "(require xrepl debug/repl describe scribble/reader racket/list racket/string racket/format racket/pretty) (use-at-readtable)")
+                         ("require debug/repl racket/trace"
+                          "(require debug/repl racket/trace)
+;;;(debug-repl)
+;;
+;;;(define (f x) (if (zero? x) 0 (add1 (f (sub1 x)))))
+;;;(trace f)
+;;
+;;;(trace-define ((+n n) x) (+ n x))
+;;;(trace-let ...)
+;;;(trace-lambda ...)"
+                          )
+                         ))
 
   :ensure t)
+
 
 
 (use-package yasnippet-snippets

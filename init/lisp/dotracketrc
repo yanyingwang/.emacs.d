@@ -3,11 +3,21 @@
 
 
 (require racket/trace)
+;;; (define (f x) (if (zero? x) 0 (add1 (f (sub1 x)))))
+;;; (trace f)
+;;
+;;; (trace-define ((+n n) x) (+ n x))
+;;; (trace-let ...)
+;;; (trace-lambda ...)
+;;; 
 
 
 ;;;; raco pkg install -i sugar
 (require sugar sugar/debug)
-(require (submod sugar safe))
+;; (report (+ 3 2))
+;; (report/line (+ 3 2))
+;; (report/file (+ 3 2))
+;; (report* (+ 3 2))
 
 ;;;; raco pkg install at-exp-lib
 ;; enable at-exp
@@ -21,6 +31,7 @@
 
 ;;;; raco pkg install debug
 (require debug/repl)
+;; (debug-repl)
 
 ;;;; raco pkg install macro-debugger
 ;;(require macro-debugger/syntax-browser)
