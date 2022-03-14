@@ -1,15 +1,5 @@
-;;; set fonts with check OS type
-;;(set-default-font "Ubuntu Mono-12:bold")
-;;(set-default-font "Bront-12:bold")
-;;(set-default-font "agave-11:book")
-;;(set-default-font "Pointfree-10:bold")
-;;(set-default-font "monaco-12:bold")
-;;(set-default-font "Bront-14:bold")
-;;(set-default-font "agave-14:bold")
-;;(set-default-font "Bront-12:bold")
-;;(set-default-font "agave-11:bold")
-;; (defvar fontname "agave-15")
-(defvar fontname "monaco-13")
+;; (custom-set-faces
+;;  '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 143 :width normal)))))
 
 ;; (cond ((string-equal system-type "windows-nt")
 ;;        (progn (message "Font set for Windows")))
@@ -18,7 +8,6 @@
 ;;               (set-frame-font "agave-14:book" nil t)))
 ;;       ((string-equal system-type "gnu/linux")
 ;;        (progn (set-default-font "Ubuntu Mono-11:bold"))))
-
 
 (use-package gruvbox-theme
   :config
@@ -30,7 +19,6 @@
   ;;(load-theme 'gruvbox-dark-medium t)
   ;;(load-theme 'gruvbox-dark-hard  t)
   :ensure t :defer)
-
 
 ;;
 ;;(use-package doom-themes
@@ -58,6 +46,9 @@
 ;;
 
 
+(setq-default line-spacing 2)
+;; (setq-default letter-spacing 2)
+
 
 (use-package circadian
   :ensure t
@@ -71,8 +62,11 @@
   (add-hook 'circadian-after-load-theme-hook
             #'(lambda (theme)
                 (progn
-                  (set-face-attribute 'default nil :font (concat fontname ":bold"))
-                  (set-frame-font (concat fontname ":book") nil t)
+                  ;;; set fonts with check OS type
+                  ;; "agave-11:bold"
+                  ;; "MonacoB2-10:bold"
+                  (set-face-attribute 'default nil :font "MonacoB2-10:bold")
+                  (set-frame-font "MonacoB2-10:bold" nil t)
                   (set-face-foreground 'indent-guide-face "dimgray"))
                 ;; (cond
                 ;;  ((or (string-equal theme "gruvbox-light-soft")
@@ -92,7 +86,3 @@
                   ))
   (circadian-setup))
 
-
-
-;; (set-face-attribute 'default nil :font "SF Mono-12:semibold")
-;; (set-frame-font "SF Mono-12:bold" nil t)
