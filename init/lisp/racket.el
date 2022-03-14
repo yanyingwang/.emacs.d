@@ -10,15 +10,15 @@
   ;;             (define-key racket-repl-mode-map (kbd "C-M-y") 'insert-lambda)
   ;;             (define-key racket-repl-mode-map (kbd "[") 'racket-smart-open-bracket)))
 
+  ;;;; (require 'racket-xp)
+  ;;;; (add-hook 'racket-mode-hook #'racket-xp-mode)
+  ;;; Note: If you find these point-motion features too distracting and/or slow, in your racket-xp-mode-hook you may disable them:
   (require 'racket-xp)
-  (add-hook 'racket-mode-hook #'racket-xp-mode)
-  ;; Note: If you find these point-motion features too distracting and/or slow, in your racket-xp-mode-hook you may disable them:
-  ;; (require 'racket-xp)
-  ;; (add-hook 'racket-xp-mode-hook
-  ;;           (lambda ()
-  ;;             (remove-hook 'pre-redisplay-functions
-  ;;                          #'racket-xp-pre-redisplay
-  ;;                          t)))
+  (add-hook 'racket-xp-mode-hook
+            (lambda ()
+              (remove-hook 'pre-redisplay-functions
+                           #'racket-xp-pre-redisplay
+                           t)))
 
 
   ;; (add-hook 'racket-mode-hook      #'racket-unicode-input-method-enable)
