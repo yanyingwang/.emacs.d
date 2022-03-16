@@ -18,6 +18,8 @@
   (setq fontname "MonacoB2-10:bold")
   (set-face-attribute 'default nil :font fontname)
   (set-frame-font fontname nil t)
+
+  (setq-default line-spacing 2)
   (set-face-foreground 'indent-guide-face "dimgray")
   ;; (set-face-foreground 'indent-guide-face "lightgray")
   :ensure t :defer)
