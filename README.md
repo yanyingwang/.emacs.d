@@ -31,7 +31,7 @@ cd ~ && git clone git@gitlab.com:yanyingwang/.emacs.d.git
 5. You can check out my emacs memo if you like: https://github.com/yanyingwang/memo/blob/master/emacs.md
 6. geiser with scheme(racket/chez/gosh)
 7. flymake for ruby racket js: `npm install -g jslint`
-8. racketrc: `ln -sf ~/.emacs.d/init/scheme/dotracketrc ~/.racketrc`
+8. racketrc: `ln -sf ~/.emacs.d/init/lisp/dotracketrc ~/.racketrc`
 9. enable us to use emacs to edit macos's plist files.
 10. customized [yasnippet](https://github.com/joaotavora/yasnippet) working with company.
 

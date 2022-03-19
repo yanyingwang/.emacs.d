@@ -19,7 +19,7 @@
   (set-face-attribute 'default nil :font fontname)
   (set-frame-font fontname nil t)
 
-  (setq-default line-spacing 2)
+  (setq-default line-spacing 1)
   (set-face-foreground 'indent-guide-face "dimgray")
   ;; (set-face-foreground 'indent-guide-face "lightgray")
   :ensure t :defer)
