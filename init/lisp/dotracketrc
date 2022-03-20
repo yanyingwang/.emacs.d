@@ -1,7 +1,15 @@
-;; ln -s ~/.emacs.d/init/lisp/dotracketrc ~/.racketrc
+;;; macos
+; ln -s ~/.emacs.d/init/lisp/dotracketrc ~/.racketrc
+
+;;; linux
+; ln -sf ~/.emacs.d/init/lisp/dotracketrc ~/.config/racket/racketrc.rktl
+
+;;;;;;;;;;;
+; raco pkg install sugar at-exp-lib describe debug xrepl-lib colorize
+;;;;;;;;;;;
+
+
 ;; please run below with shell terminal first:
-
-
 (require racket/trace)
 ;;; (define (f x) (if (zero? x) 0 (add1 (f (sub1 x)))))
 ;;; (trace f)
@@ -9,10 +17,10 @@
 ;;; (trace-define ((+n n) x) (+ n x))
 ;;; (trace-let ...)
 ;;; (trace-lambda ...)
-;;; 
+;;;
 
 
-;;;; raco pkg install -i sugar
+;;;; raco pkg install sugar
 (require sugar sugar/debug)
 ;; (report (+ 3 2))
 ;; (report/line (+ 3 2))
@@ -47,8 +55,6 @@
 ;;
 ;; load readline support (added by `install-readline!')
 ;;(require readline/rep)
-
-
 
 
 
