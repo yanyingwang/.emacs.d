@@ -118,7 +118,6 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
   ;; Default font
   (qiang-set-font
    '("MonacoBsemi" "Agave" "Consolas" "DejaVu Sans Mono" "Monospace") 10
-   (setq-default line-spacing 3)
    ;; (set-face-attribute 'default nil :font "MonacoBsemi-10:bold")
    ;; (set-frame-font "MonacoBsemi-10:bold" nil t)
    ;;;;; describle-font ;;;;;;;
@@ -131,6 +130,7 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
 
    '("文泉驿微米黑" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
+  (setq-default line-spacing 3)
   (set-face-attribute 'default nil :font (font-spec))
 
   ;; 窗口初始不透明
