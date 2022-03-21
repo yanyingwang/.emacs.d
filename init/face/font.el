@@ -118,7 +118,7 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
   ;; Default font
   (qiang-set-font
    '("MonacoBsemi" "Agave" "Consolas" "DejaVu Sans Mono" "Monospace") 10
-   ;; (setq-default line-spacing 3)
+   (setq-default line-spacing 3)
    ;; (set-face-attribute 'default nil :font "MonacoBsemi-10:bold")
    ;; (set-frame-font "MonacoBsemi-10:bold" nil t)
    ;;;;; describle-font ;;;;;;;
