@@ -1,5 +1,7 @@
 (setq visible-bell t)            ; flash instead of that annoying bell
 
+;; (setq make-pointer-invisible t)
+;; (mouse-avoidance-mode 'banish)
 
 (setq frame-title-format ; format the title-bar to always include the buffer name
       '((:eval (if (buffer-file-name)
