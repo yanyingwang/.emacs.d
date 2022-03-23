@@ -1,15 +1,20 @@
 
 ;;;;;;;;;;; code originated from
 ;;;;;;;;;;; https://gist.github.com/exaos/4493582 ;;;;;;;;;;;;;;;;
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                  字体显示测试                                ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;
 ;; 中英文对齐
 ;; -------1---------2---------3---------4---------5---------6---------7--
 ;; abab  abababab  abababab  abababab  abababababab
+;; abab  abababab  abababab  abababab  abababababab
+;; abab  abababab  abababab  abababab  abababababab
 ;; 你我  你我你我  你我你我  你我你我  你我你我你我
+;; 你我  你我你我  你我你我  你我你我  你我你我你我
+;; 你我  你我你我  你我你我  你我你我  你我你我你我
+;; abab  abababab  abababab  abababab  abababababab
+;; abab  abababab  abababab  abababab  abababababab
+;; abab  abababab  abababab  abababab  abababababab
 ;; 3456789+123456789+123456789+123456789+123456789+123456789+123456789+12
 ;; 半角： 0 o O 1 l I | i ; : . ~ \ / - _ = ! @ # $ % ^ & * ` ' " () [] {}
 ;; 全角：  ， ； 、 。 ？ ！
@@ -26,7 +31,6 @@
 ;; ♩♪♫♬♭♮♯  ➀➁➂➃➄➅➆➇➈➉ 卐卍✝✚✡☥⎈☭☪☮☺☹ ☯☰☱☲☳☴☵☶☷
 ;; ☠☢☣☤♲♳⌬♨♿ ☉☼☾☽ ♀♂ ♔♕♖ ♗♘♙ ♚♛ ♜♝♞♟
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -37,27 +41,24 @@
 ;; ;;;;;; M=x describe-fonts ;;;;;;;;;;;;
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; (setq enfont "Agave-12:bold")
-;; ;; (setq enfont "YaHei Consolas Coder-12:bold")
-;; ;; (setq enfont "Ubuntu Mono - Bront-12:bold")
-;; ;; (setq enfont "MonacoBSemi-10:bold")
-;; ;; (setq enfont "MonacoB-10:bold")
-;; ;; (setq enfont "MonacoB2-10:bold")
-;; (setq cnfont "PingFangSC-Regular-12:normal")
-;; ;; (setq cnfont "文泉驿等宽微米黑-12:normal")
+(set-face-attribute 'default nil :font
+                    "Agave-12:bold"
+                    ;; "MonacoBSemi-10:bold"
+                    ;; "MonacoB-10:bold"
+                    ;; "MonacoB2-10:bold"
+                    ;; "YaHei Consolas Coder-12:bold"
+                    ;; "Ubuntu Mono - Bront-12:bold"
+                    )
+(dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
+  (set-fontset-font t charset
+                    ;; "PingFangSC-Regular-12:normal"
+                    "文泉驿等宽微米黑-12:normal"
+                    ))
+(setq-default line-spacing 3)
+;; (set-frame-font "MonacoBSemi-10:bold" nil t)
 
-;; (set-face-attribute 'default nil :font enfont)
-;; (set-frame-font enfont nil t)
-;; (setq-default line-spacing 3)
-
-;; (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
-;;   (set-fontset-font t charset cnfont))
-
-;; ;; '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB")
-;; ;; (set-fontset-font t nil "HanaMinB" nil 'prepend)
-
-;; ;; (setq-default line-spacing 4)
-
+;; '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB")
+;; (set-fontset-font t nil "HanaMinB" nil 'prepend)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -130,7 +131,6 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
   (qiang-set-font
    '("Agave" "Consolas" "DejaVu Sans Mono" "Monospace") 12
    ;; '("MonacoBsemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10
-
    '("PingFangSC-Regular" "文泉驿微米黑" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
   (setq-default line-spacing 4)
