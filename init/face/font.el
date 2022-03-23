@@ -131,7 +131,7 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
   (qiang-set-font
    '("Agave" "Consolas" "DejaVu Sans Mono" "Monospace") 12
    ;; '("MonacoBsemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10
-   '("PingFangSC-Regular" "文泉驿微米黑" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
+   '("文泉驿微米黑" "PingFangSC-Regular" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
   (setq-default line-spacing 4)
   (set-face-attribute 'default nil :font (font-spec))
