@@ -19,7 +19,7 @@
   :ensure t)
 
 
-;;; scss mode
+;;; scss mode ===> check rainbow-mode
 (use-package scss-mode
   :ensure t)
 (use-package less-css-mode

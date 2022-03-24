@@ -41,9 +41,13 @@
 
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Fonts.html#Fonts
 (setq enfont
-      "MonacoBSemi-10:slant=normal:weight=bold:width=normal"
-      ;; "MonacoBSemi-10:bold"
-      ;; "Agave-12:bold"
+      ;; "MonacoBSemi-10:slant=normal:weight=bold:width=normal"
+      ;; "MonacoB-Bold-10:normal"
+      ;; "Agave-12:normal"
+      ;; "Agave-Medium-12:medium"
+      "Agave-Semibold-12:Semibold"
+      ;; "Agave-Bold-12:bold"
+      ;; "Agave-Heavy-12:ultrabold"
       ;; "MonacoB-10:bold"
       ;; "MonacoB2-10:bold"
       ;; "YaHei Consolas Coder-12:bold"
@@ -54,16 +58,22 @@
               '(font . enfont))
 (set-face-attribute 'default nil :font enfont)
 
+
 (setq cnfont
-      ;; "PingFangSC-Regular-12:normal"
-      "文泉驿等宽微米黑-12:normal"
+      ;; "苹方-简-半粗-12:semibold"
+      ;; "苹方-简-常规-12:regular"
+      "PingFangSC-Regular-12:Regular"
+      ;; "PingFangSC-Medium-12:Medium"
+      ;; "PingFangSC-Semibold-12:Demi"
+      ;; "文泉驿等宽微米黑-12:normal"
       )
 (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
   (set-fontset-font t charset cnfont))
 
 ;; '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB")
 ;; (set-fontset-font t nil "HanaMinB" nil 'prepend)
-(setq-default line-spacing 2)
+(setq-default line-spacing 4)
+
 
 
 

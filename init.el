@@ -43,4 +43,3 @@
 (load-directory "~/.emacs.d/init/utility")
 ;; (load-file "~/.emacs.d/init/helm.el")
 (load-directory "~/.emacs.d/init/face")
-
