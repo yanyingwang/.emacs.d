@@ -60,8 +60,8 @@
 (global-set-key (kbd " s-l") 'select-current-line)
 
 ;; select until next begining line
-(global-set-key (kbd "C-c n") 'turn-on-expand-line-mode)
-(global-set-key (kbd "s-n") 'turn-on-expand-line-mode)
+;; (global-set-key (kbd "C-c n") 'turn-on-expand-line-mode)
+;; (global-set-key (kbd "s-n") 'turn-on-expand-line-mode)
 
 ;; cycle-paren
 (global-set-key (kbd "C-c g p") 'racket-cycle-paren-shapes)
