@@ -92,7 +92,7 @@
   (add-hook 'js-mode-hook #'rainbow-mode)
   (add-hook 'elisp-mode-hook #'rainbow-mode)
   (add-hook 'css-mode-hook #'rainbow-mode)
-  :mode "\\.elisp-mode\\'"
+  ;; :mode "\\.elisp-mode\\'"
   :ensure t)
 ;; (define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
 ;;   (lambda () (rainbow-mode 1)))

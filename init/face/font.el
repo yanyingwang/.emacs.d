@@ -43,9 +43,11 @@
 (setq enfont
       ;; "MonacoBSemi-10:slant=normal:weight=bold:width=normal"
       ;; "MonacoB-Bold-10:normal"
+      "AgaveBr-Semibold-12:Semibold"
+      ;; "AgaveBr-Bold-12:bold"
       ;; "Agave-12:normal"
       ;; "Agave-Medium-12:medium"
-      "Agave-Semibold-12:Semibold"
+      ;; "Agave-Semibold-12:Semibold"
       ;; "Agave-Bold-12:bold"
       ;; "Agave-Heavy-12:ultrabold"
       ;; "MonacoB-10:bold"
@@ -57,7 +59,6 @@
 (add-to-list 'default-frame-alist
               '(font . enfont))
 (set-face-attribute 'default nil :font enfont)
-
 
 (setq cnfont
       ;; "苹方-简-半粗-12:semibold"
