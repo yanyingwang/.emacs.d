@@ -4,6 +4,7 @@
 ;; (mouse-avoidance-mode 'banish)
 
 
+
 (setq frame-title-format ; format the title-bar to always include the buffer name
       '((:eval (if (buffer-file-name)
                    (abbreviate-file-name (buffer-file-name))
@@ -53,5 +54,7 @@
 (global-prettify-symbols-mode 1)
 
 
-(set-frame-parameter (selected-frame) 'alpha '(98 . 95))
-(add-to-list 'default-frame-alist '(alpha . (98 . 95)))
+;; transparent windows
+(set-frame-parameter (selected-frame) 'alpha '(100 100))
+;; (set-frame-parameter (selected-frame) 'alpha '(98 . 95))
+;; (add-to-list 'default-frame-alist '(alpha . (98 . 95)))
