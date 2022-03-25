@@ -67,9 +67,9 @@
       ;; "苹方-简-半粗-12:semibold"
       ;; "苹方-简-常规-12:regular"
       ;; "PingFangSC-Regular-12:Regular"
-      ;; "PingFangSC-Medium-12:Medium"
+      "PingFangSC-Medium-12:Medium"
       ;;;; "PingFangSC-Semibold-12:Demi"
-      "文泉驿等宽微米黑-12:normal"
+      ;; "文泉驿等宽微米黑-12:normal"
       )
 (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
   (set-fontset-font t charset cnfont))
