@@ -43,17 +43,20 @@
 (setq enfont
       ;; "MonacoBSemi-10:slant=normal:weight=bold:width=normal"
       ;; "MonacoB-Bold-10:normal"
-      "AgaveBr-Semibold-12:Semibold"
-      ;; "AgaveBr-Bold-12:bold"
-      ;; "Agave-12:normal"
-      ;; "Agave-Medium-12:medium"
-      ;; "Agave-Semibold-12:Semibold"
-      ;; "Agave-Bold-12:bold"
-      ;; "Agave-Heavy-12:ultrabold"
       ;; "MonacoB-10:bold"
       ;; "MonacoB2-10:bold"
       ;; "YaHei Consolas Coder-12:bold"
       ;; "Ubuntu Mono - Bront-12:bold"
+      ;; "Agave-12:normal"
+      ;; "Agave-12:bold"
+      ;; "AgaveB-Regular-12:normal"
+      ;; "AgaveB-Medium-12:medium"
+      ;; "AgaveB-Semibold-12:semibold"
+      "AgaveBBr-Semibold-12:Semibold"
+      ;; "AgaveB-Bold-12:bold"
+      ;; "AgaveB-Heavy-12:heavy"
+      ;; "AgaveB-Black-12:black"
+      ;; "AgaveBBr-Black-12:black"
       )
 ;; (set-frame-font "MonacoBSemi-10:bold" nil t)
 (add-to-list 'default-frame-alist
@@ -63,9 +66,9 @@
 (setq cnfont
       ;; "苹方-简-半粗-12:semibold"
       ;; "苹方-简-常规-12:regular"
-      "PingFangSC-Regular-12:Regular"
+      ;; "PingFangSC-Regular-12:Regular"
       ;; "PingFangSC-Medium-12:Medium"
-      ;; "PingFangSC-Semibold-12:Demi"
+      "PingFangSC-Semibold-12:Demi"
       ;; "文泉驿等宽微米黑-12:normal"
       )
 (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
@@ -74,8 +77,6 @@
 ;; '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB")
 ;; (set-fontset-font t nil "HanaMinB" nil 'prepend)
 (setq-default line-spacing 4)
-
-
 
 
 
