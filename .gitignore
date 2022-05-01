@@ -64,3 +64,5 @@ helm-curl.log
 dired-history
 
 request/
+eln-cache/
+projects

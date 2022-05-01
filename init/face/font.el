@@ -45,14 +45,16 @@
       ;; "MonacoB-Bold-10:normal"
       ;; "MonacoB-10:bold"
       ;; "MonacoB2-10:bold"
+      "MonacoBSemi-10:bold"
       ;; "YaHei Consolas Coder-12:bold"
       ;; "Ubuntu Mono - Bront-12:bold"
+
       ;; "Agave-12:normal"
       ;; "Agave-12:bold"
       ;; "AgaveB-Regular-12:normal"
       ;; "AgaveB-Medium-12:medium"
       ;; "AgaveB-Semibold-12:semibold"
-      "AgaveBBr-Semibold-12:Semibold"
+      ;; "AgaveBBr-Semibold-12:Semibold"
       ;; "AgaveB-Bold-12:bold"
       ;; "AgaveB-Heavy-12:heavy"
       ;; "AgaveB-Black-12:black"
@@ -76,7 +78,7 @@
 
 ;; '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB")
 ;; (set-fontset-font t nil "HanaMinB" nil 'prepend)
-(setq-default line-spacing 4)
+(setq-default line-spacing 2)
 
 
 

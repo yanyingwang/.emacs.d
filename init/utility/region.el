@@ -24,8 +24,8 @@
   :ensure t)
 
 
-;; (use-package expand-line
-;;   ;; :bind (("C-c g n" . 'turn-on-expand-line-mode))
-;;   :init
-;;   :config
-;;   :ensure t)
+(use-package expand-line
+  :bind (("C-c g n" . 'turn-on-expand-line-mode))
+  :init
+  :config
+  :ensure t)
