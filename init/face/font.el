@@ -39,137 +39,143 @@
 ;; ;;;;;; M=x describe-fonts ;;;;;;;;;;;;
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Fonts.html#Fonts
-(setq enfont
-      ;; "MonacoBSemi-10:slant=normal:weight=bold:width=normal"
-      ;; "MonacoB-Bold-10:normal"
-      ;; "MonacoB-10:bold"
-      ;; "MonacoB2-10:bold"
-      "MonacoBSemi-10:bold"
-      ;; "YaHei Consolas Coder-12:bold"
-      ;; "Ubuntu Mono - Bront-12:bold"
 
-      ;; "Agave-12:normal"
-      ;; "Agave-12:bold"
-      ;; "AgaveB-Regular-12:normal"
-      ;; "AgaveB-Medium-12:medium"
-      ;; "AgaveB-Semibold-12:semibold"
-      ;; "AgaveBBr-Semibold-12:Semibold"
-      ;; "AgaveB-Bold-12:bold"
-      ;; "AgaveB-Heavy-12:heavy"
-      ;; "AgaveB-Black-12:black"
-      ;; "AgaveBBr-Black-12:black"
-      )
-;; (set-frame-font "MonacoBSemi-10:bold" nil t)
-(add-to-list 'default-frame-alist
-              '(font . enfont))
-(set-face-attribute 'default nil :font enfont)
+;; (setq enfont
+;;       ;; "MonacoBSemi-10:slant=normal:weight=bold:width=normal"
+;;       ;; "MonacoB-Bold-10:normal"
+;;       ;; "MonacoB-10:bold"
+;;       ;; "MonacoB2-10:bold"
+;;       ;; "MonacoBSemi-11:bold"
+;;       ;; "YaHei Consolas Coder-12:bold"
+;;       ;; "Ubuntu Mono - Bront-12:bold"
 
-(setq cnfont
-      ;; "苹方-简-半粗-12:semibold"
-      ;; "苹方-简-常规-12:regular"
-      ;; "PingFangSC-Regular-12:Regular"
-      "PingFangSC-Medium-12:Medium"
-      ;;;; "PingFangSC-Semibold-12:Demi"
-      ;; "文泉驿等宽微米黑-12:normal"
-      )
-(dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
-  (set-fontset-font t charset cnfont))
+;;       ;; "Agave-12:normal"
+;;       ;; "Agave-12:bold"
+;;       "AgaveB-Regular-12:normal"
+;;       ;; "AgaveB-Medium-12:medium"
+;;       ;; "AgaveB-Semibold-12:semibold"
+;;       ;; "AgaveBBr-Semibold-12:Semibold"
+;;       ;; "AgaveB-Bold-12:bold"
+;;       ;; "AgaveB-Heavy-12:heavy"
+;;       ;; "AgaveB-Black-12:black"
+;;       ;; "AgaveBBr-Black-12:black"
+;;       )
+;; ;; (set-frame-font "MonacoBSemi-10:bold" nil t)
+;; (add-to-list 'default-frame-alist
+;;               '(font . enfont))
+;; (set-face-attribute 'default nil :font enfont)
 
-;; '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB")
+;; (setq cnfont
+;;       ;; "苹方-简-半粗-12:semibold"
+;;       ;; "苹方-简-常规-12:regular"
+;;       "PingFangSC-Regular-12:Regular"
+;;       ;; "PingFangSC-Medium-12:Medium"
+;;       ;;;; "PingFangSC-Semibold-12:Demi"
+;;       ;; "文泉驿等宽微米黑-13:normal"
+;;       )
+;; (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
+;;   (set-fontset-font t charset cnfont))
+
+;; ;; '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB")
 ;; (set-fontset-font t nil "HanaMinB" nil 'prepend)
-(setq-default line-spacing 2)
+;; (setq-default line-spacing 5)
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun qiang-font-existsp (font)
+  (if (null (x-list-fonts font)) nil t))
 
-;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; (defun qiang-font-existsp (font)
-;;   (if (null (x-list-fonts font)) nil t))
-
-;; (defun qiang-make-font-string (font-name font-size)
-;;   (if (and (stringp font-size)
-;;            (equal ":" (string (elt font-size 0))))
-;;       (format "%s%s:bold" font-name font-size)
-;;     (format "%s-%s:bold" font-name font-size)))
-
-
-;; (defun qiang-set-font ( english-fonts
-;; 			english-font-size
-;; 			chinese-fonts
-;; 			&optional unicode-fonts )
-;;   "The english-font-size could be set to \":pixelsize=18\" or a integer.
-;; If set/leave chinese-font-size to nil, it will follow english-font-size"
-;;   (require 'cl)   ;; for find if
-;;   (unless unicode-fonts (setq unicode-fonts chinese-fonts))
-;;   (let ((en-font (qiang-make-font-string (find-if #'qiang-font-existsp english-fonts) english-font-size))
-;;         (zh-font  (font-spec :family (find-if #'qiang-font-existsp chinese-fonts)))
-;; 	(uni-font (font-spec :family (find-if #'qiang-font-existsp unicode-fonts))))
-;;     ;; Set the default English font: for most latin characters
-;;     (message "Set English Font to %s" en-font)
-;;     (set-face-attribute 'default nil :font en-font)
-;;     (set-frame-font en-font nil t)
-
-;;     ;; Set Chinese font
-;;     (message "Set Chinese Font to %s" zh-font)
-;;     (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
-;;       (set-fontset-font t charset zh-font))
-
-;;     ;; Set the font for unicode not covered above
-;;     ;;     'prepend -- do not override the previous settings
-;;     (message "Set Unicode Font to %s" uni-font)
-;;     (set-fontset-font t nil uni-font nil 'prepend)
-;;     ))
+(defun qiang-make-font-string (font-name font-size)
+  (if (and (stringp font-size)
+           (equal ":" (string (elt font-size 0))))
+      (format "%s%s:bold" font-name font-size)
+    (format "%s-%s:bold" font-name font-size)))
 
 
-;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun qiang-set-font ( english-fonts
+			english-font-size
+			chinese-fonts
+			&optional unicode-fonts )
+  "The english-font-size could be set to \":pixelsize=18\" or a integer.
+If set/leave chinese-font-size to nil, it will follow english-font-size"
+  (require 'cl)   ;; for find if
+  (unless unicode-fonts (setq unicode-fonts chinese-fonts))
+  (let ((en-font (qiang-make-font-string (find-if #'qiang-font-existsp english-fonts) english-font-size))
+        (zh-font  (font-spec :family (find-if #'qiang-font-existsp chinese-fonts)))
+	(uni-font (font-spec :family (find-if #'qiang-font-existsp unicode-fonts))))
+    ;; Set the default English font: for most latin characters
+    (message "Set English Font to %s" en-font)
+    (set-face-attribute 'default nil :font en-font)
+    (set-frame-font en-font nil t)
 
-;; (setq face-font-rescale-alist
-;;       '(("AR PL UMing CN" . 1.2)
-;; 	("SimSun"  . 1.2)
-;; 	("NSimSun" . 1.2)
-;; 	("宋体"   . 1.2)
-;; 	("新宋体" . 1.2)
-;; 	("HanaMinB" . 1.2)
-;; 	("SimSun-ExtB" . 1.2)
-;; 	("Adobe 明體 Std" . 1.2)
-;; 	("微软雅黑" . 1.2)
-;; 	("文泉驿正黑" . 1.2)
-;;         ("文泉驿微米黑" . 1.2)
-;; 	))
+    ;; Set Chinese font
+    (message "Set Chinese Font to %s" zh-font)
+    (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
+      (set-fontset-font t charset zh-font))
 
-
-;; ;; 透明窗口
-;; (defun toggle-transparency ()
-;;   (interactive)
-;;   (if (/= (cadr (frame-parameter nil 'alpha)) 100)
-;;       (set-frame-parameter nil 'alpha '(100 100))
-;;     (set-frame-parameter nil 'alpha '(85 50))))
-;; (global-set-key (kbd "C-c t") 'toggle-transparency)
-
-;; ;; 默认风格 (frame)
-;; (defun my-default-frame-face ()
-;;   (qiang-set-font
-;;    '("Agave" "Consolas" "DejaVu Sans Mono" "Monospace") 12
-;;    ;; '("MonacoBsemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10
-;;    '("文泉驿微米黑" "PingFangSC-Regular" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
-;;    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
-;;   (setq-default line-spacing 4)
-;;   (set-face-attribute 'default nil :font (font-spec))
-
-;;   ;; 窗口初始不透明
-;;   (set-frame-parameter (selected-frame) 'alpha '(100 100))
-;;   (add-to-list 'initial-frame-alist '(alpha 100 100))
-;;   ;; (toggle-transparency)
-;;   )
+    ;; Set the font for unicode not covered above
+    ;;     'prepend -- do not override the previous settings
+    (message "Set Unicode Font to %s" uni-font)
+    (set-fontset-font t nil uni-font nil 'prepend)
+    ))
 
 
-;; ;; If not in terminal, load default style
-;; (if (display-graphic-p)
-;;     (my-default-frame-face))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; ;; For emacsclient: apply default frame style to each new frame
-;; (add-hook 'after-make-frame-functions
-;; 	  (lambda (new-frame)
-;; 	    (select-frame new-frame)
-;; 	    (my-default-frame-face) ))
+(setq face-font-rescale-alist
+      '(("AR PL UMing CN" . 1.2)
+	("SimSun"  . 1.2)
+	("NSimSun" . 1.2)
+	("宋体"   . 1.2)
+	("新宋体" . 1.2)
+	("HanaMinB" . 1.2)
+	("SimSun-ExtB" . 1.2)
+	("Adobe 明體 Std" . 1.2)
+	("微软雅黑" . 1.2)
+	("文泉驿正黑" . 1.2)
+        ("文泉驿微米黑" . 1.2)
+        ("PingFangSC-Medium" . 1.2)
+	))
+
+
+;; 透明窗口
+(defun toggle-transparency ()
+  (interactive)
+  (if (/= (cadr (frame-parameter nil 'alpha)) 100)
+      (set-frame-parameter nil 'alpha '(100 100))
+    (set-frame-parameter nil 'alpha '(85 50))))
+(global-set-key (kbd "C-c t") 'toggle-transparency)
+
+;; 默认风格 (frame)
+(defun my-default-frame-face ()
+  (qiang-set-font
+   '("MonacoBSemi" "Agave" "Consolas" "DejaVu Sans Mono" "Monospace") 11
+   ;; '("MonacoBsemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10
+   '("PingFangSC-Medium" "文泉驿微米黑" "PingFangSC-Regular" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
+   '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
+  (setq-default line-spacing 4)
+  (set-face-attribute 'default nil :font (font-spec))
+
+  ;; 窗口初始不透明
+  (set-frame-parameter (selected-frame) 'alpha '(100 100))
+  (add-to-list 'initial-frame-alist '(alpha 100 100))
+  ;; (toggle-transparency)
+  )
+
+
+;; If not in terminal, load default style
+(if (display-graphic-p)
+    (my-default-frame-face))
+
+;; For emacsclient: apply default frame style to each new frame
+(add-hook 'after-make-frame-functions
+	  (lambda (new-frame)
+	    (select-frame new-frame)
+	    (my-default-frame-face)))
