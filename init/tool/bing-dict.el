@@ -11,8 +11,8 @@
 
 
 
-(use-package youdao-dictionary
-  :config
-  (setq url-automatic-caching t)
-  (global-set-key (kbd "C-c y") 'youdao-dictionary-search-at-point)
-  :ensure t)
+;; (use-package youdao-dictionary
+;;   :config
+;;   (setq url-automatic-caching t)
+;;   (global-set-key (kbd "C-c y") 'youdao-dictionary-search-at-point)
+;;   :ensure t)
