@@ -14,7 +14,7 @@
   (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages) ; enable man page at point
   :config
   (require 'helm)
-  (require 'helm-config)
+  ;; (require 'helm-config)
   (helm-mode 1)
   ;; (semantic-mode 1)
   ;;(helm-autoresize-mode t)              ; autoresize
