@@ -29,7 +29,7 @@
 
 (use-package dired-recent
   :init
-  (dired-recent-mode 1)
+  ;; (dired-recent-mode 1)
   :config
   :ensure t)
 
