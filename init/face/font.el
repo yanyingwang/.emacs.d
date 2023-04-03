@@ -159,10 +159,11 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
 ;; 默认风格 (frame)
 (defun my-default-frame-face ()
   (qiang-set-font
-   '("MonacoBSemi" "Agave" "Consolas" "DejaVu Sans Mono" "Monospace") 10
-   '("苹方-简-中等" "文泉驿微米黑" "思源黑体" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
+   ;; '("AgaveB-Semibold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 11 ;; 1.1
+   '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.3
+   '("苹方-简-中等" "文泉驿微米黑" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
-  (setq-default line-spacing 4)
+  (setq-default line-spacing 3)
   (set-face-attribute 'default nil :font (font-spec))
 
   ;; 窗口初始不透明
@@ -181,3 +182,5 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
 	  (lambda (new-frame)
 	    (select-frame new-frame)
 	    (my-default-frame-face)))
+
+
