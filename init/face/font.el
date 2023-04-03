@@ -130,21 +130,21 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq face-font-rescale-alist
-      '(("AR PL UMing CN" . 1.3)
-	("SimSun"  . 1.3)
-	("NSimSun" . 1.3)
-	("宋体"   . 1.3)
-	("新宋体" . 1.3)
-	("HanaMinB" . 1.3)
-	("SimSun-ExtB" . 1.3)
-	("Adobe 明體 Std" . 1.3)
-	("微软雅黑" . 1.3)
-	("文泉驿正黑" . 1.3)
-        ("文泉驿微米黑" . 1.3)
-        ("PingFangSC-Medium" . 1.3)
-        ("苹方-简-中等" . 1.3)
-        ("思源黑体" . 1.3)
-        ("仓颉" . 1.3)
+      '(("AR PL UMing CN" . 1.1)
+	("SimSun"  . 1.1)
+	("NSimSun" . 1.1)
+	("宋体"   . 1.1)
+	("新宋体" . 1.1)
+	("HanaMinB" . 1.1)
+	("SimSun-ExtB" . 1.1)
+	("Adobe 明體 Std" . 1.1)
+	("微软雅黑" . 1.1)
+	("文泉驿正黑" . 1.1)
+        ("文泉驿微米黑" . 1.1)
+        ("PingFangSC-Medium" . 1.1)
+        ("苹方-简-中等" . 1.1)
+        ("思源黑体" . 1.1)
+        ("仓颉" . 1.1)
  	))
 
 
@@ -159,11 +159,11 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
 ;; 默认风格 (frame)
 (defun my-default-frame-face ()
   (qiang-set-font
-   ;; '("AgaveB-Semibold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 11 ;; 1.1
-   '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.3
-   '("苹方-简-中等" "文泉驿微米黑" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
+   '("AgaveB-Semibold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 11 ;; 1.1
+   ;; '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.3
+   '("文泉驿微米黑" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
-  (setq-default line-spacing 3)
+  (setq-default line-spacing 4)
   (set-face-attribute 'default nil :font (font-spec))
 
   ;; 窗口初始不透明
@@ -182,5 +182,3 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
 	  (lambda (new-frame)
 	    (select-frame new-frame)
 	    (my-default-frame-face)))
-
-
