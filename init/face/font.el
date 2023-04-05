@@ -55,8 +55,8 @@
 ;;       ;; "Ubuntu Mono - Bront-12:bold"
 
 ;;       ;; "Agave-12:normal"
-;;       ;; "Agave-12:bold"
-;;       "AgaveB-Regular-12:normal"
+;;       ;; "Agave-11:bold"
+;;       ;; "AgaveB-Regular-12:normal"
 ;;       ;; "AgaveB-Medium-12:medium"
 ;;       ;; "AgaveB-Semibold-12:semibold"
 ;;       ;; "AgaveBBr-Semibold-12:Semibold"
@@ -64,6 +64,8 @@
 ;;       ;; "AgaveB-Heavy-12:heavy"
 ;;       ;; "AgaveB-Black-12:black"
 ;;       ;; "AgaveBBr-Black-12:black"
+;;       ;; "AgaveXX-Semibold-11:normal"
+;;       "AgaveXX-Bold-11:bold"
 ;;       )
 ;; ;; (set-frame-font "MonacoBSemi-10:bold" nil t)
 ;; (add-to-list 'default-frame-alist
@@ -73,61 +75,65 @@
 ;; (setq cnfont
 ;;       ;; "苹方-简-半粗-12:semibold"
 ;;       ;; "苹方-简-常规-12:regular"
-;;       "PingFangSC-Regular-12:Regular"
+;;       ;; "PingFangSC-Regular-12:Regular"
 ;;       ;; "PingFangSC-Medium-12:Medium"
 ;;       ;;;; "PingFangSC-Semibold-12:Demi"
-;;       ;; "文泉驿等宽微米黑-13:normal"
+;;       "文泉驿等宽微米黑-12:normal"
 ;;       )
+
+
 ;; (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
 ;;   (set-fontset-font t charset cnfont))
 
+
 ;; ;; '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB")
-;; (set-fontset-font t nil "HanaMinB" nil 'prepend)
-;; (setq-default line-spacing 5)
+;; (set-fontset-font t nil cnfont nil 'prepend)
+;; (setq-default line-spacing 4)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (defun qiang-font-existsp (font)
-;;   (if (null (x-list-fonts font)) nil t))
 
-;; (defun qiang-make-font-string (font-name font-size)
-;;   (if (and (stringp font-size)
-;;            (equal ":" (string (elt font-size 0))))
-;;       (format "%s%s:bold" font-name font-size)
-;;     (format "%s-%s:bold" font-name font-size)))
+(defun qiang-font-existsp (font)
+  (if (null (x-list-fonts font)) nil t))
 
-
-;; (defun qiang-set-font ( english-fonts
-;; 			english-font-size
-;; 			chinese-fonts
-;; 			&optional unicode-fonts )
-;;   "The english-font-size could be set to \":pixelsize=18\" or a integer.
-;; If set/leave chinese-font-size to nil, it will follow english-font-size"
-;;   (require 'cl)   ;; for find if
-;;   (unless unicode-fonts (setq unicode-fonts chinese-fonts))
-;;   (let ((en-font (qiang-make-font-string (find-if #'qiang-font-existsp english-fonts) english-font-size))
-;;         (zh-font  (font-spec :family (find-if #'qiang-font-existsp chinese-fonts)))
-;; 	(uni-font (font-spec :family (find-if #'qiang-font-existsp unicode-fonts))))
-;;     ;; Set the default English font: for most latin characters
-;;     (message "Set English Font to %s" en-font)
-;;     (set-face-attribute 'default nil :font en-font)
-;;     (set-frame-font en-font nil t)
-
-;;     ;; Set Chinese font
-;;     (message "Set Chinese Font to %s" zh-font)
-;;     (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
-;;       (set-fontset-font t charset zh-font))
-
-;;     ;; Set the font for unicode not covered above
-;;     ;;     'prepend -- do not override the previous settings
-;;     (message "Set Unicode Font to %s" uni-font)
-;;     (set-fontset-font t nil uni-font nil 'prepend)
-;;     ))
+(defun qiang-make-font-string (font-name font-size)
+  (if (and (stringp font-size)
+           (equal ":" (string (elt font-size 0))))
+      (format "%s%s:bold" font-name font-size)
+    (format "%s-%s:bold" font-name font-size)))
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun qiang-set-font ( english-fonts
+			english-font-size
+			chinese-fonts
+			&optional unicode-fonts )
+  ;; "The english-font-size could be set to \":pixelsize=18\" or a integer.
+  ;; If set/leave chinese-font-size to nil, it will follow english-font-size"
+  (require 'cl)   ;; for find if
+  (unless unicode-fonts (setq unicode-fonts chinese-fonts))
+  (let ((en-font (qiang-make-font-string (find-if #'qiang-font-existsp english-fonts) english-font-size))
+        (zh-font  (font-spec :family (find-if #'qiang-font-existsp chinese-fonts)))
+	(uni-font (font-spec :family (find-if #'qiang-font-existsp unicode-fonts))))
+    ;; Set the default English font: for most latin characters
+    (message "Set English Font to %s" en-font)
+    (set-face-attribute 'default nil :font en-font)
+    ;; (set-frame-font en-font nil t)
+
+    ;; Set Chinese font
+    (message "Set Chinese Font to %s" zh-font)
+    (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
+      (set-fontset-font t charset zh-font))
+
+    ;; Set the font for unicode not covered above
+    ;;     'prepend -- do not override the previous settings
+    (message "Set Unicode Font to %s" uni-font)
+    (set-fontset-font t nil uni-font nil 'prepend)
+    ))
+
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq face-font-rescale-alist
       '(("AR PL UMing CN" . 1.1)
@@ -141,6 +147,7 @@
 	("微软雅黑" . 1.1)
 	("文泉驿正黑" . 1.1)
         ("文泉驿微米黑" . 1.1)
+        ("文泉驿等宽微米黑" . 1.1)
         ("PingFangSC-Medium" . 1.1)
         ("苹方-简-中等" . 1.1)
         ("思源黑体" . 1.1)
@@ -161,7 +168,7 @@
   (qiang-set-font
    '("AgaveXX-Bold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 11 ;; 1.1
    ;; '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.3
-   '("文泉驿微米黑" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
+   '("文泉驿等宽微米黑" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
   (setq-default line-spacing 4)
   (set-face-attribute 'default nil :font (font-spec))
