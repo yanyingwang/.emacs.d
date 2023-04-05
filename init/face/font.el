@@ -89,42 +89,42 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defun qiang-font-existsp (font)
-  (if (null (x-list-fonts font)) nil t))
+;; (defun qiang-font-existsp (font)
+;;   (if (null (x-list-fonts font)) nil t))
 
-(defun qiang-make-font-string (font-name font-size)
-  (if (and (stringp font-size)
-           (equal ":" (string (elt font-size 0))))
-      (format "%s%s:bold" font-name font-size)
-    (format "%s-%s:bold" font-name font-size)))
+;; (defun qiang-make-font-string (font-name font-size)
+;;   (if (and (stringp font-size)
+;;            (equal ":" (string (elt font-size 0))))
+;;       (format "%s%s:bold" font-name font-size)
+;;     (format "%s-%s:bold" font-name font-size)))
 
 
-(defun qiang-set-font ( english-fonts
-			english-font-size
-			chinese-fonts
-			&optional unicode-fonts )
-  "The english-font-size could be set to \":pixelsize=18\" or a integer.
-If set/leave chinese-font-size to nil, it will follow english-font-size"
-  (require 'cl)   ;; for find if
-  (unless unicode-fonts (setq unicode-fonts chinese-fonts))
-  (let ((en-font (qiang-make-font-string (find-if #'qiang-font-existsp english-fonts) english-font-size))
-        (zh-font  (font-spec :family (find-if #'qiang-font-existsp chinese-fonts)))
-	(uni-font (font-spec :family (find-if #'qiang-font-existsp unicode-fonts))))
-    ;; Set the default English font: for most latin characters
-    (message "Set English Font to %s" en-font)
-    (set-face-attribute 'default nil :font en-font)
-    (set-frame-font en-font nil t)
+;; (defun qiang-set-font ( english-fonts
+;; 			english-font-size
+;; 			chinese-fonts
+;; 			&optional unicode-fonts )
+;;   "The english-font-size could be set to \":pixelsize=18\" or a integer.
+;; If set/leave chinese-font-size to nil, it will follow english-font-size"
+;;   (require 'cl)   ;; for find if
+;;   (unless unicode-fonts (setq unicode-fonts chinese-fonts))
+;;   (let ((en-font (qiang-make-font-string (find-if #'qiang-font-existsp english-fonts) english-font-size))
+;;         (zh-font  (font-spec :family (find-if #'qiang-font-existsp chinese-fonts)))
+;; 	(uni-font (font-spec :family (find-if #'qiang-font-existsp unicode-fonts))))
+;;     ;; Set the default English font: for most latin characters
+;;     (message "Set English Font to %s" en-font)
+;;     (set-face-attribute 'default nil :font en-font)
+;;     (set-frame-font en-font nil t)
 
-    ;; Set Chinese font
-    (message "Set Chinese Font to %s" zh-font)
-    (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
-      (set-fontset-font t charset zh-font))
+;;     ;; Set Chinese font
+;;     (message "Set Chinese Font to %s" zh-font)
+;;     (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
+;;       (set-fontset-font t charset zh-font))
 
-    ;; Set the font for unicode not covered above
-    ;;     'prepend -- do not override the previous settings
-    (message "Set Unicode Font to %s" uni-font)
-    (set-fontset-font t nil uni-font nil 'prepend)
-    ))
+;;     ;; Set the font for unicode not covered above
+;;     ;;     'prepend -- do not override the previous settings
+;;     (message "Set Unicode Font to %s" uni-font)
+;;     (set-fontset-font t nil uni-font nil 'prepend)
+;;     ))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -159,7 +159,7 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
 ;; 默认风格 (frame)
 (defun my-default-frame-face ()
   (qiang-set-font
-   '("AgaveB-Semibold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 11 ;; 1.1
+   '("AgaveXX-Bold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 11 ;; 1.1
    ;; '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.3
    '("文泉驿微米黑" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
