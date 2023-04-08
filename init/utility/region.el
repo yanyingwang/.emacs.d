@@ -24,8 +24,8 @@
   :ensure t)
 
 
+(defvar expand-line-mode nil)
 (use-package expand-line
   :bind (("C-c g n" . 'turn-on-expand-line-mode))
   ;; :init (defvar expand-line-mode nil)
-  :config
   :ensure t)
