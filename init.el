@@ -27,6 +27,19 @@
 (setq use-package-always-ensure t)
 
 
+;(quelpa
+;'(quelpa-use-package
+;  :fetcher git
+;  :url "https://github.com/quelpa/quelpa-use-package.git"))
+;require 'quelpa-use-package)
+
+;; (unless (package-installed-p 'quelpa)
+;;   (with-temp-buffer
+;;     (url-insert-file-contents "https://raw.githubusercontent.com/quelpa/quelpa/master/quelpa.el")
+;;     (eval-buffer)
+;;     (quelpa-self-upgrade)))
+
+
 ;;; load init files
 (defun load-directory (dir)
   (let ((load-it (lambda (f)
@@ -48,6 +61,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("d445c7b530713eac282ecdeea07a8fa59692c83045bf84dd112dd738c7bcad1d" default)))
  '(package-selected-packages
    (quote
     (pyim-wbdict pyim-basedict pyim gruvbox-theme rainbow-mode rainbow-delimiters micgoline powerline golden-ratio esh-autosuggest eshell-prompt-extras dired-rainbow diredfl dired-collapse dired-filter dired-efap dired-recent dired-ranger dired-subtree dired-avfs dired-atool auto-dim-other-buffers diff-hl yasnippet-snippets yasnippet undo-tree expand-line expand-region region-bindings-mode multiple-cursors phi-search emr exec-path-from-shell pinyin-search counsel ivy helm-themes helm-descbinds browse-at-remote magit wttrin cal-china-x youdao-dictionary bing-dict company-tabnine company ws-butler smartparens indent-guide aggressive-indent scribble-mode racket-mode geiser olivetti emmet-mode yaml-mode markdown-mode haml-mode slim-mode scss-mode web-mode osx-plist flymake-grammarly ruby-refactor robe rvm php-mode vue-mode projectile-rails helm-projectile auto-package-update use-package))))

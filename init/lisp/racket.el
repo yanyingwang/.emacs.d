@@ -1,5 +1,6 @@
 ;; brew install librsvg
 (use-package racket-mode
+  ;; :quelpa ((racket-mode :fetcher github :repo "yanyingwang/racket-mode-for-ming") :upgrade t)
   :init
   ;; (add-hook 'racket-mode-hook
   ;;           (lambda ()
@@ -40,7 +41,13 @@
   (add-to-list 'auto-mode-alist '("\\.rkt?\\'" . racket-mode))
   (add-to-list 'auto-mode-alist '("\\.scm?\\'" . racket-mode))
   (add-to-list 'auto-mode-alist '("\\.*racketrc\\'" . racket-mode))
+
+  ;; (put '􏹌 'racket-indent-function 0)
+  ;; (put '名 'racket-indent-function 'defun)
+  ;; (put 'insert 'racket-indent-function 'defun)
+  ;; (put 'racket-macro-name 'racket-indent-function indent-value)
   :ensure t)
+
 
 
 (use-package scribble-mode
@@ -48,3 +55,42 @@
   ;; (add-hook 'scribble-mode-hook #'geiser-mode)
   :bind (("C-c C-p" . racket-cycle-paren-shapes))
   :ensure t)
+
+
+
+
+;; (defun racket-add-keywords (face-name keyword-rules)
+;;   (let* ((keyword-list (mapcar #'(lambda (x)
+;;                                    (symbol-name (cdr x)))
+;;                                keyword-rules))
+;;          (keyword-regexp (concat "(\\("
+;;                                  (regexp-opt keyword-list)
+;;                                  "\\)[ \n]")))
+;;     (font-lock-add-keywords 'racket-mode
+;;                             `((,keyword-regexp 1 ',face-name))))
+;;   (mapc #'(lambda (x)
+;;             (put (cdr x)
+;;                  'racket-indent-function
+;;                  (car x)))
+;;         keyword-rules))
+
+
+;; (racket-add-keywords
+;;  'font-lock-keyword-face
+;;  '((0 . 名)
+;;    ;; (2 . let1)
+;;    ;; (1 . error)
+;;    ))
+
+;; ;; (scheme-add-keywords
+;; ;;  'font-lock-variable-name-face
+;; ;;  '((0 . 名)
+;; ;;    ))
+
+
+;; (racket-add-keywords
+;;  'font-lock-function-face
+;;  '((0 . 􏹌)
+;;    ;; (2 . let1)
+;;    ;; (1 . error)
+;;    ))
