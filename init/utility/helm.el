@@ -2,7 +2,7 @@
 ;;; helm
 (use-package helm
   :bind (("M-x" . helm-M-x)
-         ("C-x C-f" . hexl-find-file)
+         ("C-x C-f" . dired-x-find-file)
          ("C-c h" . helm-command-prefix)
          ("M-y" . helm-show-kill-ring)
          ("C-x b" . helm-mini)
