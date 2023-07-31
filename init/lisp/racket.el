@@ -1,6 +1,7 @@
 ;; brew install librsvg
 (use-package racket-mode
   ;; :quelpa ((racket-mode :fetcher github :repo "yanyingwang/racket-mode-for-ming") :upgrade t)
+  :load-path "/home/yanying/racket-mode-for-ming"
   :init
   ;; (add-hook 'racket-mode-hook
   ;;           (lambda ()
@@ -14,7 +15,7 @@
   (add-hook 'racket-mode-hook #'racket-mode-xref-backend-function)
 
   (require 'racket-xp)
-  (add-hook 'racket-mode-hook #'racket-xp-mode)
+  ;; (add-hook 'racket-mode-hook #'racket-xp-mode)
   ;; Note: If you find these point-motion features too distracting and/or slow, in your racket-xp-mode-hook you may disable them:
   ;; (add-hook 'racket-xp-mode-hook
   ;;           (lambda ()
@@ -42,6 +43,8 @@
   (add-to-list 'auto-mode-alist '("\\.scm?\\'" . racket-mode))
   (add-to-list 'auto-mode-alist '("\\.*racketrc\\'" . racket-mode))
 
+  ;; :config
+  ;; (put '􏻿 'racket-indent-function 0)
   ;; (put '􏹌 'racket-indent-function 0)
   ;; (put '名 'racket-indent-function 'defun)
   ;; (put 'insert 'racket-indent-function 'defun)
@@ -58,39 +61,3 @@
 
 
 
-
-;; (defun racket-add-keywords (face-name keyword-rules)
-;;   (let* ((keyword-list (mapcar #'(lambda (x)
-;;                                    (symbol-name (cdr x)))
-;;                                keyword-rules))
-;;          (keyword-regexp (concat "(\\("
-;;                                  (regexp-opt keyword-list)
-;;                                  "\\)[ \n]")))
-;;     (font-lock-add-keywords 'racket-mode
-;;                             `((,keyword-regexp 1 ',face-name))))
-;;   (mapc #'(lambda (x)
-;;             (put (cdr x)
-;;                  'racket-indent-function
-;;                  (car x)))
-;;         keyword-rules))
-
-
-;; (racket-add-keywords
-;;  'font-lock-keyword-face
-;;  '((0 . 名)
-;;    ;; (2 . let1)
-;;    ;; (1 . error)
-;;    ))
-
-;; ;; (scheme-add-keywords
-;; ;;  'font-lock-variable-name-face
-;; ;;  '((0 . 名)
-;; ;;    ))
-
-
-;; (racket-add-keywords
-;;  'font-lock-function-face
-;;  '((0 . 􏹌)
-;;    ;; (2 . let1)
-;;    ;; (1 . error)
-;;    ))
