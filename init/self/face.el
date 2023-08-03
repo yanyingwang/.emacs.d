@@ -58,3 +58,4 @@
 (set-frame-parameter (selected-frame) 'alpha '(100 100))
 ;; (set-frame-parameter (selected-frame) 'alpha '(98 . 95))
 ;; (add-to-list 'default-frame-alist '(alpha . (98 . 95)))
+

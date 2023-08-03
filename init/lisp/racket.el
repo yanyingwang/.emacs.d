@@ -43,8 +43,9 @@
   (add-to-list 'auto-mode-alist '("\\.scm?\\'" . racket-mode))
   (add-to-list 'auto-mode-alist '("\\.*racketrc\\'" . racket-mode))
 
-  ;; :config
-  ;; (put '􏻿 'racket-indent-function 0)
+  :config
+
+  (put '􏿰攸+ 'racket-indent-function 1)
   ;; (put '􏹌 'racket-indent-function 0)
   ;; (put '名 'racket-indent-function 'defun)
   ;; (put 'insert 'racket-indent-function 'defun)

@@ -10,9 +10,26 @@
 ;;(mouse-wheel-mode t) ; Make the mouse wheel scroll Emacs
 ;;(show-paren-mode 1)                     ; enable ShowParenMode
 
-(desktop-save-mode 1)                   ; set windows size
+
 ;;(custom-set-variables
-;; '(initial-frame-alist (quote ((fullscreen . maximized))))) ; Start in full-screen mode
+;; '(initial-frame-alist (quote ((fullscryeen . maximized))))) ; Start in full-screen mode
+
+(add-to-list 'default-frame-alist '(height . 250)) ;; Vertical frame size
+(add-to-list 'default-frame-alist '(width . 180)) ;; Horizontal frame size
+
+;; (desktop-save-mode 1)                   ; set windows size
+(if (not (daemonp))
+    (desktop-save-mode 1)
+  (defun restore-desktop (frame)
+    "Restores desktop and cancels hook after first frame opens.
+     So the daemon can run at startup and it'll still work"
+    (with-selected-frame frame
+      (desktop-save-mode 1)
+      (desktop-read)
+      (remove-hook 'after-make-frame-functions 'restore-desktop)))
+  (add-hook 'after-make-frame-functions 'restore-desktop))
+(global-set-key (kbd "C-x C-M-c") 'save-buffers-kill-emacs)
+
 
 (when (fboundp 'winner-mode)
   (winner-mode 1))                      ; key commands ‘C-c left’ and ‘C-c right’
@@ -69,3 +86,4 @@
 
 
 (pixel-scroll-precision-mode 1)
+(setq warning-minimum-level :emergency)
