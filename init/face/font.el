@@ -122,9 +122,11 @@
     ;; (set-frame-font en-font nil t)
 
     ;; Set Chinese font
-    (message "Set Chinese Font to %s" zh-font)
+    (message "Set Chinese Font to %s prepended" zh-font)
     (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
-      (set-fontset-font t charset zh-font))
+      (set-fontset-font t charset "仓颉")
+      (set-fontset-font t charset zh-font nil 'append)
+      )
 
     ;; Set the font for unicode not covered above
     ;;     'prepend -- do not override the previous settings
@@ -152,7 +154,8 @@
         ("苹方-简-中等" . 1.1)
         ("思源黑体" . 1.1)
         ("仓颉" . 1.1)
-       	))
+        ("Noto Sans CJK SC" . 1.1)
+        ))
 
 
 ;; 透明窗口
@@ -168,7 +171,7 @@
   (qiang-set-font
    '("AgaveXX-Bold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 11 ;; 1.1
    ;; '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.3
-   '("仓颉" "文泉驿等宽微米黑" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
+   '( "文泉驿等宽微米黑" "思源黑体" "Noto Sans CJK SC" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
   (setq-default line-spacing 4)
   (set-face-attribute 'default nil :font (font-spec))

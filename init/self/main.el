@@ -14,9 +14,8 @@
 ;;(custom-set-variables
 ;; '(initial-frame-alist (quote ((fullscryeen . maximized))))) ; Start in full-screen mode
 
-(add-to-list 'default-frame-alist '(height . 250)) ;; Vertical frame size
+(add-to-list 'default-frame-alist '(height . 350)) ;; Vertical frame size
 (add-to-list 'default-frame-alist '(width . 180)) ;; Horizontal frame size
-
 ;; (desktop-save-mode 1)                   ; set windows size
 (if (not (daemonp))
     (desktop-save-mode 1)
