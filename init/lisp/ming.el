@@ -16,6 +16,8 @@
 
 ;; argument is an alist of width and list of RANGEs,
 ;; which is the same as the RANGE that set-char-table-range accepts
+;; for cangjie fonts:
+;; https://github.com/yanyingwang/cangjie
 (blaenk/set-char-widths
  `((2 . (?\􏻿
          ?\􏿰
@@ -678,6 +680,7 @@
          ?\􏹅
          ?\􏹄
          ?\􏹃
+         ?\􏹀
          ))))
 
 ;; (char-width ?\􏿰)

@@ -171,7 +171,7 @@
   (qiang-set-font
    '("AgaveXX-Bold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 11 ;; 1.1
    ;; '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.3
-   '( "文泉驿等宽微米黑" "思源黑体" "Noto Sans CJK SC" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
+   '( "文泉驿等宽微米黑" "Noto Sans CJK SC" "思源黑体" "Noto Sans CJK SC" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
   (setq-default line-spacing 4)
   (set-face-attribute 'default nil :font (font-spec))
