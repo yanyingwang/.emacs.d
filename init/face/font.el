@@ -169,7 +169,7 @@
 ;; 默认风格 (frame)
 (defun my-default-frame-face ()
   (qiang-set-font
-   '("AgaveXX-Bold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 11 ;; 1.1
+   '("AgaveXX-Bold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 14 ;; 1.1
    ;; '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.3
    '( "文泉驿等宽微米黑" "Noto Sans CJK SC" "思源黑体" "Noto Sans CJK SC" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
