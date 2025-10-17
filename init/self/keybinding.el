@@ -17,7 +17,7 @@
 (global-set-key (kbd "<M-return>") 'toggle-frame-fullscreen)
 (global-set-key (kbd "<s-S-escape>") 'next-buffer)
 (global-set-key (kbd "<s-escape>") 'previous-buffer)
-
+(global-set-key (kbd "S-SPC") 'toggle-input-method)
 
 (global-set-key (kbd "C-c 2 c") 'hs-toggle-hiding)
 (global-set-key (kbd "C-c 2 a") 'hs-show-all)

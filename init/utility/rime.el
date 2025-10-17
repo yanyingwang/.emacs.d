@@ -9,9 +9,9 @@
   ;; (setq rime-user-data-dir "~/.emacs.d/rime")
   (setq rime-show-candidate 'posframe)  ; minibuffer message posframe sidewindow
   (setq rime-show-preedit 'inline)
-  ;; (setq rime-posframe-properties
-  ;;       (list :font ""
-  ;;             :internal-border-width 10))
+  (setq rime-posframe-properties
+        (list :font "思源黑体 Bold"
+              :internal-border-width 10))
   :bind
   (:map rime-mode-map
         ("C-`" . 'rime-send-keybinding))
