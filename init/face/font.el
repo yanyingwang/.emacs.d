@@ -46,6 +46,8 @@
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Fonts.html#Fonts
 
 ;; (setq enfont
+;;       ;; "0xProto-11:bold"
+;;       "Maple Mono NF CN-12:semibold"
 ;;       ;; "MonacoBSemi-10:slant=normal:weight=bold:width=normal"
 ;;       ;; "MonacoB-Bold-10:normal"
 ;;       ;; "MonacoB-10:bold"
@@ -65,7 +67,7 @@
 ;;       ;; "AgaveB-Black-12:black"
 ;;       ;; "AgaveBBr-Black-12:black"
 ;;       ;; "AgaveXX-Semibold-11:normal"
-;;       "AgaveXX-Bold-11:bold"
+;;       ;; "AgaveXX-Bold-11:bold"
 ;;       )
 ;; ;; (set-frame-font "MonacoBSemi-10:bold" nil t)
 ;; (add-to-list 'default-frame-alist
@@ -78,7 +80,8 @@
 ;;       ;; "PingFangSC-Regular-12:Regular"
 ;;       ;; "PingFangSC-Medium-12:Medium"
 ;;       ;;;; "PingFangSC-Semibold-12:Demi"
-;;       "文泉驿等宽微米黑-12:normal"
+;;       "Maple Mono NF CN-12:semibold"
+;;       ;; "文泉驿等宽微米黑-11:normal"
 ;;       )
 
 
@@ -88,7 +91,7 @@
 
 ;; ;; '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB")
 ;; (set-fontset-font t nil cnfont nil 'prepend)
-;; (setq-default line-spacing 4)
+;; ;; (setq-default line-spacing 4)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -101,8 +104,8 @@
 (defun qiang-make-font-string (font-name font-size)
   (if (and (stringp font-size)
            (equal ":" (string (elt font-size 0))))
-      (format "%s%s:bold" font-name font-size)
-    (format "%s-%s:bold" font-name font-size)))
+      (format "%s%s:semibold" font-name font-size)
+    (format "%s-%s:semibold" font-name font-size)))
 
 
 (defun qiang-set-font ( english-fonts
@@ -138,23 +141,24 @@
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq face-font-rescale-alist
-      '(("AR PL UMing CN" . 1.1)
-	("SimSun"  . 1.1)
-	("NSimSun" . 1.1)
-	("宋体"   . 1.1)
-	("新宋体" . 1.1)
-	("HanaMinB" . 1.1)
-	("SimSun-ExtB" . 1.1)
-	("Adobe 明體 Std" . 1.1)
-	("微软雅黑" . 1.1)
-	("文泉驿正黑" . 1.1)
-        ("文泉驿微米黑" . 1.1)
-        ("文泉驿等宽微米黑" . 1.1)
-        ("PingFangSC-Medium" . 1.1)
-        ("苹方-简-中等" . 1.1)
-        ("思源黑体" . 1.1)
-        ("仓颉" . 1.1)
-        ("Noto Sans CJK SC" . 1.1)
+      '(("AR PL UMing CN" . 1.0)
+	("SimSun"  . 1.0)
+	("NSimSun" . 1.0)
+	("宋体"   . 1.0)
+	("新宋体" . 1.0)
+	("HanaMinB" . 1.0)
+	("SimSun-ExtB" . 1.0)
+	("Adobe 明體 Std" . 1.0)
+	("微软雅黑" . 1.0)
+	("文泉驿正黑" . 1.0)
+        ("文泉驿微米黑" . 1.0)
+        ("文泉驿等宽微米黑" . 1.0)
+        ("PingFangSC-Medium" . 1.0)
+        ("苹方-简-中等" . 1.0)
+        ("思源黑体" . 1.0)
+        ("仓颉" . 1.0)
+        ("Noto Sans CJK SC" . 1.0)
+        ("Maple Mono NF CN" . 1.0)
         ))
 
 
@@ -169,11 +173,12 @@
 ;; 默认风格 (frame)
 (defun my-default-frame-face ()
   (qiang-set-font
-   '("AgaveXX-Bold" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 14 ;; 1.1
-   ;; '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.3
-   '( "文泉驿等宽微米黑" "Noto Sans CJK SC" "思源黑体" "Noto Sans CJK SC" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
+   '("Maple Mono NF CN" "0xProto" "Maple Mono NF" "0xProto" "0xProto Nerd Font Mono" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace" "AgaveXX-Bold") 12 ;; 1.0
+   ;; '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.0
+   '("Maple Mono NF CN" "文泉驿等宽微米黑" "Noto Sans CJK SC"  "思源黑体" "Noto Sans CJK SC" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
-  (setq-default line-spacing 4)
+  (setq-default line-spacing 0.05)   ;; 适度增加行高
+;; (setq-default character-spacing 8) ;; (可选) 在需要的地方增加或微调字符绘制间距
   (set-face-attribute 'default nil :font (font-spec))
 
   ;; 窗口初始不透明
@@ -192,3 +197,10 @@
 	  (lambda (new-frame)
 	    (select-frame new-frame)
 	    (my-default-frame-face)))
+
+
+;; (use-package cnfonts
+;;   :config
+;;   (cnfonts-mode 1)
+;;   :ensure t)
+;; (add-to-list 'default-frame-alist '(letter-spacing . 2))
