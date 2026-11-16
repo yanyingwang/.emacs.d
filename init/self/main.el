@@ -42,7 +42,7 @@
 
 
 (setq user-full-name "Yanying Wang")
-(setq user-mail-address "yanyingwang1@gmail.com")
+(setq user-mail-address "git@yanying.wang")
 
 
 (put 'downcase-region 'disabled nil)

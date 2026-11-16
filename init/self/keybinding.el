@@ -99,3 +99,22 @@
 ;;       "ag --line-numbers -S --hidden --color --color-match '31;43' \
 ;;           --nogroup %s %s %s")
 ;; (setq helm-grep-ag-pipe-cmd-switches '("--color-match '31;43'"))
+
+(defun unicode-hex-to-char ()
+  "将光标所在的 U+XXXXXX 或 XXXXXXX 转换为 Unicode 字符。"
+  (interactive)
+  (let ((case-fold-search t)
+        beg end code)
+    (save-excursion
+      (skip-chars-backward "0-9a-fA-Fx+U")
+      (setq beg (point))
+      (skip-chars-forward "0-9a-fA-Fx+U")
+      (setq end (point)))
+
+    (let ((text (buffer-substring-no-properties beg end)))
+      (when (string-match
+             "\\`\\(?:U\\+\\)?\\([0-9A-F]+\\)\\'" text)
+        (setq code (string-to-number (match-string 1 text) 16))
+        (delete-region beg end)
+        (insert-char code)))))
+(global-set-key (kbd "C-c u") #'unicode-hex-to-char)
