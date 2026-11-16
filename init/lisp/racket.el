@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; brew install librsvg
 (use-package racket-mode
   ;; :quelpa ((racket-mode :fetcher github :repo "yanyingwang/racket-mode-for-ming") :upgrade t)

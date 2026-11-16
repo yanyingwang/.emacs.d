@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 (add-hook 'focus-out-hook (lambda ()
                             (cl-letf (((symbol-function 'message) #'format))
                               (save-some-buffers t))))  ; save all buffers when lost focus
@@ -86,3 +88,5 @@
 
 (pixel-scroll-precision-mode 1)
 (setq warning-minimum-level :emergency)
+
+(setq lexical-binding t)

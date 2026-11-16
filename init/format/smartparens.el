@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; https://www.reddit.com/r/emacs/comments/g9jkyz/rebinding_spbackwarddeletechar/
 (defun de-sp-smart-delete ()
   "Kill region in mark if mark is active, else delete char."

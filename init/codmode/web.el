@@ -21,8 +21,12 @@
 
 ;;; scss mode ===> check rainbow-mode
 (use-package scss-mode
+  :init
+  (require 'flymake-proc)
   :ensure t)
 (use-package less-css-mode
+  :init
+  (require 'flymake-proc)
   :ensure t)
 
 

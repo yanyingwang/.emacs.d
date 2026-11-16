@@ -12,7 +12,7 @@
   (setq projectile-find-dir-includes-top-level t)
   (add-hook 'projectile-idle-timer-hook 'my-projectile-idle-timer-function) ; Idle Timer
   :config
-  (projectile-global-mode)
+  (projectile-mode 1)
   (helm-projectile-on)
   (define-key projectile-mode-map (kbd "M-<escape>") #'projectile-project-buffers-other-buffer)
   (define-key projectile-mode-map (kbd "s-b") #'projectile-switch-to-buffer)
