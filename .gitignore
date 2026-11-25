@@ -68,3 +68,6 @@ request/
 eln-cache/
 projects
 rime/*
+projectile-frecency.eld.bak
+projectile-frecency.eld
+cnfonts.bak/*

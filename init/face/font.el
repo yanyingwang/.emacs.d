@@ -204,3 +204,11 @@
 ;;   (cnfonts-mode 1)
 ;;   :ensure t)
 ;; (add-to-list 'default-frame-alist '(letter-spacing . 2))
+
+
+(set-char-table-range
+ char-width-table
+ '(#x10F000 . #x10FFFF)
+ 2)
+;; (char-width ?􏳋)
+;; (char-width #x10F000)
