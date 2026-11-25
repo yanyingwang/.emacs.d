@@ -127,7 +127,7 @@
     ;; Set Chinese font
     (message "Set Chinese Font to %s prepended" zh-font)
     (dolist (charset '(kana han symbol cjk-misc bopomofo gb18030))
-      (set-fontset-font t charset "仓颉")
+      (set-fontset-font t charset "cangjieem")
       (set-fontset-font t charset zh-font nil 'append)
       )
 
@@ -156,6 +156,7 @@
         ("PingFangSC-Medium" . 1.0)
         ("苹方-简-中等" . 1.0)
         ("思源黑体" . 1.0)
+        ("cangjieem" . 1.0)
         ("仓颉" . 1.0)
         ("Noto Sans CJK SC" . 1.0)
         ("Maple Mono NF CN" . 1.0)
@@ -175,7 +176,7 @@
   (qiang-set-font
    '("Maple Mono NF CN" "0xProto" "Maple Mono NF" "0xProto" "0xProto Nerd Font Mono" "MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace" "AgaveXX-Bold") 12 ;; 1.0
    ;; '("MonacoBSemi" "Consolas" "DejaVu Sans Mono" "Monospace") 10 ;; 1.0
-   '("Maple Mono NF CN" "文泉驿等宽微米黑" "Noto Sans CJK SC"  "思源黑体" "Noto Sans CJK SC" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN")
+   '("Maple Mono NF CN" "文泉驿等宽微米黑" "Noto Sans CJK SC"  "思源黑体" "Noto Sans CJK SC" "苹方-简-中等" "文泉驿正黑" "新宋体" "微软雅黑" "AR PL UMing CN" "cangjieem" "仓颉")
    '("SimSun-ExtB" "HanaMinB" "MingLiU-ExtB"))
   (setq-default line-spacing 0.05)   ;; 适度增加行高
 ;; (setq-default character-spacing 8) ;; (可选) 在需要的地方增加或微调字符绘制间距
