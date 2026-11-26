@@ -44,10 +44,11 @@
   (add-to-list 'auto-mode-alist '("\\.rkt?\\'" . racket-mode))
   (add-to-list 'auto-mode-alist '("\\.scm?\\'" . racket-mode))
   (add-to-list 'auto-mode-alist '("\\.*racketrc\\'" . racket-mode))
+  (add-to-list 'auto-mode-alist
+               '("\\.isp\\'" . racket-mode))
 
   :config
-
-  (put '􏿰攸+ 'racket-indent-function 1)
+  ;;(put '􏿰攸+ 'racket-indent-function 1)
   ;; (put '􏹌 'racket-indent-function 0)
   ;; (put '名 'racket-indent-function 'defun)
   ;; (put 'insert 'racket-indent-function 'defun)
